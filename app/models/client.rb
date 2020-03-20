@@ -4,7 +4,8 @@ class Client < ApplicationRecord
   extend FriendlyId
   friendly_id :full_name, use: :slugged
   belongs_to :company
-  has_many :projects
+  has_many :projects, dependent: :destroy
+  has_many :artists, through: :projects
 
   def full_name
     "#{first_name} #{last_name}"

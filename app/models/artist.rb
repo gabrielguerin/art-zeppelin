@@ -6,7 +6,8 @@ class Artist < ApplicationRecord
   has_many :artworks
   has_many :artists_tags, dependent: :destroy
   has_many :tags, through: :artists_tags
-  has_many :projects
+  has_many :projects, dependent: :destroy
+  has_many :clients, through: :projects
 
   def full_name
     "#{first_name} #{last_name}"
