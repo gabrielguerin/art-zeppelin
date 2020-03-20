@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class TagsController < ApplicationController
-  before_action :set_tag, only: [:show, :edit, :update, :destroy]
+  before_action :set_tag, only: %i[show edit update destroy]
 
   # GET /tags
   # GET /tags.json
@@ -9,8 +11,7 @@ class TagsController < ApplicationController
 
   # GET /tags/1
   # GET /tags/1.json
-  def show
-  end
+  def show; end
 
   # GET /tags/new
   def new
@@ -18,8 +19,7 @@ class TagsController < ApplicationController
   end
 
   # GET /tags/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /tags
   # POST /tags.json
@@ -62,13 +62,14 @@ class TagsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_tag
-      @tag = Tag.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def tag_params
-      params.fetch(:tag, {})
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_tag
+    @tag = Tag.friendly.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def tag_params
+    params.fetch(:tag, {})
+  end
 end

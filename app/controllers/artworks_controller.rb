@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class ArtworksController < ApplicationController
-  before_action :set_artwork, only: [:show, :edit, :update, :destroy]
+  before_action :set_artwork, only: %i[show edit update destroy]
 
   # GET /artworks
   # GET /artworks.json
@@ -9,8 +11,7 @@ class ArtworksController < ApplicationController
 
   # GET /artworks/1
   # GET /artworks/1.json
-  def show
-  end
+  def show; end
 
   # GET /artworks/new
   def new
@@ -18,8 +19,7 @@ class ArtworksController < ApplicationController
   end
 
   # GET /artworks/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /artworks
   # POST /artworks.json
@@ -62,13 +62,14 @@ class ArtworksController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_artwork
-      @artwork = Artwork.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def artwork_params
-      params.fetch(:artwork, {})
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_artwork
+    @artwork = Artwork.friendly.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def artwork_params
+    params.fetch(:artwork, {})
+  end
 end
