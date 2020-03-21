@@ -12,6 +12,7 @@ class ArtworkDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     artist: Field::BelongsTo,
     artworks_tags: Field::HasMany,
+    images: Field::ActiveStorage,
     tags: Field::HasMany,
     id: Field::Number,
     title: Field::String,
@@ -37,13 +38,13 @@ class ArtworkDashboard < Administrate::BaseDashboard
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = %i[
-    artist
-    artworks_tags
-    tags
     id
+    artist
+    images
     title
     description
     dimension
+    tags
     created_at
     updated_at
   ].freeze
@@ -53,11 +54,11 @@ class ArtworkDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
     artist
-    artworks_tags
-    tags
+    images
     title
     description
     dimension
+    tags
   ].freeze
 
   # COLLECTION_FILTERS
@@ -72,10 +73,14 @@ class ArtworkDashboard < Administrate::BaseDashboard
   #   }.freeze
   COLLECTION_FILTERS = {}.freeze
 
+  # Allow has_many attachments with ActiveStorage
+  def permitted_attributes
+    super + [images: []]
+  end
+
   # Overwrite this method to customize how artworks are displayed
   # across all pages of the admin dashboard.
-  #
-  # def display_resource(artwork)
-  #   "Artwork ##{artwork.id}"
-  # end
+  def display_resource(artwork)
+    "#{artwork.title} – #{artwork.artist}"
+  end
 end

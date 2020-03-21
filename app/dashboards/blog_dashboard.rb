@@ -11,8 +11,7 @@ class BlogDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     rich_text_body: Field::HasOne,
-    cover_attachment: Field::HasOne,
-    cover_blob: Field::HasOne,
+    cover: Field::ActiveStorage,
     user: Field::BelongsTo,
     blogs_tags: Field::HasMany,
     tags: Field::HasMany,
@@ -31,23 +30,21 @@ class BlogDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = %i[
     id
-    user
     title
     description
+    user
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = %i[
-    rich_text_body
-    cover_attachment
-    cover_blob
-    user
-    blogs_tags
-    tags
     id
+    user
+    cover
     title
     description
+    body
+    tags
     created_at
     updated_at
   ].freeze
@@ -56,14 +53,12 @@ class BlogDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
-    rich_text_body
-    cover_attachment
-    cover_blob
     user
-    blogs_tags
-    tags
+    cover
     title
     description
+    body
+    tags
   ].freeze
 
   # COLLECTION_FILTERS
@@ -81,7 +76,7 @@ class BlogDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how blogs are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(blog)
-  #   "Blog ##{blog.id}"
-  # end
+  def display_resource(blog)
+    blog.title.to_s
+  end
 end

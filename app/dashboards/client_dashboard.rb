@@ -12,6 +12,7 @@ class ClientDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     company: Field::BelongsTo,
     projects: Field::HasMany,
+    avatar: Field::ActiveStorage,
     artists: Field::HasMany,
     id: Field::Number,
     first_name: Field::String,
@@ -44,18 +45,19 @@ class ClientDashboard < Administrate::BaseDashboard
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = %i[
-    company
-    projects
-    artists
     id
+    avatar
     first_name
     last_name
-    email
-    job
     gender
-    address
+    email
     telephone
+    job
+    company
+    address
     comment
+    projects
+    artists
     created_at
     updated_at
   ].freeze
@@ -64,16 +66,15 @@ class ClientDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
-    company
-    projects
-    artists
+    avatar
     first_name
     last_name
-    email
-    job
     gender
-    address
+    email
     telephone
+    job
+    company
+    address
     comment
   ].freeze
 
@@ -92,7 +93,7 @@ class ClientDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how clients are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(client)
-  #   "Client ##{client.id}"
-  # end
+  def display_resource(client)
+    "#{client.first_name} #{client.last_name}"
+  end
 end

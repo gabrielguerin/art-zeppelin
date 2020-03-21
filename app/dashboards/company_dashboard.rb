@@ -37,11 +37,11 @@ class CompanyDashboard < Administrate::BaseDashboard
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = %i[
-    clients
     id
     name
     address
     size
+    clients
     category
     created_at
     updated_at
@@ -51,10 +51,10 @@ class CompanyDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
-    clients
     name
     address
     size
+    clients
     category
   ].freeze
 
@@ -73,7 +73,7 @@ class CompanyDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how companies are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(company)
-  #   "Company ##{company.id}"
-  # end
+  def display_resource(company)
+    company.name.to_s
+  end
 end

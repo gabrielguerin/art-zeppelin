@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Admin
   class ArtworksController < Admin::ApplicationController
     # Overwrite any of the RESTful controller actions to implement custom behavior
@@ -13,9 +15,9 @@ module Admin
     # This will be used to set the resource for the `show`, `edit`, and `update`
     # actions.
     #
-    # def find_resource(param)
-    #   Foo.find_by!(slug: param)
-    # end
+    def find_resource(param)
+      Artwork.find_by!(slug: param)
+    end
 
     # Override this if you have certain roles that require a subset
     # this will be used to set the records shown on the `index` action.
@@ -27,6 +29,9 @@ module Admin
     #    resource_class.with_less_stuff
     #  end
     # end
+    def scoped_resource
+      resource_class.with_attached_images
+    end
 
     # See https://administrate-prototype.herokuapp.com/customizing_controller_actions
     # for more information

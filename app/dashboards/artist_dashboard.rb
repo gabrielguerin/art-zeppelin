@@ -12,6 +12,7 @@ class ArtistDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     artworks: Field::HasMany,
     artists_tags: Field::HasMany,
+    avatar: Field::ActiveStorage,
     tags: Field::HasMany,
     projects: Field::HasMany,
     clients: Field::HasMany,
@@ -42,18 +43,18 @@ class ArtistDashboard < Administrate::BaseDashboard
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = %i[
-    artworks
-    artists_tags
-    tags
-    projects
-    clients
     id
+    avatar
     first_name
     last_name
     gender
     email
     telephone
     description
+    artworks
+    tags
+    projects
+    clients
     created_at
     updated_at
   ].freeze
@@ -62,17 +63,15 @@ class ArtistDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
-    artworks
-    artists_tags
-    tags
-    projects
-    clients
+    avatar
     first_name
     last_name
     gender
     email
     telephone
     description
+    artworks
+    tags
   ].freeze
 
   # COLLECTION_FILTERS
@@ -90,7 +89,7 @@ class ArtistDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how artists are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(artist)
-  #   "Artist ##{artist.id}"
-  # end
+  def display_resource(artist)
+    "#{artist.first_name} #{artist.last_name}"
+  end
 end
