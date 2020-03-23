@@ -74,3 +74,9 @@ gem 'pg_search'
 
 # Framework for creating flexible, powerful admin dashboards in Rails
 gem 'administrate'
+
+# Support Active Storage in Administrate
+gem 'administrate-field-active_storage'
+
+# Mini Replacement for RMagick
+gem 'mini_magick'
