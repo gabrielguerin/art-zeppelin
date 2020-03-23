@@ -1,0 +1,2 @@
+class ArtistsTag < ApplicationRecord
+end
