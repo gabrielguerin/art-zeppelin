@@ -10976,7 +10976,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* ######## Variables */
 :root {
-  --page-x-padding: 6vw;
+  --page-x-padding: 8vw;
 }
 
 
@@ -10999,13 +10999,42 @@ p {
     width: 100vw;
     min-width: 100vw;
     max-width: 100vw;
+
     padding: 0 var(--page-x-padding);
     overflow: hidden;
 }
 
 /* ######## Navbar */
+nav {
+  width: 100vw;
+  position: fixed !important;
+  top:0;
+  left:0;
+  z-index: 100000;
+  padding: 12.25px var(--page-x-padding) !important;
+}
+@media screen and (max-width: 992px) {
+  nav {
+    padding: 18.75px var(--page-x-padding) !important;
+  }
+}
 .navbar-nav {
     margin-left: auto !important;
+}
+.nav-link {
+  font-size: 20px;
+  margin-left: 20px;
+}
+@media screen and (max-width: 992px) {
+  .nav-link {
+    margin-left: 0;
+  }
+}
+.dropdown-menu {
+  transform: translateY(10px);
+}
+.navbar-placeholder{
+  height: 70.5px;
 }
 
 /* ######## Footer */
@@ -11056,7 +11085,7 @@ footer {
   flex-direction: column;
   align-items: center;
   min-width : 250px;
-  margin: 0 20px 30px;
+  margin: 0 20px 40px;
 }
 .picto {
   width: calc(150px + 2vw);
@@ -11117,3 +11146,4 @@ footer {
 .h3-team {
   font-size: calc(18px + 0.5vw);
 }
+
