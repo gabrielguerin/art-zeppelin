@@ -12,7 +12,9 @@
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <%= link_to(root_path, class: "navbar-brand navlink-logo-ctn") do %>
+        <% image_tag("logo-art-zeppelin.svg", alt: "logo-art-zeppelin", class: "navbar-logo") %>
+      <% end %>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -24,12 +26,12 @@
               Offres
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Pour les artistes</a>
-              <a class="dropdown-item" href="#">Pour les entreprises</a>
+              <%= link_to "Pour les artistes", statics_forartists_path, :class => "dropdown-item"%>
+              <%= link_to "Pour les entreprises", statics_forcompanies_path, :class => "dropdown-item"%>
             </div>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Réalisations <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Réalisations</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Artistes</a>
@@ -46,13 +48,10 @@
 
     <div class="navbar-placeholder"></div>
 
-
-
     <%= yield %>
 
 
     <footer>
-
     </footer>  
 
 
