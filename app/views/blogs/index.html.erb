@@ -7,6 +7,12 @@
 
 <div class="main">
 
+  <div class="d-flex justify-content-end">
+    <%= link_to new_blog_path do %>
+      <button class="btn btn-primary"> Créer un article </button>
+    <% end %>
+  </div>
+
   <div class="project-sorting-ctn">
       <div class="sorting-btns-ctn">
           <h3 class="filter-btn portfolio-filter-active all-projects-btn">Tous les articles</h3>
@@ -40,6 +46,3 @@
     <% end %>
   </div>
 </div>
-
-
-<%= link_to 'New Blog', new_blog_path %>
