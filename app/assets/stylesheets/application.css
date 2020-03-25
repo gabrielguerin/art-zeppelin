@@ -10977,6 +10977,7 @@ a.text-dark:hover, a.text-dark:focus {
 /* ######## Variables */
 :root {
   --page-x-padding: 8vw;
+  --page-x-padding-both: calc(var(--page-x-padding)*2);
 }
 
 
@@ -11108,6 +11109,55 @@ footer {
   z-index: 10;
 }
 
+/*  #########  Sorting / Filters / Tags ########  */
+
+.project-sorting-ctn {
+	width: 100%;
+	padding: 20px 0 0;
+	margin-bottom: 40px;
+	z-index: 9000;
+}
+.sorting-btns-ctn {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 5vw;
+
+	background-color: #008a96;;
+}
+@media screen and (max-width: 700px) {
+	.sorting-btns-ctn{
+		padding: 0;
+		justify-content: flex-start;
+	}
+}
+.sorting-btns-ctn h3{
+	color: #fff;
+	font-size: 16px;
+	padding: 12px 15px;
+	font-weight: 500;
+	cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+	.sorting-btns-ctn h3{
+		background-color: rgba(0,138,150,0.08);
+		font-size: 16px;
+		height:40px;
+		padding: 2px 14px;
+		margin: 0 10px 0 0;
+		display: flex;
+		align-items: center;
+	}
+}
+h3.portfolio-filter-active {
+	background-color: #cae8eb;
+	color: #008a96;
+	transition: all 0.3s;
+}
+
 /* ######## Page Button Container */
 .page-btn-ctn {
   display: flex;
@@ -11233,3 +11283,51 @@ footer {
 }
 
 /* ############ For Companies Page */
+
+
+/* ############ Index articles Page */
+
+.index-articles-grid {
+  
+}
+.index-article-ctn {
+  height: 200px;
+  display: flex;
+  margin: 0 0 40px;
+  box-shadow: 0 0 50px #00000020;
+}
+@media screen and (max-width: 740px) {
+  .index-article-ctn {
+    height: auto;
+    flex-direction: column;
+  }
+}
+.index-article-img {
+  flex: 1;
+  object-fit: cover;
+  max-height: 200px;
+}
+.index-article-text {
+  flex: 3;
+  padding: 20px;
+}
+.h3-index-article {
+
+}
+.description-index-article {
+  max-height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.date-index-article {
+
+}
+.index-article-ctn *{
+  text-decoration: none !important;
+}
+.index-article-ctn p{
+  color: #000 !important;
+}
+.index-article-ctn p:hover{
+  color: #000 !important;
+}
