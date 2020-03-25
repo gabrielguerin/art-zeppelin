@@ -10978,6 +10978,10 @@ a.text-dark:hover, a.text-dark:focus {
 :root {
   --page-x-padding: 8vw;
   --page-x-padding-both: calc(var(--page-x-padding)*2);
+
+  --margin-top-r0: 4vh;
+  --margin-top-r1: 8vh;
+  --margin-top-r2: 16vh;
 }
 
 
@@ -11051,7 +11055,7 @@ nav {
 .h2-for-cards {
   width: 100%;
   text-align: center;
-  margin: 0 0 40px;
+  margin: 0 0 var(--margin-top-r1);
 }
 .half-for-card {
   flex: 1;
@@ -11059,17 +11063,17 @@ nav {
   box-shadow: 0 5px 50px #00000020;
 }
 .half-for-card:first-child,  {
-  margin: 0 30px 40px 0;
+  margin: 0 30px var(--margin-top-r1) 0;
 }
 .half-for-card:last-child {
-  margin: 0 0 40px 30px;
+  margin: 0 0 var(--margin-top-r1) 30px;
 }
 @media screen and (max-width: 952px ) {
   .half-for-card:first-child  {
-    margin: 0 0 40px 0;
+    margin: 0 0 var(--margin-top-r1) 0;
   }
   .half-for-card:last-child {
-    margin: 0 0 40px 0;
+    margin: 0 0 var(--margin-top-r1) 0;
   }
 }
 .for-card-img {
@@ -11089,7 +11093,7 @@ footer {
   width: 100vw;
   background-color: #000;
   padding: var(--page-x-padding);
-  margin: 40px 0 0;
+  margin: var(--margin-top-r1) 0 0;
 }
 
 /* ######## Page Title */
@@ -11097,7 +11101,7 @@ footer {
   width: 100vw;
   position: relative;
   padding: 10vh var(--page-x-padding);
-  margin: 0 0 40px;
+  margin: 0 0 var(--margin-top-r2);
 }
 .page-title-img {
   height: 100%;
@@ -11116,7 +11120,7 @@ footer {
 
 .project-sorting-ctn {
 	width: 100%;
-	margin-bottom: 40px;
+	margin-bottom: var(--margin-top-r1);
 }
 .sorting-btns-ctn {
 	display: -webkit-box;
@@ -11207,7 +11211,7 @@ h3.portfolio-filter-active {
   flex-direction: column;
   align-items: center;
   width : 200px;
-  margin: 0 20px 40px;
+  margin: 0 20px var(--margin-top-r1);
 }
 .picto {
   width: 150px;
@@ -11245,7 +11249,7 @@ h3.portfolio-filter-active {
   width: 100%;
   text-align: center;
   font-size: calc(22px + 1vw);
-  margin: 0 0 40px;
+  margin: 0 0 var(--margin-top-r1);
 }
 .team-cards-ctn {
   width: 100%;
@@ -11287,7 +11291,7 @@ h3.portfolio-filter-active {
 .index-article-ctn {
   height: 200px;
   display: flex;
-  margin: 0 0 40px;
+  margin: 0 0 var(--margin-top-r1);
   box-shadow: 0 0 50px #00000020;
 }
 @media screen and (max-width: 740px) {
@@ -11478,3 +11482,26 @@ margin-top: 20px;
   opacity: 1;
   transition: 0.6s;
 }
+
+/* ############ Index Artists Page */
+
+.artist-description {
+  margin: 0 0 var(--margin-top-r0);
+}
+.artist-text {
+  margin: 0 0 var(--margin-top-r1);
+}
+.artist-contact-btn {
+  margin: 0 0 var(--margin-top-r1);
+}
+.artist-tags-ctn {
+ display: flex;
+ flex-wrap: wrap;
+}
+.artist-tag {
+  padding: 7px 18px;
+  border-radius: 25px;
+  background-color: #fa4616;
+  color: #fff;
+  margin: 0 16px var(--margin-top-r1);
+ }
