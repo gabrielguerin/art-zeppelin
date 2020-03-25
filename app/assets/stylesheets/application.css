@@ -11042,12 +11042,31 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
+}
+.h2-for-cards {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 40px;
 }
 .half-for-card {
-  width: 45%;
-  min-width: 300px;
-
-  box-shadow: 0 5px 50px #00000015;
+  flex: 1;
+  min-width: 400px;
+  box-shadow: 0 5px 50px #00000020;
+}
+.half-for-card:first-child,  {
+  margin: 0 30px 40px 0;
+}
+.half-for-card:last-child {
+  margin: 0 0 40px 30px;
+}
+@media screen and (max-width: 952px ) {
+  .half-for-card:first-child  {
+    margin: 0 0 40px 0;
+  }
+  .half-for-card:last-child {
+    margin: 0 0 40px 0;
+  }
 }
 .for-card-img {
   width: 100%;
