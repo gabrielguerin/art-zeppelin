@@ -11012,13 +11012,16 @@ nav {
   position: fixed !important;
   top:0;
   left:0;
-  z-index: 100000;
+  z-index: 100;
   padding: 12.25px var(--page-x-padding) !important;
 }
 @media screen and (max-width: 992px) {
   nav {
     padding: 18.75px var(--page-x-padding) !important;
   }
+}
+.navbar-logo {
+  width: 120px;
 }
 .navbar-nav {
     margin-left: auto !important;
@@ -11115,7 +11118,6 @@ footer {
 	width: 100%;
 	padding: 20px 0 0;
 	margin-bottom: 40px;
-	z-index: 9000;
 }
 .sorting-btns-ctn {
 	display: -webkit-box;
@@ -11200,13 +11202,6 @@ h3.portfolio-filter-active {
   justify-content: space-around;
   align-items: center;
   margin: 0 0 30px;
-}
-.navbar-logo-ctn {
-  width: 10px;
-  padding: 0;
-}
-.navbar-logo {
-  width: 10px;
 }
 .picto-ctn {
   display: flex;
@@ -11349,3 +11344,69 @@ margin-top: 20px;
 .article-description {
 
 }
+
+/* ############ Index Artworks Page */
+
+:root {
+  --artworks-grid-gap: 10px;
+  --artworks-grid-gap-double: calc(var(--artworks-grid-gap) * 2)
+}
+
+.index-artworks-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.index-artwork-img {
+  width: calc(33.33333333% - ((var(--artworks-grid-gap) * 4) / 3));
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.index-artwork-img:nth-child(3n-2) {
+  margin: 0 var(--artworks-grid-gap) var(--artworks-grid-gap-double) 0;
+}
+.index-artwork-img:nth-child(3n-1) {
+  margin: 0 var(--artworks-grid-gap) var(--artworks-grid-gap-double);
+}
+.index-artwork-img:nth-child(3n) {
+  margin: 0 0 var(--artworks-grid-gap-double) var(--artworks-grid-gap);
+}
+@media screen and (max-width: 1120px) {
+  .index-artwork-img {
+    width: calc(50% - var(--artworks-grid-gap));
+  }
+  .index-artwork-img:nth-child(odd) {
+    margin: 0 var(--artworks-grid-gap) var(--artworks-grid-gap-double) 0;
+  }
+  .index-artwork-img:nth-child(even) {
+    margin: 0 0 var(--artworks-grid-gap-double) var(--artworks-grid-gap);
+  }
+}
+@media screen and (max-width: 800px) {
+  .index-artwork-img {
+    width: 100%;
+    margin: var(--artworks-grid-gap) 0 !important;
+  }
+}
+
+/* ######### Index Artworks Blackbox */
+.artworks-blackbox-ctn {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000099;
+  z-index: 200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.artworks-blackbox {
+  height: 80vh;
+  width: 80vw;
+}
+.artworks-blackbox .carousel-control-prev {}
+.artworks-blackbox .carousel-control-next {}
+
