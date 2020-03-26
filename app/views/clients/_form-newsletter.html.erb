@@ -1,17 +1,25 @@
-<%= form_with(model: client, local: true) do |form| %>
-  <% if client.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(client.errors.count, "error") %> prohibited this client from being saved:</h2>
-
-      <ul>
-        <% client.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
+<div class="card">
+  <div class="card-header">
+    <h5>Abonnez-vous à notre newsletter</h5>
+  </div>
+  <%= form_with(model: client, local: true, class: 'card-body') do |form| %>
+    <% if client.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(client.errors.count, "error") %> prohibited this client from being saved:</h2>
+        <ul>
+          <% client.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <div class='form-group text'>
+      <%= form.label :email, 'Email' %>
+      <%= form.text_field :email, class: 'form-control', placeholder: 'Votre email' %>
+    </div>
+    <div class="actions">
+      <%= form.submit 'Envoyer', class: 'btn btn-primary' %>
+      <%= link_to 'Retour', clients_path, class: 'btn btn-outline-primary' %>
     </div>
   <% end %>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+</div>
