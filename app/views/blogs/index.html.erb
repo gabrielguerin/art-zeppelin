@@ -1,25 +1,48 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Blogs</h1>
+<div class="page-title-ctn">
+    <img src="https://images.pexels.com/photos/3047316/pexels-photo-3047316.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="" class="page-title-img">
+    <h1 class="h1-page-title">Notre actualité</h1>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<div class="main">
 
-  <tbody>
-    <% @blogs.each do |blog| %>
-      <tr>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+  <div class="d-flex justify-content-end">
+    <%= link_to new_blog_path do %>
+      <button class="btn btn-primary"> Créer un article </button>
     <% end %>
-  </tbody>
-</table>
+  </div>
 
-<br>
+  <div class="project-sorting-ctn">
+      <div class="sorting-btns-ctn">
+          <h3 class="filter-btn portfolio-filter-active all-projects-btn">Tous les articles</h3>
+          <h3 class="filter-btn branding-btn">Artistes</h3>
+          <h3 class="filter-btn dev-btn">Évenements</h3>
+          <h3 class="filter-btn illu-btn">Réalisation</h3>
+          <h3 class="filter-btn print-btn">Autres</h3>
+      </div>
+  </div>
 
-<%= link_to 'New Blog', new_blog_path %>
+  <div class="index-articles-grid">
+
+    <% @blogs.each do |blog| %>
+      <%= link_to blog_path(blog.id) do%>
+        <div class="index-article-ctn">
+          <%= image_tag("https://images.pexels.com/photos/3047316/pexels-photo-3047316.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260", alt: "", class: "index-article-img") %>
+          <div class="index-article-text">
+            <h3 class="h3-index-article"><%= blog.title%></h3>
+            <hr>
+            <p class="description-index-article"><%= blog.description%></p>
+            <div class="d-flex mt-3 justify-content-between">
+              <p class="date-index-article"><%= blog.created_at.strftime("%d/%m/%Y")%></p>
+              <div>
+              <%= link_to 'Edit', edit_blog_path(blog) %>
+              <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

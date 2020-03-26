@@ -1,25 +1,31 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Artists</h1>
+<div class="page-title-ctn">
+    <img src="https://images.pexels.com/photos/3047316/pexels-photo-3047316.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="" class="page-title-img">
+    <h1 class="h1-page-title">Tous nos artistes et partenaires</h1>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<div class="main">
+  <div class="project-sorting-ctn">
+      <div class="sorting-btns-ctn">
+          <h3 class="filter-btn portfolio-filter-active all-projects-btn">Tous</h3>
+          <h3 class="filter-btn branding-btn">Fresque</h3>
+          <h3 class="filter-btn dev-btn">Tableau</h3>
+          <h3 class="filter-btn illu-btn">Sculpture</h3>
+          <h3 class="filter-btn print-btn">Autres</h3>
+      </div>
+  </div>
+  <div class="index-artists-grid">
     <% @artists.each do |artist| %>
-      <tr>
-        <td><%= link_to 'Show', artist %></td>
-        <td><%= link_to 'Edit', edit_artist_path(artist) %></td>
-        <td><%= link_to 'Destroy', artist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        <div class="index-artists-ctn">
+        <%= link_to artist_path(artist.id) do%>
+          <div class="index-artists-ctn index-artists-hover">
+            <h3 class="h3-index-artist-name"><%= artist.first_name + " " + artist.last_name %></h3>
+            <p class="h3-index-artist-medium"><%= artist.description %></p>
+          </div>
+        <% end %>
+          <%= image_tag(artist.avatar, alt: "", class: "index-artists-ctn index-artists-img") %>
+        </div>
     <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Artist', new_artist_path %>
+  </div>
+</div>

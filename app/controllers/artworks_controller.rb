@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class ArtworksController < ApplicationController
+  
   before_action :set_artwork, only: %i[show edit update destroy]
 
   # GET /artworks

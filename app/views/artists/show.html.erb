@@ -1,4 +1,31 @@
 <p id="notice"><%= notice %></p>
 
-<%= link_to 'Edit', edit_artist_path(@artist) %> |
-<%= link_to 'Back', artists_path %>
+<div class="page-title-ctn">
+    <img src="https://images.pexels.com/photos/3047316/pexels-photo-3047316.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="" class="page-title-img">
+    <h1 class="h1-page-title"><%= @artist.first_name + " " + @artist.last_name %></h1>
+</div>
+
+<div class="main">
+    <div class="artist-tags-ctn">
+        <% @artist.tags.each do |tag| %>
+            <p class="artist-tag">
+                <%= tag.title %>
+            </p>
+        <% end %>
+    </div>
+    <p class="artist-description">
+        <%= @artist.description %>
+    </p>
+    <p class="artist-text">
+        fgh ghjlkj hg hijk jinbuv uhij ihug  hij oihg guhij oihguv bjih uv ubij inbuv bni buv ubib uv bib uvbin bv bon9b8vu inib uvb ini h vybbbuv y ubnkbhvy b onb ivbi nonib
+    </p>
+    <button class="artist-contact-btn btn btn-primary">Cet artiste vous intéresse? Contactez-nous</button>
+
+    <div class="index-artworks-grid">
+        <% @artist.artworks.each do |artwork| %>
+            <% artwork.images.each do |artworkImage| %>
+                <%= image_tag(artworkImage, alt: "", class: "index-artwork-img") %>
+            <% end %>
+        <% end %>
+    </div>
+</div>
