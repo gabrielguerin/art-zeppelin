@@ -29,6 +29,7 @@ Rails.application.routes.draw do
   get 'statics/forartists'
   get 'statics/forcompanies'
   get 'statics/contact'
+  get 'statics/deductions'
 
   root 'statics#show', page: 'index'
 
