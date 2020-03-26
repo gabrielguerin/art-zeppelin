@@ -43,13 +43,13 @@
   --white: #fff;
   --gray: #95a5a6;
   --gray-dark: #343a40;
-  --primary: #2C3E50;
-  --secondary: #95a5a6;
-  --success: #18BC9C;
+  --primary: #fa4616;
+  --secondary: #ffffff;
+  --success: rgb(255, 255, 255);
   --info: #3498DB;
   --warning: #F39C12;
   --danger: #E74C3C;
-  --light: #ecf0f1;
+  --light: #fff;
   --dark: #7b8a8b;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -80,7 +80,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.5;
@@ -179,13 +179,13 @@ sup {
 }
 
 a {
-  color: #18BC9C;
+  color: #333;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #0f7864;
+  color: #fa4616;
   text-decoration: underline;
 }
 
@@ -3491,7 +3491,7 @@ input[type="button"].btn-block {
   display: none;
   float: left;
   min-width: 10rem;
-  padding: 0.5rem 0;
+  padding: 0;
   margin: 0.125rem 0 0;
   font-size: 0.9375rem;
   color: #212529;
@@ -3500,7 +3500,6 @@ input[type="button"].btn-block {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
 }
 
 .dropdown-menu-left {
@@ -3658,26 +3657,28 @@ input[type="button"].btn-block {
 .dropdown-item {
   display: block;
   width: 100%;
-  padding: 0.25rem 1.5rem;
+  padding: 1rem 2rem;
   clear: both;
   font-weight: 400;
-  color: #7b8a8b;
+  color: #333;
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
   border: 0;
+  font-size: 18px;
 }
 
 .dropdown-item:hover, .dropdown-item:focus {
-  color: #fff;
+  color: #fa4616;
   text-decoration: none;
-  background-color: #2C3E50;
+  background-color: #eee;
+
 }
 
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #2C3E50;
+  background-color: #fa4616;
 }
 
 .dropdown-item.disabled, .dropdown-item:disabled {
@@ -4988,15 +4989,15 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5);
+  color: #333;
 }
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.7);
+  color: #fa4616;
 }
 
 .navbar-light .navbar-nav .nav-link.disabled {
-  color: rgba(0, 0, 0, 0.3);
+  color: #fa4616;
 }
 
 .navbar-light .navbar-nav .show > .nav-link,
@@ -7129,7 +7130,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #2C3E50 !important;
+  background-color: #fff !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -7139,7 +7140,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #95a5a6 !important;
+  background-color: #fa4616 !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -7189,7 +7190,7 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #ecf0f1 !important;
+  background-color: #fff !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,
@@ -11089,6 +11090,9 @@ nav {
 .p-for-card {
   padding: 2vw;
 }
+#dropdownMenuButton:hover {
+  color: #fa4616 !important;
+}
 
 .navbar-placeholder{
   height: 70.5px;
@@ -11137,7 +11141,7 @@ footer {
 	justify-content: space-between;
 	padding: 0 5vw;
 
-	background-color: #008a96;;
+	background-color: #fa4616;;
 }
 @media screen and (max-width: 700px) {
 	.sorting-btns-ctn{
@@ -11164,8 +11168,8 @@ footer {
 	}
 }
 h3.portfolio-filter-active {
-	background-color: #cae8eb;
-	color: #008a96;
+	background-color: #ffddd4;
+	color: #fa4616;
 	transition: all 0.3s;
 }
 
@@ -11177,6 +11181,7 @@ h3.portfolio-filter-active {
   margin: 0 0 80px;
 }
 
+/* ####################### */
 /* ############ Index Page */
 
 /* ######## Index Layout */
@@ -11184,13 +11189,26 @@ h3.portfolio-filter-active {
   margin: 0 0 80px;
 }
 
-/* ######## Carousel */
-.carousel {
-    overflow: hidden;
+.index-video-ctn {
+  height: calc(100vh - 70.5px);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-.carousel-item img {
-    height: calc(100vh - 70.5px);
-    object-fit: cover;
+.index-video {
+  height: calc(100vh - 70.5px);
+  width: 100vw;
+  object-fit: cover;
+}
+.index-video-ctn h1 {
+  position: absolute;
+  padding: 2vw 4vw;
+  color: #333;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 4.5vw;
+  background-color: #fffd;
 }
 
 /* ######## Intro */
@@ -11280,15 +11298,15 @@ h3.portfolio-filter-active {
   font-size: calc(18px + 0.5vw);
 }
 
-
+/* ############################# */
 /* ############ For Artists Page */
 .picto-forartists-ctn {
   margin: 0;
 }
-
+/* ############################### */
 /* ############ For Companies Page */
 
-
+/* ################################ */
 /* ############ Index articles Page */
 
 .index-articles-grid {
@@ -11336,6 +11354,7 @@ h3.portfolio-filter-active {
   color: #000 !important;
 }
 
+/* ############################## */
 /* ############ Show Article Page */
 
 .article-img {
@@ -11354,6 +11373,7 @@ margin-top: 20px;
 
 }
 
+/* ################################ */
 /* ############ Index Artworks Page */
 
 :root {
@@ -11420,6 +11440,7 @@ margin-top: 20px;
 .artworks-blackbox .carousel-control-next {}
 
 
+/* ############################### */
 /* ############ Index Artists Page */
 
 :root {
@@ -11488,8 +11509,12 @@ margin-top: 20px;
   opacity: 1;
   transition: 0.6s;
 }
+.h3-index-artist-medium {
+  margin-top: 15px
+}
 
-/* ############ Index Artists Page */
+/* ############################## */
+/* ############ Show Artists Page */
 
 .artist-description {
   margin: 0 0 var(--margin-top-r0);
@@ -11512,7 +11537,7 @@ margin-top: 20px;
   margin: 0 8px var(--margin-top-r1);
  }
 
-
+/* ############################ */
 /* ############ Deductions Page */
 
 .deductions-intro {
@@ -11533,7 +11558,7 @@ margin-top: 20px;
   margin: 0 0 var(--margin-top-r1);
 }
 
-
+/* ######################### */
 /* ############ Contact Page */
 
 .contact-title-ctn {
