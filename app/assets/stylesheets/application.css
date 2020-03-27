@@ -11008,6 +11008,59 @@ p,ul,li,a,strong,a {
 p {
   font-size: 18px;
 }
+.main-cards-decoration {
+  border-left: 2px solid #fa4616;
+  border-right: 2px solid #fa4616;
+  position: relative;
+}
+.main-cards-decoration::before {
+  content: '';
+  display: block;
+  background-color: #fa4616;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.main-cards-decoration::after {
+  content: '';
+  display: block;
+  background-color: #fa4616;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  right: 0;
+  transition: 0.5s;
+}
+.main-cards-decoration:hover::before {
+  content: '';
+  display: block;
+  background-color: #fa4616;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.main-cards-decoration:hover::after {
+  content: '';
+  display: block;
+  background-color: #fa4616;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  right: 0;
+  transition: 0.5s;
+}
+.main-cards-decoration {
+  border-left: 2px solid #fa4616;
+  border-right: 2px solid #fa4616;
+}
 
 
 /* ######## Layout elements */
@@ -11231,15 +11284,15 @@ h3.portfolio-filter-active {
     margin: var(--margin-top-r1) 0;
     padding: 4vw 6vw;
 
+    font-family: "Trebuchet MS";
     text-align: center;
-    font-size: calc(15px + 0.5vw);
+    font-size: calc(14px + 0.5vw);
     line-height: 1.3em;
     background-color: #fff;
     box-shadow: 0 0 50px #00000012;
 
     outline: 2px solid #333;
     outline-offset: -15px;
-
 }
 
 /* ######## Pictos */
@@ -11258,8 +11311,8 @@ h3.portfolio-filter-active {
   flex-direction: column;
   align-items: center;
   height: 100%;
-  width : 300px;
-  margin: 0 15px var(--margin-top-r1);
+  width : calc(250px + 6vw);
+  margin: 0 10px 20px;
   box-shadow: 0 0 50px #00000012;
 }
 .picto {
@@ -11393,8 +11446,8 @@ position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 40%;
-  min-width : 250px;
+  flex: 1;
+  min-width : 220px;
   margin: 0 20px 30px;
 }
 .team {
@@ -11406,10 +11459,12 @@ position: absolute;
   font-size: calc(18px + 0.5vw);
   font-family: "libre baskerville";
   margin: 10px 0 0; 
+  text-align: center;
 }
 .p-team {
   font-size: 20px;
   margin: 8px 0 0; 
+  text-align: center;
 }
 .index-outro {
   background-color: #fff;
