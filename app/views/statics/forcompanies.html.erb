@@ -24,8 +24,10 @@
     </div>
 
     <div class="page-btn-ctn">
-        <button class="btn-lg btn-primary mx-3">Détail des étapes</button>
-        <button class="btn-lg btn-primary mx-3">Déductions fiscales</button>
+        <div class="btn-lg btn-primary mx-3">Détail des étapes</div>
+        <%= link_to(statics_forcompanies_path, class: "btn-lg btn-primary mx-3 for-btn") do %>
+            <p>Déductions fiscales</p>
+        <% end %>
     </div>
 
     <p class="p-index">
@@ -45,9 +47,15 @@
     </div>
 
     <div class="page-btn-ctn">
-        <button class="btn-lg btn-primary mx-3">Nos réalisations</button>
-        <button class="btn-lg btn-primary mx-3">Nos artistes</button>
-        <button class="btn-lg btn-primary mx-3">Nous contacter</button>
+        <%= link_to(statics_forcompanies_path, class: "btn-lg btn-primary mx-3 for-btn") do %>
+            <p>Nos réalisations</p>
+        <% end %>
+        <%= link_to(statics_forcompanies_path, class: "btn-lg btn-primary mx-3 for-btn") do %>
+            <p>Nos artistes</p>
+        <% end %>
+        <%= link_to(statics_forcompanies_path, class: "btn-lg btn-primary mx-3 for-btn") do %>
+            <p>Nous contacter</p>
+        <% end %>
     </div>
     
 </div>

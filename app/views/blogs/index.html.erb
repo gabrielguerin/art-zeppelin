@@ -7,12 +7,6 @@
 
 <div class="main">
 
-  <div class="d-flex justify-content-end">
-    <%= link_to new_blog_path do %>
-      <button class="btn btn-primary"> Créer un article </button>
-    <% end %>
-  </div>
-
   <div class="project-sorting-ctn">
       <div class="sorting-btns-ctn">
           <h3 class="filter-btn portfolio-filter-active all-projects-btn">Tous les articles</h3>
@@ -35,10 +29,6 @@
             <p class="description-index-article"><%= blog.description%></p>
             <div class="d-flex mt-3 justify-content-between">
               <p class="date-index-article"><%= blog.created_at.strftime("%d/%m/%Y")%></p>
-              <div>
-              <%= link_to 'Edit', edit_blog_path(blog) %>
-              <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
-              </div>
             </div>
           </div>
         </div>
