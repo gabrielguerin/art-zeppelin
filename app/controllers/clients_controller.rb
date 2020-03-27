@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class ClientsController < ApplicationController
-  
   before_action :set_client, only: %i[show edit update destroy]
 
   # GET /clients
@@ -71,6 +70,15 @@ class ClientsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def client_params
-    params.fetch(:client, {})
+    params.require(:client).permit(
+      :first_name,
+      :last_name,
+      :email,
+      :job,
+      :gender,
+      :address,
+      :telephone,
+      :commment
+    )
   end
 end
