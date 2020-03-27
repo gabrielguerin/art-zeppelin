@@ -4,20 +4,24 @@
 </div>
 <div class="main">
 
-    <h2 class="h2-index-intro">Les artistes aux savoir-faire variés conceptualisent des espaces inspirants propices au bien-être et aux échanges. Notre double expertise, artistique et commerciale, vous accompagne de la conception à la réalisation d’œuvres d'art qui reflètent votre vision, mission et identité. Nous choisissons avec un soin particulier nos artistes selon une approche prenant en compte à la fois expérience mais aussi style et technique.</h2>
+    <h2 class="h2-index-intro">Les artistes aux savoir-faire variés conceptualisent des espaces inspirants propices au bien-être et aux échanges. Notre double expertise, artistique et commerciale, vous accompagne de la conception à la réalisation d’œuvres d'art qui reflètent votre vision, mission et identité.<br><br>
+    Nous choisissons avec un soin particulier nos artistes selon une approche prenant en compte à la fois expérience mais aussi style et technique.</h2>
     
     <div class="picto-main-ctn">
       <div class="picto-ctn">
-        <img src="https://images.pexels.com/photos/3047316/pexels-photo-3047316.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="" class="picto"> 
-        <h3 class="h3-picto">TEST ES TESTES TEST ES</h3>
+        <%= image_tag "pictos/picto-index-1.png", :class => "picto"%>
+        <h3 class="h3-picto">Inspirez vos équipes</h3>
+        <p class="p-picto">Apporter un environnement de travail agréable, créatif et stimulant.</p>
       </div>
       <div class="picto-ctn">
-        <img src="https://images.pexels.com/photos/3047316/pexels-photo-3047316.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="" class="picto"> 
-        <h3 class="h3-picto">TEST ES TESTES TEST ES</h3>
+        <%= image_tag "pictos/picto-index-2.png", :class => "picto"%>
+        <h3 class="h3-picto">Consolidez votre image</h3>
+        <p class="p-picto">Développez une image haut-de-gamme auprès de vos clients, collaborateurs, partenaires…</p>
       </div>
       <div class="picto-ctn">
-        <img src="https://images.pexels.com/photos/3047316/pexels-photo-3047316.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="" class="picto"> 
-        <h3 class="h3-picto">TEST ES TESTES TEST ES</h3>
+        <%= image_tag "pictos/picto-index-3.png", :class => "picto"%>
+        <h3 class="h3-picto">Avantages fiscaux</h3>
+        <p class="p-picto">Déduisez la totalité de la valeur des œuvres acquises du résultat imposable de votre société :</p>
       </div>
     </div>
 
@@ -29,12 +33,60 @@
 </div>
 
 <div class="artistes-entreprises-ctn">
-  <div class="for-artists">
+  <%= link_to(statics_forartists_path, class: "for-artists") do %>
     <h3>Pour les Artistes</h3>
-  </div>
-  <div class="for-companies">
+    <div class="ac-picto-ctn ac-a">
+      <div class="ac-picto">
+        <%= image_tag "pictos/pictos-ac/picto-ac-a2.png", :class => ""%>
+        <%= image_tag "pictos/pictos-ac/picto-ac-a1.png", :class => ""%>
+      </div>
+    </div>
+    <div class="ac-picto-ctn ac-b">
+      <div class="ac-picto">
+        <%= image_tag "pictos/pictos-ac/picto-ac-b1.png", :class => ""%>
+        <%= image_tag "pictos/pictos-ac/picto-ac-b2.png", :class => ""%>
+      </div>
+    </div>
+    <div class="ac-picto-ctn ac-c">
+      <div class="ac-picto">
+        <%= image_tag "pictos/pictos-ac/picto-ac-c2.png", :class => "ac-picto-pos-correction-1"%>
+        <%= image_tag "pictos/pictos-ac/picto-ac-c1.png", :class => ""%>
+      </div>
+    </div>
+    <div class="ac-picto-ctn ac-d">
+      <div class="ac-picto">
+        <%= image_tag "pictos/pictos-ac/picto-ac-d2.png", :class => ""%>
+        <%= image_tag "pictos/pictos-ac/picto-ac-d1.png", :class => ""%>
+      </div>
+    </div>
+  <% end %>
+  <%= link_to(statics_forcompanies_path, class: "for-companies") do %>
     <h3>Pour les Entreprises</h3>
-  </div>
+    <div class="ac-picto-ctn ac-e">
+      <div class="ac-picto">
+        <%= image_tag "pictos/pictos-ac/picto-ac-e2.png", :class => ""%>
+        <%= image_tag "pictos/pictos-ac/picto-ac-e1.png", :class => ""%>
+      </div>
+    </div>
+    <div class="ac-picto-ctn ac-f">
+      <div class="ac-picto">
+        <%= image_tag "pictos/pictos-ac/picto-ac-f2.png", :class => ""%>
+        <%= image_tag "pictos/pictos-ac/picto-ac-f1.png", :class => ""%>
+      </div>
+    </div>
+    <div class="ac-picto-ctn ac-g">
+      <div class="ac-picto">
+        <%= image_tag "pictos/pictos-ac/picto-ac-g2.png", :class => ""%>
+        <%= image_tag "pictos/pictos-ac/picto-ac-g1.png", :class => ""%>
+      </div>
+    </div>
+    <div class="ac-picto-ctn ac-h">
+    <div class="ac-picto">
+        <%= image_tag "pictos/pictos-ac/picto-ac-h2.png", :class => "ac-picto-pos-correction-2"%>
+        <%= image_tag "pictos/pictos-ac/picto-ac-h1.png", :class => ""%>
+    </div>
+    </div>
+  <% end %>
 </div>
 
 <div class="main">
@@ -42,21 +94,29 @@
     <h2 class="h2-team">L'équipe</h2>
     <div class="team-cards-ctn">
       <div class="team-card">
-        <img src="https://images.pexels.com/photos/3047316/pexels-photo-3047316.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="" class="team"> 
-        <h3 class="h3-team">TEST ES TESTES TEST ES</h3>
+          <%= image_tag "team/Mato.png", :class => "team"%>
+        <h3 class="h3-team">Maxime Mato</h3>
+        <p class="p-team">Directeur opération </p>
       </div>
       <div class="team-card">
-        <img src="https://images.pexels.com/photos/3047316/pexels-photo-3047316.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="" class="team"> 
-        <h3 class="h3-team">TEST ES TESTES TEST ES</h3>
+          <%= image_tag "team/Stavo.jpg", :class => "team"%>
+        <h3 class="h3-team">Auguste Strassmann</h3>
+        <p class="p-team">Directeur commercial</p>
       </div>
       <div class="team-card">
-        <img src="https://images.pexels.com/photos/3047316/pexels-photo-3047316.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="" class="team"> 
-        <h3 class="h3-team">TEST ES TESTES TEST ES</h3>
+          <%= image_tag "team/Gabriel.png", :class => "team"%>
+        <h3 class="h3-team">Gabriel Guérin</h3>
+        <p class="p-team">Directeur technique</p>
       </div>
       <div class="team-card">
-        <img src="https://images.pexels.com/photos/3047316/pexels-photo-3047316.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="" class="team"> 
-        <h3 class="h3-team">TEST ES TESTES TEST ES</h3>
+          <%= image_tag "team/Raphael.png", :class => "team"%>
+        <h3 class="h3-team">Raphaël Chillio</h3>
+        <p class="p-team">Directeur communication</p>
       </div>
+    </div>
   </div>
-  </div>
+  
+  <p class="index-outro">
+    Nous partons du constat que l’art en entreprise est peu présent si ce n’est absent. Notre équipe a pour mission de fournir un support commercial et promotionnel aux artistes afin qu’ils puissent se focaliser pleinement sur leur processus créatif. Forte de 4 nationalités et de compétences complémentaires, Art Zeppelin une entreprise vivante et compétente pour vous conseiller dans vos choix artistiques. Nous avons la volonté partagée de contribuer à promouvoir le travail d’artiste en France et bientôt au-delà.
+  </p>
 </div>
