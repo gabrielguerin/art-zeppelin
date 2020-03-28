@@ -4,33 +4,46 @@
 </div>
 
 <div class="main">
+    <p class="p-for-index main-cards-decoration">
+        <strong>Donnez vie à l’esprit de votre entreprise en co-créant des œuvres d’art qui reflètent vos valeurs, métiers et engagements.</strong> <br><br>
+        Un projet artistique commence par la définition de votre besoin, nous vous proposons ensuite le ou les artistes adéquats ainsi que des maquettes pour vous projeter avant la réalisation de l’oeuvre.
+        Ensemble nous définissons les spécificités du projet (dimensions, matériaux, couleurs …), la variété des médiums et techniques proposés élargit le champ des possibilités pour s’intégrer à votre image de marque, en tant qu’entreprise moderne.
+    </p>
+
     <div class="picto-main-ctn picto-forartists-ctn">
+      <div class="d-flex">
         <div class="picto-ctn main-cards-decoration">
-            <%= image_tag("pictos/steps-picto-1.png", alt: "", class: "picto") %>
-            <h3 class="h3-picto">Définition du besoin<br></h3>
+            <%= image_tag("pictos/steps-picto-5.png", alt: "", class: "picto") %>
+            <h3 class="h3-picto">Nous vous proposons un projet<br></h3>
         </div>
+        <p class="for-p-picto">hbgrvf yhbgvf cddrvtby btvrcexcevrtbynbtvrc crvtb vrce vrtbynbtvrce vrbtny btvrce vrbtny btvrc vrtby tgfrde rvyn btvrcerv btynbtv rcrvtb y</p>
+      </div>
+      <div class="d-flex">
         <div class="picto-ctn main-cards-decoration">
-            <%= image_tag("pictos/steps-picto-2.png", alt: "", class: "picto") %>
-            <h3 class="h3-picto">Proposition de maquettes<br></h3>
+            <%= image_tag("pictos/steps-picto-6.png", alt: "", class: "picto") %>
+            <h3 class="h3-picto">Nous vous proposons un projet<br></h3>
         </div>
+        <p class="for-p-picto">hbgrvf yhbgvf cddrvtby btvrcexcevrtbynbtvrc crvtb vrce vrtbynbtvrce vrbtny btvrce vrbtny btvrc vrtby tgfrde rvyn btvrcerv btynbtv rcrvtb y</p>
+      </div>
+      <div class="d-flex">
         <div class="picto-ctn main-cards-decoration">
-            <%= image_tag("pictos/steps-picto-3.png", alt: "", class: "picto") %>
-            <h3 class="h3-picto">Ajustements des spécifications avec vous</h3>
+            <%= image_tag("pictos/steps-picto-7.png", alt: "", class: "picto") %>
+            <h3 class="h3-picto">Nous vous proposons un projet<br></h3>
         </div>
+        <p class="for-p-picto">hbgrvf yhbgvf cddrvtby btvrcexcevrtbynbtvrc crvtb vrce vrtbynbtvrce vrbtny btvrce vrbtny btvrc vrtby tgfrde rvyn btvrcerv btynbtv rcrvtb y</p>
+      </div>
+      <div class="d-flex">
         <div class="picto-ctn main-cards-decoration">
-            <%= image_tag("pictos/steps-picto-4.png", alt: "", class: "picto") %>
-            <h3 class="h3-picto">Réalisation de l’oeuvre<br></h3>
+            <%= image_tag("pictos/steps-picto-8.png", alt: "", class: "picto") %>
+            <h3 class="h3-picto">Nous vous proposons un projet<br></h3>
         </div>
+        <p class="for-p-picto">hbgrvf yhbgvf cddrvtby btvrcexcevrtbynbtvrc crvtb vrce vrtbynbtvrce vrbtny btvrce vrbtny btvrc vrtby tgfrde rvyn btvrcerv btynbtv rcrvtb y</p>
+      </div>
     </div>
 
     <div class="page-btn-ctn">
-        <div class="btn-lg btn-primary mx-3">Détail des étapes</div>
+        <div class="for-steps-btn btn-lg btn-primary mx-3">Détail des étapes</div>
     </div>
-
-    <p class="p-index main-cards-decoration">
-        La présence de l’art au sein des entreprises se développe progressivement et séduit tous les secteurs, c’est un excellent moyen de transformer les espaces de façon innovante. Cultiver la notion de plaisir au travail est un moyen pertinent de créer un sentiment d’appartenance et de cohésion de groupe au sein de votre entreprise.<br>
-        Nos experts accompagnent votre réflexion stratégique lors du choix de l’artiste-auteur pour mettre en valeur votre environnement professionnel. En effet, notre sélection d’artistes partenaires présente de multiples styles et techniques qui conviendront à l’image et aux valeurs de votre entreprise. La présence d’art contribue au maintien et au renforcement de vos relations commerciales. C’est dans un environnement accueillant et chaleureux que vos clients et partenaires se projettent, Art Zeppelin met à votre disposition l’ensemble de ses connaissances et compétences pour que cela soit chez vous, dans vos locaux.
-    </p>
 
     <div class="for-cards-full-ctn">
         <h2 class="h2-for-cards">Nos modes opératoires</h2>
@@ -51,11 +64,11 @@
     </div>
 
     <div class="page-btn-ctn">
-        <%= link_to(statics_for_companies_path, class: "btn-lg btn-primary mx-3 for-btn") do %>
+        <%= link_to(artworks_path, class: "btn-lg btn-primary mx-3 for-btn") do %>
             <p>Nos réalisations</p>
         <% end %>
         <%= link_to(artists_path, class: "btn-lg btn-primary mx-3 for-btn") do %>
-            <p>Nos artistes</p>
+            <p>Nous artiste</p>
         <% end %>
         <%= link_to(statics_contact_path, class: "btn-lg btn-primary mx-3 for-btn") do %>
             <p>Nous contacter</p>
@@ -63,3 +76,30 @@
     </div>
     
 </div>
+
+<script>
+    const detailsBtn = document.querySelector('.for-steps-btn');
+    const pictosCtn = document.querySelector('.picto-main-ctn');
+    const pictosText = document.querySelectorAll('.for-p-picto');
+    var revealed = false;
+
+    function revealPictos() {
+        if (revealed == false) {
+            pictosCtn.style.display = 'block';
+            for (let i = 0; i < pictosText.length; i++) {
+                pictosText[i].style.display = 'flex';
+            }
+            detailsBtn.innerHTML = 'Réduire';
+            revealed = !revealed; 
+        } else {
+            pictosCtn.style.display = 'flex';
+            for (let i = 0; i < pictosText.length; i++) {
+                pictosText[i].style.display = 'none';
+            }
+            detailsBtn.innerHTML = 'Détails des étapes';
+            revealed = !revealed; 
+        }
+    }
+    detailsBtn.addEventListener('click', revealPictos) 
+
+</script>

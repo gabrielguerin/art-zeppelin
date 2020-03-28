@@ -5,29 +5,41 @@
 
 <div class="main">
     <div class="picto-main-ctn picto-forartists-ctn">
+      <div class="d-flex">
         <div class="picto-ctn main-cards-decoration">
             <%= image_tag("pictos/steps-picto-5.png", alt: "", class: "picto") %>
             <h3 class="h3-picto">Nous vous proposons un projet<br></h3>
         </div>
+        <p class="for-p-picto">hbgrvf yhbgvf cddrvtby btvrcexcevrtbynbtvrc crvtb vrce vrtbynbtvrce vrbtny btvrce vrbtny btvrc vrtby tgfrde rvyn btvrcerv btynbtv rcrvtb y</p>
+      </div>
+      <div class="d-flex">
         <div class="picto-ctn main-cards-decoration">
             <%= image_tag("pictos/steps-picto-6.png", alt: "", class: "picto") %>
-            <h3 class="h3-picto">Vous créez une proposition<br></h3>
+            <h3 class="h3-picto">Nous vous proposons un projet<br></h3>
         </div>
+        <p class="for-p-picto">hbgrvf yhbgvf cddrvtby btvrcexcevrtbynbtvrc crvtb vrce vrtbynbtvrce vrbtny btvrce vrbtny btvrc vrtby tgfrde rvyn btvrcerv btynbtv rcrvtb y</p>
+      </div>
+      <div class="d-flex">
         <div class="picto-ctn main-cards-decoration">
             <%= image_tag("pictos/steps-picto-7.png", alt: "", class: "picto") %>
-            <h3 class="h3-picto">Validation de la maquette</h3>
+            <h3 class="h3-picto">Nous vous proposons un projet<br></h3>
         </div>
+        <p class="for-p-picto">hbgrvf yhbgvf cddrvtby btvrcexcevrtbynbtvrc crvtb vrce vrtbynbtvrce vrbtny btvrce vrbtny btvrc vrtby tgfrde rvyn btvrcerv btynbtv rcrvtb y</p>
+      </div>
+      <div class="d-flex">
         <div class="picto-ctn main-cards-decoration">
             <%= image_tag("pictos/steps-picto-8.png", alt: "", class: "picto") %>
-            <h3 class="h3-picto">Vous réalisez l’oeuvre<br></h3>
+            <h3 class="h3-picto">Nous vous proposons un projet<br></h3>
         </div>
+        <p class="for-p-picto">hbgrvf yhbgvf cddrvtby btvrcexcevrtbynbtvrc crvtb vrce vrtbynbtvrce vrbtny btvrce vrbtny btvrc vrtby tgfrde rvyn btvrcerv btynbtv rcrvtb y</p>
+      </div>
     </div>
 
     <div class="page-btn-ctn">
-        <div class="btn-lg btn-primary mx-3">Détail des étapes</div>
+        <div class="for-steps-btn btn-lg btn-primary mx-3">Détail des étapes</div>
     </div>
 
-    <p class="p-index main-cards-decoration">
+    <p class="p-for-index main-cards-decoration">
         <strong>Art Zeppelin est une structure commerciale qui vous accompagne dans la réalisation de projets d’art en entreprise, dans le respect de votre démarche artistique.</strong><br><br>
 
         Réaliser des projets avec nous, c’est la liberté de travailler selon vos disponibilités. Nous prenons en charge les aspects commerciaux, promotionnels et administratifs, et c’est vous qui êtes responsable de l’ouvrage.<br><br>
@@ -57,7 +69,7 @@
     </div>
 
     <div class="page-btn-ctn">
-        <%= link_to(statics_for_companies_path, class: "btn-lg btn-primary mx-3 for-btn") do %>
+        <%= link_to(artworks_path, class: "btn-lg btn-primary mx-3 for-btn") do %>
             <p>Nos réalisations</p>
         <% end %>
         <%= link_to(statics_contact_path, class: "btn-lg btn-primary mx-3 for-btn") do %>
@@ -66,3 +78,30 @@
     </div>
     
 </div>
+
+<script>
+    const detailsBtn = document.querySelector('.for-steps-btn');
+    const pictosCtn = document.querySelector('.picto-main-ctn');
+    const pictosText = document.querySelectorAll('.for-p-picto');
+    var revealed = false;
+
+    function revealPictos() {
+        if (revealed == false) {
+            pictosCtn.style.display = 'block';
+            for (let i = 0; i < pictosText.length; i++) {
+                pictosText[i].style.display = 'flex';
+            }
+            detailsBtn.innerHTML = 'Réduire';
+            revealed = !revealed; 
+        } else {
+            pictosCtn.style.display = 'flex';
+            for (let i = 0; i < pictosText.length; i++) {
+                pictosText[i].style.display = 'none';
+            }
+            detailsBtn.innerHTML = 'Détails des étapes';
+            revealed = !revealed; 
+        }
+    }
+    detailsBtn.addEventListener('click', revealPictos) 
+
+</script>

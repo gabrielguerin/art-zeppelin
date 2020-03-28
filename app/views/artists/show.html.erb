@@ -13,14 +13,16 @@
             </p>
         <% end %>
     </div>
-    <p class="artist-description">
-        <%= @artist.description %>
-    </p>
-    <p class="artist-text">
-        fgh ghjlkj hg hijk jinbuv uhij ihug  hij oihg guhij oihguv bjih uv ubij inbuv bni buv ubib uv bib uvbin bv bon9b8vu inib uvb ini h vybbbuv y ubnkbhvy b onb ivbi nonib
-    </p>
+    <div class="main-cards-decoration">
+        <p class="artist-description">
+            <%= @artist.description %>
+        </p>
+        <p class="artist-text">
+            fgh ghjlkj hg hijk jinbuv uhij ihug  hij oihg guhij oihguv bjih uv ubij inbuv bni buv ubib uv bib uvbin bv bon9b8vu inib uvb ini h vybbbuv y ubnkbhvy b onb ivbi nonib
+        </p>
+    </div>
     <button class="artist-contact-btn btn btn-primary">Cet artiste vous intéresse? Contactez-nous</button>
-
+    <hr style="margin-top: 0;">
     <div class="index-artworks-grid">
         <% @artist.artworks.each do |artwork| %>
             <% artwork.images.each do |artworkImage| %>

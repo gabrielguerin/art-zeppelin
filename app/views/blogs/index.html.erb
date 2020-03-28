@@ -27,8 +27,13 @@
             <h3 class="h3-index-article"><%= blog.title%></h3>
             <hr>
             <p class="description-index-article"><%= blog.description%></p>
-            <div class="d-flex mt-3 justify-content-between">
+            <div class="index-article-bottom-ctn d-flex justify-content-between">
               <p class="date-index-article"><%= blog.created_at.strftime("%d/%m/%Y")%></p>
+              <div class="index-articles-tags-ctn">
+                <% blog.tags.each do |tag| %>
+                 <p><%= tag.title %></p>
+                <% end %>
+              </div>
             </div>
           </div>
         </div>
@@ -36,3 +41,16 @@
     <% end %>
   </div>
 </div>
+
+<script>
+  var BlogImages = document.querySelectorAll('.index-article-img');
+  var articleCtn = document.querySelectorAll('.index-article-text');
+  function resizeArticleImages() {
+    for (let i = 0; i < BlogImages.length; i++) {
+      BlogImages[i].style.height = `${articleCtn[i].getBoundingClientRect().height}px`;
+    }
+  }
+  resizeArticleImages();
+
+  window.addEventListener('resize', resizeArticleImages);
+</script>
