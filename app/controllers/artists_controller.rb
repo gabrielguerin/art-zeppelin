@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 class ArtistsController < ApplicationController
-  
+  layout '_navbar'
+
   before_action :set_artist, only: %i[show edit update destroy]
 
   # GET /artists
