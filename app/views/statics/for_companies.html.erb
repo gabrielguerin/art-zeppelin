@@ -1,0 +1,105 @@
+<div class="page-title-ctn">
+    <%= image_tag("https://images.pexels.com/photos/3047316/pexels-photo-3047316.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260", alt: "", class: "page-title-img") %>
+    <h1 class="h1-page-title">Pour les entreprises</h1>
+</div>
+
+<div class="main">
+    <p class="p-for-index main-cards-decoration">
+        <strong>Donnez vie à l’esprit de votre entreprise en co-créant des œuvres d’art qui reflètent vos valeurs, métiers et engagements.</strong> <br><br>
+        Un projet artistique commence par la définition de votre besoin, nous vous proposons ensuite le ou les artistes adéquats ainsi que des maquettes pour vous projeter avant la réalisation de l’oeuvre.
+        Ensemble nous définissons les spécificités du projet (dimensions, matériaux, couleurs …), la variété des médiums et techniques proposés élargit le champ des possibilités pour s’intégrer à votre image de marque, en tant qu’entreprise moderne.
+    </p>
+
+    <div class="picto-main-ctn picto-forartists-ctn">
+      <div class="d-flex">
+        <div class="picto-ctn main-cards-decoration">
+            <%= image_tag("pictos/steps-picto-5.png", alt: "", class: "picto") %>
+            <h3 class="h3-picto">Nous vous proposons un projet<br></h3>
+        </div>
+        <p class="for-p-picto">hbgrvf yhbgvf cddrvtby btvrcexcevrtbynbtvrc crvtb vrce vrtbynbtvrce vrbtny btvrce vrbtny btvrc vrtby tgfrde rvyn btvrcerv btynbtv rcrvtb y</p>
+      </div>
+      <div class="d-flex">
+        <div class="picto-ctn main-cards-decoration">
+            <%= image_tag("pictos/steps-picto-6.png", alt: "", class: "picto") %>
+            <h3 class="h3-picto">Nous vous proposons un projet<br></h3>
+        </div>
+        <p class="for-p-picto">hbgrvf yhbgvf cddrvtby btvrcexcevrtbynbtvrc crvtb vrce vrtbynbtvrce vrbtny btvrce vrbtny btvrc vrtby tgfrde rvyn btvrcerv btynbtv rcrvtb y</p>
+      </div>
+      <div class="d-flex">
+        <div class="picto-ctn main-cards-decoration">
+            <%= image_tag("pictos/steps-picto-7.png", alt: "", class: "picto") %>
+            <h3 class="h3-picto">Nous vous proposons un projet<br></h3>
+        </div>
+        <p class="for-p-picto">hbgrvf yhbgvf cddrvtby btvrcexcevrtbynbtvrc crvtb vrce vrtbynbtvrce vrbtny btvrce vrbtny btvrc vrtby tgfrde rvyn btvrcerv btynbtv rcrvtb y</p>
+      </div>
+      <div class="d-flex">
+        <div class="picto-ctn main-cards-decoration">
+            <%= image_tag("pictos/steps-picto-8.png", alt: "", class: "picto") %>
+            <h3 class="h3-picto">Nous vous proposons un projet<br></h3>
+        </div>
+        <p class="for-p-picto">hbgrvf yhbgvf cddrvtby btvrcexcevrtbynbtvrc crvtb vrce vrtbynbtvrce vrbtny btvrce vrbtny btvrc vrtby tgfrde rvyn btvrcerv btynbtv rcrvtb y</p>
+      </div>
+    </div>
+
+    <div class="page-btn-ctn">
+        <div class="for-steps-btn btn-lg btn-primary mx-3">Détail des étapes</div>
+    </div>
+
+    <div class="for-cards-full-ctn">
+        <h2 class="h2-for-cards">Nos modes opératoires</h2>
+        <div class="for-cards-ctn">
+            <div class="half-for-card main-cards-decoration">
+                <h3 class="h3-for-card">In-situ</h3>
+                <%= image_tag("in-situ.jpg", alt: "logo-art-zeppelin", class: "for-card-img") %>
+                <h5 class="h5-for-card">Accueillir un artiste dans vos locaux c’est participer à son processus de création.</h5>
+                <p class="p-for-card">Nos projets in situ apportent une expérience unique à vos employés de par la présence d’un artiste qui réalise l’oeuvre dans l’entreprise. Avoir la possibilité d’interagir avec un artiste qui travaille est une occasion de découvrir ce beau métier et la démarche artistique qui l’anime. Cette offre permet de prendre du recul sur votre organisation (méthodes de travail, processus internes, relation partenaires) pour repenser votre vision et redonner de l’élan à vos activités.</p>
+            </div>
+            <div class="half-for-card main-cards-decoration">
+                <h3 class="h3-for-card">En atelier</h3>
+                <%= image_tag("en-atelier.jpg", alt: "logo-art-zeppelin", class: "for-card-img") %>
+                <h5 class="h5-for-card">L’artiste peut également produire l’œuvre d’art dans son atelier.</h5>
+                <p class="p-for-card">Il peut arriver que les locaux d’entreprises ne conviennent pas pour un projet « In-Situ » en raison de la taille des locaux ou du bruit émis par la conception de l’œuvre d’art, comme la sculpture. Dans cette offre « En atelier », nous organisons une réception dans vos locaux avec l’artiste, à nos frais, afin qu’il explique et commente son travail auprès de vos collaborateurs. Cette rencontre avec l’artiste permet de comprendre le cheminement et la réflexion qu’il a suivi pour mener à l’œuvre accomplie.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-btn-ctn">
+        <%= link_to(artworks_path, class: "btn-lg btn-primary mx-3 for-btn") do %>
+            <p>Nos réalisations</p>
+        <% end %>
+        <%= link_to(artists_path, class: "btn-lg btn-primary mx-3 for-btn") do %>
+            <p>Nous artiste</p>
+        <% end %>
+        <%= link_to(statics_contact_path, class: "btn-lg btn-primary mx-3 for-btn") do %>
+            <p>Nous contacter</p>
+        <% end %>
+    </div>
+    
+</div>
+
+<script>
+    const detailsBtn = document.querySelector('.for-steps-btn');
+    const pictosCtn = document.querySelector('.picto-main-ctn');
+    const pictosText = document.querySelectorAll('.for-p-picto');
+    var revealed = false;
+
+    function revealPictos() {
+        if (revealed == false) {
+            pictosCtn.style.display = 'block';
+            for (let i = 0; i < pictosText.length; i++) {
+                pictosText[i].style.display = 'flex';
+            }
+            detailsBtn.innerHTML = 'Réduire';
+            revealed = !revealed; 
+        } else {
+            pictosCtn.style.display = 'flex';
+            for (let i = 0; i < pictosText.length; i++) {
+                pictosText[i].style.display = 'none';
+            }
+            detailsBtn.innerHTML = 'Détails des étapes';
+            revealed = !revealed; 
+        }
+    }
+    detailsBtn.addEventListener('click', revealPictos) 
+
+</script>

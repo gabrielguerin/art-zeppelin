@@ -1,0 +1,56 @@
+<p id="notice"><%= notice %></p>
+
+<div class="page-title-ctn">
+    <%= image_tag("https://images.pexels.com/photos/3047316/pexels-photo-3047316.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260", alt: "", class: "page-title-img") %>
+    <h1 class="h1-page-title">Notre actualité</h1>
+</div>
+
+<div class="main">
+
+  <div class="project-sorting-ctn">
+      <div class="sorting-btns-ctn">
+          <h3 class="filter-btn portfolio-filter-active all-projects-btn">Tous les articles</h3>
+          <h3 class="filter-btn branding-btn">Artistes</h3>
+          <h3 class="filter-btn dev-btn">Évenements</h3>
+          <h3 class="filter-btn illu-btn">Réalisation</h3>
+          <h3 class="filter-btn print-btn">Autres</h3>
+      </div>
+  </div>
+
+  <div class="index-articles-grid">
+
+    <% @blogs.each do |blog| %>
+      <%= link_to blog_path(blog.id) do%>
+        <div class="index-article-ctn">
+          <%= image_tag("https://images.pexels.com/photos/3047316/pexels-photo-3047316.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260", alt: "", class: "index-article-img") %>
+          <div class="index-article-text">
+            <h3 class="h3-index-article"><%= blog.title%></h3>
+            <hr>
+            <p class="description-index-article"><%= blog.description%></p>
+            <div class="index-article-bottom-ctn d-flex justify-content-between">
+              <p class="date-index-article"><%= blog.created_at.strftime("%d/%m/%Y")%></p>
+              <div class="index-articles-tags-ctn">
+                <% blog.tags.each do |tag| %>
+                 <p><%= tag.title %></p>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+
+<script>
+  var BlogImages = document.querySelectorAll('.index-article-img');
+  var articleCtn = document.querySelectorAll('.index-article-text');
+  function resizeArticleImages() {
+    for (let i = 0; i < BlogImages.length; i++) {
+      BlogImages[i].style.height = `${articleCtn[i].getBoundingClientRect().height}px`;
+    }
+  }
+  resizeArticleImages();
+
+  window.addEventListener('resize', resizeArticleImages);
+</script>
