@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class StaticsController < ApplicationController
+  layout '_navbar'
+
   def show; end
 
   def for_artists; end
