@@ -29,8 +29,10 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<div class="w-100 d-flex justify-content-center align-items-center p-4">
-  <h3 class="quote">Citation de Einstein</h3>
+<div class="artworks-index-quote w-100 d-flex justify-content-center align-items-center">
+  <h3 class="quote">Creativity is intelligence having fun<br>
+  <span class="quote-2">- Albert Einstein</span>
+  </h3>
 </div>
 
 <div class="main">
@@ -51,3 +53,62 @@
     <% end %>
   </div>
 </div>
+
+<div class="artworks-lightbox-ctn">
+  <div id="carousel-2" class="carousel slide artworks-lightbox" data-ride="carousel">
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="https://images.pexels.com/photos/3047316/pexels-photo-3047316.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260
+        " alt="First slide">
+      </div>
+      <% @artworks.take(20).each do |artwork| %>
+        <% artwork.images.each do |artworkImage| %>
+          <div class="carousel-item">
+            <%= image_tag(artworkImage, alt: "", class: "d-block w-100") %>
+            <div class="lightbox-slide-text-ctn">
+              <div class="lightbox-slide-text">
+                <h3 class="lightbox-slide-name"><%= artwork.artist.first_name + '' + artwork.artist.last_name %></h3>
+                <div class="d-flex justify-content-center">
+                  <% artwork.tags.each do |artworkTag| %>
+                    <p class="lightbox-slide-medium"><%= artworkTag.title %></p>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+    <a class="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<script>
+  const lightboxCtn = document.querySelector('.artworks-lightbox-ctn');
+  const artworks = document.querySelectorAll('.index-artworks-grid');
+
+  function openLightbox() {
+    lightboxCtn.style.display = 'flex';
+  }
+  function closeLightbox(e) {
+    if(e.target !== e.currentTarget) {
+      return;
+    }
+    else {
+      (lightboxCtn.style.display = 'none');
+    }
+  }
+
+  for (let i = 0; i < artworks.length; i++) {
+    artworks[i].addEventListener('click', openLightbox);
+  }
+  lightboxCtn.addEventListener('click', closeLightbox);
+</script>
