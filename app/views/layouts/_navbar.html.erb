@@ -1,32 +1,37 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarColor01">
-    <ul class="navbar-nav">
-      <li class="dropdown nav-item">
-        <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Offres
-        </a>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <%= link_to "Pour les artistes", statics_for_artists_path, :class => "dropdown-item"%>
-          <%= link_to "Pour les entreprises", statics_for_companies_path, :class => "dropdown-item"%>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Réalisations</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Artistes</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Articles</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact - FAQ</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<div class="navbar-placeholder"></div>
+<%= render :layout => "layouts/base" do %>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <%= link_to(root_path, class: "navbar-brand navlink-logo-ctn") do %>
+      <% image_tag("logo-art-zeppelin.svg", alt: "logo-art-zeppelin", class: "navbar-logo") %>
+    <% end %>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor03">
+      <ul class="navbar-nav">
+        <li class="dropdown nav-item">
+          <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Offres
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <%= link_to "Pour les artistes", for_artists_statics_path, class: "dropdown-item"%>
+            <%= link_to "Pour les entreprises", for_companies_statics_path, class: "dropdown-item"%>
+          </div>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Réalisations", artworks_path, class: "nav-link"%>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Artistes", artists_path, class: "nav-link"%>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Articles", blogs_path, class: "nav-link"%>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Contact - FAQ", contact_statics_path, class: "nav-link"%>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="navbar-placeholder"></div>
+  <%= yield %>
+<% end %>

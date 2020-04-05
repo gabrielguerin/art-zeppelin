@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 class BlogsController < ApplicationController
-  
+  layout '_navbar'
+
   before_action :set_blog, only: %i[show edit update destroy]
 
   # GET /blogs

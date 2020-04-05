@@ -45,13 +45,17 @@ Rails.application.routes.draw do
 
   resources :clients
 
-  get 'statics/for_artists'
+  resources :statics, only: %i[for_artists for_companies contact deductions] do
+    collection do
+      get :for_artists
 
-  get 'statics/for_companies'
+      get :for_companies
 
-  get 'statics/contact'
+      get :contact
 
-  get 'statics/deductions'
+      get :deductions
+    end
+  end
 
   root 'statics#show', page: 'index'
 
