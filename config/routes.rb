@@ -45,19 +45,9 @@ Rails.application.routes.draw do
 
   resources :clients
 
-  resources :statics, only: %i[for_artists for_companies contact deductions] do
-    collection do
-      get :for_artists
-
-      get :for_companies
-
-      get :contact
-
-      get :deductions
-    end
-  end
-
   root 'statics#show', page: 'index'
+
+  get '/statics/:page' => 'statics#show'
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
