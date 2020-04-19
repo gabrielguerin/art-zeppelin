@@ -93,6 +93,7 @@
 
 <script>
   const lightboxCtn = document.querySelector('.artworks-lightbox-ctn');
+  const nextBtn = lightboxCtn.querySelector('.carousel-control-next');
   const artworks = document.querySelectorAll('.index-artworks-grid');
 
   function openLightbox() {
@@ -108,7 +109,7 @@
   }
 
   for (let i = 0; i < artworks.length; i++) {
-    artworks[i].addEventListener('click', openLightbox);
+    artworks[i].addEventListener('click', openLightbox;
   }
   lightboxCtn.addEventListener('click', closeLightbox);
 </script>
