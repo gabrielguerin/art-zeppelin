@@ -3,15 +3,33 @@
 class StaticsController < ApplicationController
   layout '_navbar'
 
-  def show; end
+  before_action :contact, only: %i[show]
 
-  def for_artists; end
+  def index; end
 
-  def for_companies; end
+  def show
+    if valid_page?
+
+      render template: "statics/#{params[:page]}"
+
+    else
+
+      render template: 'statics/errors/404', status: :not_found
+
+    end
+  end
+
+  private
+
+  def valid_page?
+    File.exist?(
+      Pathname.new(
+        Rails.root + "app/views/statics/#{params[:page]}.html.erb"
+      )
+    )
+  end
 
   def contact
     @client = Client.new
   end
-
-  def deductions; end
 end
