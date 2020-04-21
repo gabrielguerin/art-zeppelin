@@ -80,3 +80,7 @@ gem 'administrate-field-active_storage'
 
 # Mini Replacement for RMagick
 gem 'mini_magick'
+
+# Official Twilio SendGrid Led, Community Driven Ruby API Library
+
+gem 'sendgrid-ruby'
