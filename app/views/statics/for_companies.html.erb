@@ -1,105 +1,114 @@
-<div class="page-title-ctn">
-    <%= image_tag("https://images.pexels.com/photos/3047316/pexels-photo-3047316.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260", alt: "", class: "page-title-img") %>
-    <h1 class="h1-page-title">Pour les entreprises</h1>
+<p id="notice"><%= notice %></p>
+<h1 class="index-artist-h1">Nous avons des <span class="span-orange">opportunités </span> pour vous</h1>
+<div class="section-100vh-top artist-index-section-1">
+  <div class="crsl-ctn">
+    <div class="crsl-all-img-ctn">
+      <div class="crsl-img-ctn">
+        <%= image_tag("for-panels-7.png", alt: "art-zeppelin-index-artist-artwork", class: "crsl-img") %>
+      </div>
+      <div class="crsl-img-ctn">
+        <%= image_tag("for-panels-4.png", alt: "art-zeppelin-index-artist-artwork", class: "crsl-img") %>
+      </div>
+      <div class="crsl-img-ctn">
+        <%= image_tag("for-panels-5.png", alt: "art-zeppelin-index-artist-artwork", class: "crsl-img") %>
+      </div>
+      <div class="crsl-img-ctn">
+        <%= image_tag("for-panels-6.png", alt: "art-zeppelin-index-artist-artwork", class: "crsl-img") %>
+      </div>
+    </div>
+
+    <div class="crsl-controls">
+        <svg class="crsl-prev" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="35" viewBox="0 0 36 35">
+            <defs>
+              <clipPath id="clip-Index_8">
+                <rect width="36" height="35"/>
+              </clipPath>
+            </defs>
+            <g id="Index_8" data-name="Index – 8" clip-path="url(#clip-Index_8)">
+              <rect width="36" height="35" fill="#fff"/>
+              <g id="Groupe_614" data-name="Groupe 614" transform="translate(-5817.75 -6010)">
+                <rect id="Rectangle_228" data-name="Rectangle 228" width="36" height="35" transform="translate(5817.75 6010)" fill="#fa4616"/>
+                <path id="Tracé_1157" data-name="Tracé 1157" d="M0,0,8.86,8.86,0,17.72" transform="translate(5839.361 6036.632) rotate(180)" fill="none" stroke="#fff" stroke-width="3"/>
+              </g>
+            </g>
+          </svg>
+          
+        <svg class="crsl-next" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="35" viewBox="0 0 36 35">
+            <defs>
+              <clipPath id="clip-Index_9">
+                <rect width="36" height="35"/>
+              </clipPath>
+            </defs>
+            <g id="Index_9" data-name="Index – 9" clip-path="url(#clip-Index_9)">
+              <rect width="36" height="35" fill="#fff"/>
+              <g id="Groupe_614" data-name="Groupe 614" transform="translate(-5817.75 -6010)">
+                <rect id="Rectangle_228" data-name="Rectangle 228" width="36" height="35" transform="translate(5817.75 6010)" fill="#fa4616"/>
+                <path id="Tracé_1157" data-name="Tracé 1157" d="M0,0,8.86,8.86,0,17.72" transform="translate(5832.5 6018.912)" fill="none" stroke="#fff" stroke-width="3"/>
+              </g>
+            </g>
+          </svg>
+      </div>
+  </div>
+  <%= image_tag("img-corporate.png", alt: "art-zeppelin-index-artist-artwork-illustration", class: "index-artist-illu")%>
 </div>
 
 <div class="main">
-    <p class="p-for-index main-cards-decoration">
-        <strong>Donnez vie à l’esprit de votre entreprise en co-créant des œuvres d’art qui reflètent vos valeurs, métiers et engagements.</strong> <br><br>
-        Un projet artistique commence par la définition de votre besoin, nous vous proposons ensuite le ou les artistes adéquats ainsi que des maquettes pour vous projeter avant la réalisation de l’oeuvre.
-        Ensemble nous définissons les spécificités du projet (dimensions, matériaux, couleurs …), la variété des médiums et techniques proposés élargit le champ des possibilités pour s’intégrer à votre image de marque, en tant qu’entreprise moderne.
-    </p>
+  <div class="col-ctn for-pictos-ctn">
+      <div class="for-icons-ctn">
+        <%= image_tag("icons/for-icon-1.png", alt: "art-zeppelin-index-artist-artwork-illustration", class: "for-icons")%>
+        <h3>Nous vous proposons<br>un projet<h3>
+      </div>
+      <div class="for-icons-ctn">
+        <%= image_tag("icons/for-icon-2.png", alt: "art-zeppelin-index-artist-artwork-illustration", class: "for-icons")%>
+        <h3>Vous créez<br>une proposition<h3>
+      </div>
+      <div class="for-icons-ctn">
+        <%= image_tag("icons/for-icon-3.png", alt: "art-zeppelin-index-artist-artwork-illustration", class: "for-icons")%>
+        <h3>Validation<br>de la maquette<h3>
+      </div>
+      <div class="for-icons-ctn">
+        <%= image_tag("icons/for-icon-4.png", alt: "art-zeppelin-index-artist-artwork-illustration", class: "for-icons")%>
+        <h3>Vous réalisez<br>l’oeuvre<h3>
+      </div>
+  </div>
 
-    <div class="picto-main-ctn picto-forartists-ctn">
-      <div class="d-flex">
-        <div class="picto-ctn main-cards-decoration">
-            <%= image_tag("pictos/steps-picto-5.png", alt: "", class: "picto") %>
-            <h3 class="h3-picto">Nous vous proposons un projet<br></h3>
-        </div>
-        <p class="for-p-picto">hbgrvf yhbgvf cddrvtby btvrcexcevrtbynbtvrc crvtb vrce vrtbynbtvrce vrbtny btvrce vrbtny btvrc vrtby tgfrde rvyn btvrcerv btynbtv rcrvtb y</p>
-      </div>
-      <div class="d-flex">
-        <div class="picto-ctn main-cards-decoration">
-            <%= image_tag("pictos/steps-picto-6.png", alt: "", class: "picto") %>
-            <h3 class="h3-picto">Nous vous proposons un projet<br></h3>
-        </div>
-        <p class="for-p-picto">hbgrvf yhbgvf cddrvtby btvrcexcevrtbynbtvrc crvtb vrce vrtbynbtvrce vrbtny btvrce vrbtny btvrc vrtby tgfrde rvyn btvrcerv btynbtv rcrvtb y</p>
-      </div>
-      <div class="d-flex">
-        <div class="picto-ctn main-cards-decoration">
-            <%= image_tag("pictos/steps-picto-7.png", alt: "", class: "picto") %>
-            <h3 class="h3-picto">Nous vous proposons un projet<br></h3>
-        </div>
-        <p class="for-p-picto">hbgrvf yhbgvf cddrvtby btvrcexcevrtbynbtvrc crvtb vrce vrtbynbtvrce vrbtny btvrce vrbtny btvrc vrtby tgfrde rvyn btvrcerv btynbtv rcrvtb y</p>
-      </div>
-      <div class="d-flex">
-        <div class="picto-ctn main-cards-decoration">
-            <%= image_tag("pictos/steps-picto-8.png", alt: "", class: "picto") %>
-            <h3 class="h3-picto">Nous vous proposons un projet<br></h3>
-        </div>
-        <p class="for-p-picto">hbgrvf yhbgvf cddrvtby btvrcexcevrtbynbtvrc crvtb vrce vrtbynbtvrce vrbtny btvrce vrbtny btvrc vrtby tgfrde rvyn btvrcerv btynbtv rcrvtb y</p>
+  <div class="for-operations-ctn">
+    <h1 class="index-artist-h1">Nos modes <span class="span-orange">opératoires</span></h1>
+    <div class="col-ctn">
+      <%= image_tag("in-situ.jpg", alt: "for-in-situ", class: "for-operation-img for-operation-img-in-situ")%>
+      <div class="for-operation-text-ctn for-operation-text-ctn-in-situ">
+        <h2>In-<span class="span-orange">situ</span></h2>
+        <p class="p-bold">Accueillir un artiste dans vos locaux c’est participer à son processus de création.</p>
+        <p>Nos projets in situ apportent une expérience unique à vos employés de par la présence d’un artiste qui réalise l’oeuvre dans l’entreprise. Avoir la possibilité d’interagir avec un artiste qui travaille est une occasion de découvrir ce beau métier et la démarche artistique qui l’anime. Cette offre permet de prendre du recul sur votre organisation (méthodes de travail, processus internes, relation partenaires) pour repenser votre vision et redonner de l’élan à vos activités.</p>
       </div>
     </div>
-
-    <div class="page-btn-ctn">
-        <div class="for-steps-btn btn-lg btn-primary mx-3">Détail des étapes</div>
+    <hr>
+    <div class="col-ctn">
+      <div class="for-operation-text-ctn for-operation-text-ctn-en-atelier">
+        <h2>En <span class="span-orange">atelier</span></h2>
+        <p class="p-bold">L’artiste peut également produire l’œuvre d’art dans son atelier.</p>
+        <p>Il peut arriver que les locaux d’entreprises ne conviennent pas pour un projet « In-Situ » en raison de la taille des locaux ou du bruit émis par la conception de l’œuvre d’art, comme la sculpture. Dans cette offre « En atelier », nous organisons une réception dans vos locaux avec l’artiste, à nos frais, afin qu’il explique et commente son travail auprès de vos collaborateurs. Cette rencontre avec l’artiste permet de comprendre le cheminement et la réflexion qu’il a suivi pour mener à l’œuvre accomplie.</p>
+      </div>
+      <%= image_tag("en-atelier.jpg", alt: "for-atelier", class: "for-operation-img for-operation-img-en-atelier")%>
     </div>
+  </div>
 
-    <div class="for-cards-full-ctn">
-        <h2 class="h2-for-cards">Nos modes opératoires</h2>
-        <div class="for-cards-ctn">
-            <div class="half-for-card main-cards-decoration">
-                <h3 class="h3-for-card">In-situ</h3>
-                <%= image_tag("in-situ.jpg", alt: "logo-art-zeppelin", class: "for-card-img") %>
-                <h5 class="h5-for-card">Accueillir un artiste dans vos locaux c’est participer à son processus de création.</h5>
-                <p class="p-for-card">Nos projets in situ apportent une expérience unique à vos employés de par la présence d’un artiste qui réalise l’oeuvre dans l’entreprise. Avoir la possibilité d’interagir avec un artiste qui travaille est une occasion de découvrir ce beau métier et la démarche artistique qui l’anime. Cette offre permet de prendre du recul sur votre organisation (méthodes de travail, processus internes, relation partenaires) pour repenser votre vision et redonner de l’élan à vos activités.</p>
-            </div>
-            <div class="half-for-card main-cards-decoration">
-                <h3 class="h3-for-card">En atelier</h3>
-                <%= image_tag("en-atelier.jpg", alt: "logo-art-zeppelin", class: "for-card-img") %>
-                <h5 class="h5-for-card">L’artiste peut également produire l’œuvre d’art dans son atelier.</h5>
-                <p class="p-for-card">Il peut arriver que les locaux d’entreprises ne conviennent pas pour un projet « In-Situ » en raison de la taille des locaux ou du bruit émis par la conception de l’œuvre d’art, comme la sculpture. Dans cette offre « En atelier », nous organisons une réception dans vos locaux avec l’artiste, à nos frais, afin qu’il explique et commente son travail auprès de vos collaborateurs. Cette rencontre avec l’artiste permet de comprendre le cheminement et la réflexion qu’il a suivi pour mener à l’œuvre accomplie.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="page-btn-ctn">
-        <%= link_to(artworks_path, class: "btn-lg btn-primary mx-3 for-btn") do %>
-            <p>Nos réalisations</p>
-        <% end %>
-        <%= link_to(artists_path, class: "btn-lg btn-primary mx-3 for-btn") do %>
-            <p>Nous artiste</p>
-        <% end %>
-        <%= link_to(statics_contact_path, class: "btn-lg btn-primary mx-3 for-btn") do %>
-            <p>Nous contacter</p>
-        <% end %>
-    </div>
-    
+  <div class="col-ctn flex-center for-btns-ctn">
+    <%= link_to "Découvrez nos artistes", artists_path, class: "button"%>
+    <%= link_to "Nos réalisations", artworks_path, class: "button"%>
+    <%= link_to "Contactez-nous", contact_statics_path, class: "button"%>
+  </div>
 </div>
 
+
 <script>
-    const detailsBtn = document.querySelector('.for-steps-btn');
-    const pictosCtn = document.querySelector('.picto-main-ctn');
-    const pictosText = document.querySelectorAll('.for-p-picto');
-    var revealed = false;
+  const inSituTextCtn = document.querySelector('.for-operation-text-ctn-in-situ');
+  const inSituImg = document.querySelector('.for-operation-img-in-situ');
+  const atelierTextCtn = document.querySelector('.for-operation-text-ctn-en-atelier');
+  const atelierImg = document.querySelector('.for-operation-img-en-atelier');
 
-    function revealPictos() {
-        if (revealed == false) {
-            pictosCtn.style.display = 'block';
-            for (let i = 0; i < pictosText.length; i++) {
-                pictosText[i].style.display = 'flex';
-            }
-            detailsBtn.innerHTML = 'Réduire';
-            revealed = !revealed; 
-        } else {
-            pictosCtn.style.display = 'flex';
-            for (let i = 0; i < pictosText.length; i++) {
-                pictosText[i].style.display = 'none';
-            }
-            detailsBtn.innerHTML = 'Détails des étapes';
-            revealed = !revealed; 
-        }
-    }
-    detailsBtn.addEventListener('click', revealPictos) 
-
+  inSituImg.style.height = `${inSituTextCtn.getBoundingClientRect().height}px`;
+  atelierImg.style.height = `${atelierTextCtn.getBoundingClientRect().height}px`;
+  
+  window.addEventListener('resize', function() {inSituImg.style.height = `${inSituTextCtn.getBoundingClientRect().height}px`});
 </script>

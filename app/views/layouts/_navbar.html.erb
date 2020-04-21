@@ -1,32 +1,45 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarColor01">
-    <ul class="navbar-nav">
-      <li class="dropdown nav-item">
-        <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Offres
-        </a>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <%= link_to "Pour les artistes", statics_for_artists_path, :class => "dropdown-item"%>
-          <%= link_to "Pour les entreprises", statics_for_companies_path, :class => "dropdown-item"%>
+<%= render :layout => "layouts/base" do %>
+  <nav id="header">
+    <div class="logo-burger-ctn">
+      <%= link_to root_path do%>
+        <%=image_tag("logo-header.png", alt: "nav-logo-art-zeppelin", class: "header-logo")%>
+      <%end%>
+      <div class="burger-btn">
+        <svg id="burger-open" xmlns="http://www.w3.org/2000/svg" width="30" height="27" viewBox="0 0 15.296 14">
+            <g id="Groupe_611" data-name="Groupe 611" transform="translate(-10.257 -5.5)">
+                <path id="Tracé_1154" data-name="Tracé 1154" d="M5717.2,6130.607h15.3" transform="translate(-5706.94 -6124.107)" fill="none" stroke="#000" stroke-width="2"/>
+                <path id="Tracé_1155" data-name="Tracé 1155" d="M5717.2,6130.607h15.3" transform="translate(-5706.94 -6118.107)" fill="none" stroke="#000" stroke-width="2"/>
+                <path id="Tracé_1156" data-name="Tracé 1156" d="M5717.2,6130.607h15.3" transform="translate(-5706.94 -6112.107)" fill="none" stroke="#000" stroke-width="2"/>
+            </g>
+        </svg>
+        <svg id="burger-close" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 13.66 13.659">
+            <g id="Groupe_612" data-name="Groupe 612" transform="translate(-11.079 -6.078)">
+              <path id="Tracé_1154" data-name="Tracé 1154" d="M0,0H17.317" transform="translate(11.786 6.786) rotate(45)" fill="none" stroke="#000" stroke-width="2"/>
+              <path id="Tracé_1156" data-name="Tracé 1156" d="M0,0H17.317" transform="translate(11.786 19.03) rotate(-45)" fill="none" stroke="#000" stroke-width="2"/>
+            </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="header-links-ctn">
+      <div class="header-ddown-ctn">
+        <div class="header-link header-ddown-link">
+            Offres
+            <svg xmlns="http://www.w3.org/2000/svg" width="17.678" height="17.678" viewBox="0 0 17.678 17.678">
+                <path id="Tracé_1153" data-name="Tracé 1153" d="M11,11H0V0" transform="translate(1.061 7.778) rotate(-45)" fill="none" stroke="#000" stroke-width="2"/>
+            </svg>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Réalisations</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Artistes</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Articles</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact - FAQ</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<div class="navbar-placeholder"></div>
+        <div class="header-ddown-ctt">
+          <%= link_to "Pour les artistes", for_artists_statics_path, class: "header-link"%>
+          <%= link_to "Pour les entreprises", for_companies_statics_path, class: "header-link"%>
+        </div>
+      </div>
+
+      <%= link_to "Articles", blogs_path, class: "header-link"%>
+      <%= link_to "Artistes", artists_path, class: "header-link"%>
+      <%= link_to "Réalisations", artworks_path, class: "header-link"%>
+      <%= link_to "Contact - FAQ", contact_statics_path, class: "header-link"%>
+      </div>
+  </nav>
+  <%= yield %>
+<% end %>

@@ -1,63 +1,105 @@
-<div class="page-title-ctn contact-title-ctn">
-  <%= image_tag("contact-title.jpg", alt: "", class: "page-title-img") %>
-  <div class=" contact-title-1-2-ctn">
-    <%= image_tag("logo-art-zeppelin.svg", alt: "", class: "contact-title-1") %>
-    <div class="contact-title-2">
-        <h4>Contact@artzeppelin.com</h4>
-        <h4>+ 33 (0) 7 70 00 40 34</h4>
-        <h4>382 B rue de Picquenard<br>78630 Orgeval</h4>
+<div class="main">
+<div class="section-100vh-top flex-center full-contact-ctn">
+  <div class="contact-btns-ctn contact-btns-ctn-mobile">
+    <div class="button">Informations</div>
+    <div class="button">Formulaire</div>
+    <div class="button">FAQ</div>
+    <div class="button">Newsletter</div>
+  </div>
+  <div class="col-ctn contact-ctn">
+    <div class="contact-panels-ctn">
+      <div class="col-ctn contact-panel-1">
+        <%= image_tag("logo-contact.png", alt: "", class: "contact-info-logo") %>
+        <div class="contact-info-text-ctn">
+          <h1>Art Zeppelin</h1>
+          <hr>
+          <div class="contact-info-details-ctn">
+            <p class="contact-info-text">contact@artzeppelin.com</p>
+            <p class="contact-info-text">+ 33 (0) 7 70 00 40 34</p>
+            <p class="contact-info-text">
+              382 B rue de Picquenard<br>
+              78630 Orgeval
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-ctn contact-panel-2">
+        <input type="text" id="name" name="name" placeholder="Nom">
+        <input type="text" id="name" name="name" placeholder="Prénom">
+        <input type="text" id="name" name="name" placeholder="Email">
+        <input type="text" id="name" name="name" placeholder="Message">
+        <div class="input-btn-ctn">
+          <input type="button">
+          <svg class="input-btn-arrow" xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 33.115 23.682">
+            <g id="Groupe_195" data-name="Groupe 195" transform="translate(0 1.394)">
+              <path id="Tracé_504" data-name="Tracé 504" d="M30.189,0H0" transform="translate(30.189 10.416) rotate(180)" fill="none" stroke="#fff" stroke-width="4"/>
+              <path id="Tracé_505" data-name="Tracé 505" d="M10.154,0,0,10.447,10.154,20.894" transform="translate(30.326 20.894) rotate(180)" fill="none" stroke="#fff" stroke-width="4"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="col-ctn contact-panel-3">
+        <p class="p-bold">1°Pourquoi rejoindre Art Zeppelin ?</p>
+        <p>Nous rejoindre c’est la possibilité de réaliser des projets en lien avec votre démarche artistique, selon vos disponibilités.</p>
+        <p class="p-bold">2°Quels sont les pré-requis pour rejoindre Art Zeppelin ? </p>
+        <p>Nous privilégions la maîtrise d’un savoir-faire, n’hésitez pas à nous faire parvenir votre book à l’addresse mail artistes@artzeppelin.com.</p>
+        <p class="p-bold">3°J’expose via une galerie, est-ce un problème ?</p>
+        <p>Non, sauf si vous êtes lié par une clause d’exclusivité, ce qui n’est pas le cas chez nous.</p>
+        <p class="p-bold">4°Comment est estimé le prix d’un projet ?</p>
+        <p>Le prix d’un projet varie en fonction de l’expérience de l’artiste, de l’ampleur du projet, des moyens et du temps requis à sa réalisation.</p>
+        <p class="p-bold">5°Comment se déroulent vos projets ?</p>
+        <p>Nous sommes ravis de vous communiquer notre brochure par retour de mail.</p>
+        <p class="p-bold">6°Comment déduire la valeur des œuvres acquises de mon résultat imposable ? </p>
+        <p>Nous vous invitons à consulter la page dédiée en cliquant ici.</p>
+        <p class="p-bold">7°Dans quel pays êtes vous présents ? </p>
+        <p>Art Zeppelin réalise des projets en France Métropolitaine pour l’instant.</p>
+        <p class="p-bold">8°Comment contacter le service client ?</p>
+        <p>Nous vous invitons à remplir le formulaire de contact ci dessous ou appeler les numéros indiqués.</p>
+      </div>
+      <div class="col-ctn contact-panel-4">
+        <h2>Ça bouge chez <span class="span-orange">Art&nbsp;Zeppelin</span>&nbsp;!</h2>
+        <p>Inscrivez-vous à notre newsletter pour rester au courant</p>
+        <div class="input-text-btn-ctn">
+          <input type="text" id="name" name="name" placeholder="Message">
+          <div class="input-btn-ctn">
+            <input type="button">
+            <svg class="input-btn-arrow" xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 33.115 23.682">
+              <g id="Groupe_195" data-name="Groupe 195" transform="translate(0 1.394)">
+                <path id="Tracé_504" data-name="Tracé 504" d="M30.189,0H0" transform="translate(30.189 10.416) rotate(180)" fill="none" stroke="#fff" stroke-width="4"/>
+                <path id="Tracé_505" data-name="Tracé 505" d="M10.154,0,0,10.447,10.154,20.894" transform="translate(30.326 20.894) rotate(180)" fill="none" stroke="#fff" stroke-width="4"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-btns-ctn">
+      <div class="button">Informations</div>
+      <div class="button">Formulaire</div>
+      <div class="button">FAQ</div>
+      <div class="button">Newsletter</div>
     </div>
   </div>
-  <div class="contact-title-3">
-      <%= image_tag("pictos/social/social-04.svg", alt: "", class: "contact-title-picto") %>
-      <%= image_tag("pictos/social/social-05.svg", alt: "", class: "contact-title-picto") %>
-      <%= image_tag("pictos/social/social-06.svg", alt: "", class: "contact-title-picto") %>
-  </div>
 </div>
 
-<div class="main">
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" data-toggle="tab" href="#form">Formulaire de contact</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#faq">FAQ</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#news">Newsletter</a>
-    </li>
-  </ul>
-  <div id="myTabContent" class="tab-content">
-      <div class="tab-pane contact-tab-pane active fade show" id="form">
-          <%= render "clients/form-contact" %>
-      </div>
-      <div class="tab-pane contact-tab-pane fade" id="faq">
-          <p class="contact-faq-question">1°Pourquoi rejoindre Art Zeppelin ?</p>
-          <p class="contact-faq-answer">Nous rejoindre c’est la possibilité de réaliser des projets en lien avec votre démarche artistique, selon vos disponibilités.</p>
 
-          <p class="contact-faq-question">2°Quels sont les pré-requis pour rejoindre Art Zeppelin ? </p>
-          <p class="contact-faq-answer">Nous privilégions la maîtrise d’un savoir-faire, n’hésitez pas à nous faire parvenir votre book à l’addresse mail artistes@artzeppelin.com.</p>
+<script>
+  const contactBtns = document.querySelectorAll('.contact-btns-ctn>.button');
+  const contactPanels = document.querySelectorAll('.contact-panels-ctn>div');
+  console.log("22");
 
-          <p class="contact-faq-question">3°J’expose via une galerie, est-ce un problème ?</p>
-          <p class="contact-faq-answer">Non, sauf si vous êtes lié par une clause d’exclusivité, ce qui n’est pas le cas chez nous.</p>
+  function updateContactPanel(i) {
+    for (let y = 0; y < contactPanels.length; y++) {
+      var contactPanel = contactPanels[y];
+      contactPanel.style.display = "none";
+    }
+    if (i > 3) i -= 4;
+      contactPanels[i].style.display ="flex";
+  }
+  
+  for (let i = 0; i < contactBtns.length; i++) {
+    var ContactBtn = contactBtns[i];
 
-          <p class="contact-faq-question">4°Comment est estimé le prix d’un projet ?</p>
-          <p class="contact-faq-answer">Le prix d’un projet varie en fonction de l’expérience de l’artiste, de l’ampleur du projet, des moyens et du temps requis à sa réalisation.</p>
-          
-          <p class="contact-faq-question">5°Comment se déroulent vos projets ?</p>
-          <p class="contact-faq-answer">Nous sommes ravis de vous communiquer notre brochure par retour de mail.</p>
-
-          <p class="contact-faq-question">6°Comment déduire la valeur des œuvres acquises de mon résultat imposable ? </p>
-          <p class="contact-faq-answer">Nous vous invitons à consulter la page dédiée en cliquant ici.</p>
-
-          <p class="contact-faq-question">7°Dans quel pays êtes vous présents ? </p>
-          <p class="contact-faq-answer">Art Zeppelin réalise des projets en France Métropolitaine pour l’instant.</p>
-
-          <p class="contact-faq-question">8°Comment contacter le service client ?</p>
-          <p class="contact-faq-answer">Nous vous invitons à remplir le formulaire de contact ci dessous ou appeler les numéros indiqués.</p>
-      </div>
-      <div class="tab-pane contact-tab-pane fade" id="news">
-        <%= render "clients/form-newsletter" %>
-      </div>
-  </div>
-</div>
+    ContactBtn.addEventListener('click', updateContactPanel.bind( null, i));
+  }
+</script>

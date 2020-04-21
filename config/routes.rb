@@ -45,15 +45,9 @@ Rails.application.routes.draw do
 
   resources :clients
 
-  get 'statics/for_artists'
-
-  get 'statics/for_companies'
-
-  get 'statics/contact'
-
-  get 'statics/deductions'
-
   root 'statics#show', page: 'index'
+
+  get '/statics/:page' => 'statics#show'
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

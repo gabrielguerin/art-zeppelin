@@ -1,31 +1,103 @@
 <p id="notice"><%= notice %></p>
+<h1 class="index-artist-h1">Découvrez nos<span class="span-orange"> artistes</span></h1>
+<div class="section-100vh-top artist-index-section-1">
+  <div class="crsl-ctn">
+    <div class="crsl-all-img-ctn">
+      <div class="crsl-img-ctn">
+        <%= image_tag("img.png", alt: "art-zeppelin-index-artist-artwork", class: "crsl-img") %>
+      </div>
+      <div class="crsl-img-ctn">
+        <%= image_tag("img.png", alt: "art-zeppelin-index-artist-artwork", class: "crsl-img") %>
+      </div>
+      <div class="crsl-img-ctn">
+        <%= image_tag("img.png", alt: "art-zeppelin-index-artist-artwork", class: "crsl-img") %>
+      </div>
+      <div class="crsl-img-ctn">
+        <%= image_tag("img.png", alt: "art-zeppelin-index-artist-artwork", class: "crsl-img") %>
+      </div>
+      <div class="crsl-img-ctn">
+        <%= image_tag("img.png", alt: "art-zeppelin-index-artist-artwork", class: "crsl-img") %>
+      </div>
+    </div>
 
-<div class="page-title-ctn">
-    <img src="https://images.pexels.com/photos/3047316/pexels-photo-3047316.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="" class="page-title-img">
-    <h1 class="h1-page-title">Tous nos artistes et partenaires</h1>
+    <div class="crsl-controls">
+        <svg class="crsl-prev" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="35" viewBox="0 0 36 35">
+            <defs>
+              <clipPath id="clip-Index_8">
+                <rect width="36" height="35"/>
+              </clipPath>
+            </defs>
+            <g id="Index_8" data-name="Index – 8" clip-path="url(#clip-Index_8)">
+              <rect width="36" height="35" fill="#fff"/>
+              <g id="Groupe_614" data-name="Groupe 614" transform="translate(-5817.75 -6010)">
+                <rect id="Rectangle_228" data-name="Rectangle 228" width="36" height="35" transform="translate(5817.75 6010)" fill="#fa4616"/>
+                <path id="Tracé_1157" data-name="Tracé 1157" d="M0,0,8.86,8.86,0,17.72" transform="translate(5839.361 6036.632) rotate(180)" fill="none" stroke="#fff" stroke-width="3"/>
+              </g>
+            </g>
+          </svg>
+          
+        <svg class="crsl-next" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="35" viewBox="0 0 36 35">
+            <defs>
+              <clipPath id="clip-Index_9">
+                <rect width="36" height="35"/>
+              </clipPath>
+            </defs>
+            <g id="Index_9" data-name="Index – 9" clip-path="url(#clip-Index_9)">
+              <rect width="36" height="35" fill="#fff"/>
+              <g id="Groupe_614" data-name="Groupe 614" transform="translate(-5817.75 -6010)">
+                <rect id="Rectangle_228" data-name="Rectangle 228" width="36" height="35" transform="translate(5817.75 6010)" fill="#fa4616"/>
+                <path id="Tracé_1157" data-name="Tracé 1157" d="M0,0,8.86,8.86,0,17.72" transform="translate(5832.5 6018.912)" fill="none" stroke="#fff" stroke-width="3"/>
+              </g>
+            </g>
+          </svg>
+      </div>
+  </div>
+  <%= image_tag("img-artist.png", alt: "art-zeppelin-index-artist-artwork-illustration", class: "index-artist-illu")%>
 </div>
 
 <div class="main">
-  <div class="project-sorting-ctn">
-      <div class="sorting-btns-ctn">
-          <h3 class="filter-btn portfolio-filter-active all-projects-btn">Tous</h3>
-          <h3 class="filter-btn branding-btn">Fresque</h3>
-          <h3 class="filter-btn dev-btn">Tableau</h3>
-          <h3 class="filter-btn illu-btn">Sculpture</h3>
-          <h3 class="filter-btn print-btn">Autres</h3>
+  <div class="col-ctn all-filters-ctn">
+    <div class="one-half filters-btns-ctn">
+      <div class="flex">
+        <a href="#" class="filter-btn">Tableau</a>
+        <a href="#" class="filter-btn">Fresque</a>
+        <a href="#" class="filter-btn">Sculpture</a>
+        <a href="#" class="filter-btn">Performance</a>
       </div>
-  </div>
-  <div class="index-artists-grid">
-    <% @artists.each do |artist| %>
-        <div class="index-artists-ctn">
-        <%= link_to artist_path(artist.id) do%>
-          <div class="index-artists-ctn index-artists-hover">
-            <h3 class="h3-index-artist-name"><%= artist.first_name + " " + artist.last_name %></h3>
-            <p class="h3-index-artist-medium"><%= artist.description %></p>
-          </div>
-        <% end %>
-          <%= image_tag(artist.avatar, alt: "", class: "index-artists-ctn index-artists-img") %>
+    </div>
+    <div class="one-half">
+      <div class="input-text-btn-ctn">
+        <input type="text" id="name" name="name" placeholder="Rechercher">
+        <div class="input-btn-ctn">
+            <input type="button">
+            <svg class="input-btn-arrow" xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 33.115 23.682">
+              <g id="Groupe_195" data-name="Groupe 195" transform="translate(0 1.394)">
+                <path id="Tracé_504" data-name="Tracé 504" d="M30.189,0H0" transform="translate(30.189 10.416) rotate(180)" fill="none" stroke="#fff" stroke-width="4"/>
+                <path id="Tracé_505" data-name="Tracé 505" d="M10.154,0,0,10.447,10.154,20.894" transform="translate(30.326 20.894) rotate(180)" fill="none" stroke="#fff" stroke-width="4"/>
+              </g>
+            </svg>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-ctn">
+    <% @artists.each do |artist| %>
+      <%= link_to artist_path(artist.id), :class => 'index-artist-ctn one-half' do%>
+        <%= image_tag("img.png", alt: "art-zeppelin-index-artist-portrait", class: "")%>
+        <div class="index-artist-text-ctn">
+          <div>
+            <h3 class="index-artist-name"><%= artist.first_name + " " + artist.last_name %></h3>
+            <hr class="index-artist-hr">
+            <p class="index-artist-description"><%= artist.description %></p>
+          </div>
+          <div class="index-artist-tag-ctn">
+          <% artist.tags.each do |tag| %>
+            <p class="index-artist-tag"><%= tag.title %></p>
+          <% end %>
+          </div>
+        </div>
+        <div class="index-artist-fill-ctn"></div>
+      <% end %>
     <% end %>
   </div>
 </div>
