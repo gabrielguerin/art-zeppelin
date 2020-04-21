@@ -37,17 +37,17 @@
             </p>
             <div class="index-section-2-links">
                 <%= link_to "Découvrez nos artistes", artists_path %>
-                <%= link_to "Quels sont les avantages fiscaux ?", deductions_statics_path %>
+                <%= link_to "Quels sont les avantages fiscaux ?", "statics/deductions" %>
             </div>
         </div>
     </div>
 
     <div class="section-60vh index-section-3-ctn">
         <div class="flex-center section-60vh index-section-3">
-            <%= link_to( for_artists_statics_path, class: "") do%>
+            <%= link_to( "statics/for_artists", class: "") do%>
                 <h1>Pour les <span class="span-orange">artistes</span></h1>  
             <%end%>
-            <%= link_to( for_companies_statics_path, class: "") do%>
+            <%= link_to( "statics/for_companies", class: "") do%>
                 <h1>Pour les <span class="span-orange">entreprises</span></h1>  
             <%end%>
         </div>
