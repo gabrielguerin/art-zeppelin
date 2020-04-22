@@ -664,14 +664,17 @@ a.index-artist-ctn, a.index-artist-ctn:hover {
 .index-lp-top {
    transform: translateY(-4vh);
    margin-top: var(--header-py);
+   justify-content: space-between;
+   align-items: center;
 }
 .lp-top-text {
-    display: inline;
+    width: 60%;
 }
 .lp-top-img {
+	width: 35%;
     object-fit: contain;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
     .lp-top-img {
         display : none;
     }
