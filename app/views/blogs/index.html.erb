@@ -1,68 +1,32 @@
-<p id="notice"><%= notice %></p>
-
-<h1 class="index-articles-h1">Ça bouge chez<span class="span-orange"> Art Zeppelin</span></h1>
-
-<div class="main">
-  <div class="col-ctn all-filters-ctn">
-    <div class="one-half filters-btns-ctn">
-      <div class="flex">
-        <a href="#" class="filter-btn">Artiste</a>
-        <a href="#" class="filter-btn">Réalisation</a>
-        <a href="#" class="filter-btn">Événement</a>
-        <a href="#" class="filter-btn">Autres</a>
-      </div>
+<div class="section index-blog-section-1">
+  <h1>Ça bouge chez<span class="span-orange"> Art Zeppelin</span></h1>
+  <div class="index-blog-section-1-filters-ctn">
+    <div class="index-blog-section-1-filters-btn-ctn">
+      <a href="#" class="filter-btn">Artiste</a>
+      <a href="#" class="filter-btn">Réalisation</a>
+      <a href="#" class="filter-btn">Événement</a>
+      <a href="#" class="filter-btn">Autres</a>
     </div>
-    <div class="one-half">
-      <div class="input-text-btn-ctn">
-        <input type="text" id="name" name="name" placeholder="Rechercher">
-        <div class="input-btn-ctn">
-          <input type="button">
-          <svg class="input-btn-arrow" xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 33.115 23.682">
-            <g id="Groupe_195" data-name="Groupe 195" transform="translate(0 1.394)">
-              <path id="Tracé_504" data-name="Tracé 504" d="M30.189,0H0" transform="translate(30.189 10.416) rotate(180)" fill="none" stroke="#fff" stroke-width="4"/>
-              <path id="Tracé_505" data-name="Tracé 505" d="M10.154,0,0,10.447,10.154,20.894" transform="translate(30.326 20.894) rotate(180)" fill="none" stroke="#fff" stroke-width="4"/>
-            </g>
-          </svg>
-        </div>
+    <form class="form-inline input-text-btn-ctn">
+      <div class="form-group text">
+        <input class="form-control" placeholder="lieu, date..." type="text" name="client[email]" id="client_email">
       </div>
-    </div>
+      <div>
+        <input type="submit" name="commit" value="Envoyer" class="btn btn-primary" data-disable-with="Envoyer">
+      </div>
+    </form>
   </div>
-
-    <% @blogs.each do |blog| %>
-      <%= link_to blog_path(blog.id), :class => 'index-article-ctn' do%>
-        <%= image_tag("https://images.pexels.com/photos/3047316/pexels-photo-3047316.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260", alt: "", class: "one-quarter") %>
-        <div class="index-article-text-ctn">
-            <h3><%= blog.title%></h3>
-            <hr class="index-article-hr">
-            <p class="index-article-text"><%= blog.description%></p>
-        </div>
-      <% end %>
-    <% end %>
 </div>
 
-<div class="main">
-
-  <div class="index-articles-grid">
-
-    <% @blogs.each do |blog| %>
-      <%= link_to blog_path(blog.id) do%>
-        <div class="index-article-ctn">
-          <%= image_tag(blog.cover, alt: "", class: "index-article-img") %>
-          <div class="index-article-text">
-            <h3 class="h3-index-article"><%= blog.title%></h3>
-            <hr>
-            <p class="description-index-article"><%= blog.description%></p>
-            <div class="index-article-bottom-ctn d-flex justify-content-between">
-              <p class="date-index-article"><%= blog.created_at.strftime("%d/%m/%Y")%></p>
-              <div class="index-articles-tags-ctn">
-                <% blog.tags.each do |tag| %>
-                 <p><%= tag.title %></p>
-                <% end %>
-              </div>
-            </div>
-          </div>
-        </div>
-      <% end %>
+<div class="section index-blog-section-2">
+  <% @blogs.each do |blog| %>
+    <%= link_to blog_path(blog.id), class: "index-blog-ctn" do%>
+      <%= image_tag(blog.cover, alt: "") %>
+      <div class="index-blog-text-ctn">
+        <h3><%= blog.title%></h3>
+        <hr>
+        <p><%= blog.description%></p>
+      </div>
     <% end %>
-  </div>
+  <% end %>
 </div>
