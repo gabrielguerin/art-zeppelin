@@ -1,11 +1,14 @@
-<p id="notice"><%= notice %></p>
-
-<div class="main">
-    <div class="show-article-1">
-        <%= image_tag(@blog.cover, alt: "", class: "show-article-cover") %>
-        <h2 class="show-article-h2"><%= @blog.title %></h2>
-        <p class="show-article-date"><%= @blog.created_at.strftime("%d/%m/%Y")%></p>
-        <hr>
-        <p class="show-article-text"><%= @blog.description%></p>
+<div class="section show-blog-section-1">
+    <%= image_tag(@blog.cover, alt: "blog-image") %>
+    <div class="show-blog-infos-ctn">
+        <p class="show-blog-date"><%= @blog.created_at.strftime("%d/%m/%Y")%></p>
+        <div class="show-blog-tags-ctn">
+        <% @blog.tags.take(5).each do |tag| %>
+            <p class="tag"><%= tag.title %></p>
+        <% end %>
+        </div>
     </div>
+    <h2><%= @blog.title %></h2> 
+    <hr>
+    <p class="show-article-text"><%= @blog.description%></p>
 </div>

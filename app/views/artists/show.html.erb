@@ -1,25 +1,22 @@
-<p id="notice"><%= notice %></p>
-<div class="main">
-    <div class="flex-center show-artist-1">
-        <div class="col-ctn">
-            <%= image_tag(@artist.avatar, alt: "artist-portrait", class: "one-third show-artist-portrait") %>
-            <div class="two-third show-artist-text-ctn">
-                <h2><%= @artist.first_name + " " + @artist.last_name %></h2>
-                <hr>
-                <% @artist.tags.each do |tag| %>
-                    <p class="tag">
-                        <%= tag.title %>
-                    </p>
-                <% end %>
-                <p><%= @artist.description %></p>
-            </div>
-        </div>
-    </div>
-    <div class="col-ctn show-artist-grid">
-        <% @artist.artworks.each do |artwork| %>
-            <% artwork.images.each do |artworkImage| %>
-                <%= image_tag(artworkImage, alt: "", class: "one-half") %>
+<div class="section show-artist-section-1">
+    <%= image_tag(@artist.avatar, alt: "artist-portrait") %>
+    <div class="show-artist-section-1-text-ctn">
+        <h2><%= @artist.first_name + " " + @artist.last_name %></h2>
+        <hr>
+        <p class="show-artist-description"><%= @artist.description %></p>
+        <div class="show-artist-tags-ctn">
+            <% @artist.tags.each do |tag| %>
+                <p class="tag"><%= tag.title %></p>
             <% end %>
-        <% end %>
+        </div>
+        <%= link_to "Réserver cet artiste", "statics/contact"%>
     </div>
+</div>
+
+<div class="section show-artist-section-2">
+     <% @artist.artworks.each do |artwork| %>
+        <% artwork.images.each do |artworkImage| %>
+            <%= image_tag(artworkImage, alt: "", class: "show-artist-artwork") %>
+        <% end %>
+    <% end %>
 </div>

@@ -12,7 +12,7 @@
         <input class="form-control" placeholder="lieu, date..." type="text" name="client[email]" id="client_email">
       </div>
       <div>
-        <input type="submit" name="commit" value="Envoyer" class="btn btn-primary" data-disable-with="Envoyer">
+        <input type="submit" name="commit" value="Rechercher" class="btn btn-primary" data-disable-with="Envoyer">
       </div>
     </form>
   </div>
@@ -26,6 +26,14 @@
         <h3><%= blog.title%></h3>
         <hr>
         <p><%= blog.description%></p>
+        <div class="index-blog-infos-ctn">
+          <p class="index-blog-date"><%= blog.created_at.strftime("%d/%m/%Y")%></p>
+          <div class="index-blog-tags-ctn">
+            <% blog.tags.take(5).each do |tag| %>
+              <p class="tag"><%= tag.title %></p>
+            <% end %>
+          </div>
+        </div>
       </div>
     <% end %>
   <% end %>
