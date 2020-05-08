@@ -1,0 +1,422 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="137.945" height="114.179" viewBox="0 0 137.945 114.179">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffcdbb;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #fc3e00;
+      }
+
+      .cls-4 {
+        stroke: #fc3e00;
+        stroke-miterlimit: 10;
+        stroke-width: 4.493px;
+      }
+
+      .cls-5 {
+        fill: #ff4e00;
+      }
+    </style>
+  </defs>
+  <g id="Groupe_504" data-name="Groupe 504" transform="translate(0 0)">
+    <g id="Groupe_384" data-name="Groupe 384" transform="translate(36.202)">
+      <path id="Tracé_912" data-name="Tracé 912" class="cls-1" d="M1140.132,3339.154c7.889-5.967,12.676-13.793,12.676-22.366,0-18.7-22.776-33.867-50.871-33.867s-50.872,15.162-50.872,33.867,22.776,33.866,50.872,33.866a69.589,69.589,0,0,0,28.874-5.983,44.272,44.272,0,0,0,20.66,5.983A30.149,30.149,0,0,1,1140.132,3339.154Z" transform="translate(-1051.065 -3282.921)"/>
+    </g>
+    <g id="Groupe_443" data-name="Groupe 443" transform="translate(56.324 9.288)">
+      <g id="Groupe_441" data-name="Groupe 441">
+        <g id="Groupe_385" data-name="Groupe 385" transform="translate(20.367 19.173)">
+          <rect id="Rectangle_138" data-name="Rectangle 138" class="cls-2" width="35.486" height="24.117" transform="translate(1.376 1.376)"/>
+          <path id="Tracé_913" data-name="Tracé 913" class="cls-3" d="M1155.423,3356.266h-38.238V3329.4h38.238Zm-35.487-2.751h32.735v-21.365h-32.735Z" transform="translate(-1117.185 -3329.398)"/>
+        </g>
+        <g id="Groupe_416" data-name="Groupe 416" transform="translate(0 6.005)">
+          <g id="Groupe_386" data-name="Groupe 386">
+            <rect id="Rectangle_139" data-name="Rectangle 139" class="cls-2" width="7.006" height="58.748" transform="translate(60.124 1.375) rotate(90)"/>
+            <path id="Tracé_914" data-name="Tracé 914" class="cls-3" d="M1145.424,3317.653h-61.5v-9.758h61.5Zm-58.748-2.751h56v-4.256h-56Z" transform="translate(-1083.925 -3307.895)"/>
+          </g>
+          <g id="Groupe_387" data-name="Groupe 387" transform="translate(43.409 5.647)">
+            <path id="Tracé_915" data-name="Tracé 915" class="cls-4" d="M1154.814,3317.117" transform="translate(-1154.814 -3317.117)"/>
+          </g>
+          <g id="Groupe_388" data-name="Groupe 388" transform="translate(43.409 8.382)">
+            <path id="Tracé_916" data-name="Tracé 916" class="cls-4" d="M1154.814,3321.583" transform="translate(-1154.814 -3321.583)"/>
+          </g>
+          <g id="Groupe_389" data-name="Groupe 389" transform="translate(40.552 4.879)">
+            <line id="Ligne_105" data-name="Ligne 105" class="cls-2" y1="3.503" transform="translate(1.376)"/>
+            <rect id="Rectangle_140" data-name="Rectangle 140" class="cls-3" width="2.751" height="3.503" transform="translate(0 0)"/>
+          </g>
+          <g id="Groupe_390" data-name="Groupe 390" transform="translate(46.172 4.879)">
+            <line id="Ligne_106" data-name="Ligne 106" class="cls-2" y1="3.503" transform="translate(1.376)"/>
+            <rect id="Rectangle_141" data-name="Rectangle 141" class="cls-3" width="2.751" height="3.503" transform="translate(0 0)"/>
+          </g>
+          <g id="Groupe_391" data-name="Groupe 391" transform="translate(49.029 5.647)">
+            <path id="Tracé_917" data-name="Tracé 917" class="cls-4" d="M1163.991,3317.117" transform="translate(-1163.991 -3317.117)"/>
+          </g>
+          <g id="Groupe_392" data-name="Groupe 392" transform="translate(49.029 8.382)">
+            <path id="Tracé_918" data-name="Tracé 918" class="cls-4" d="M1163.991,3321.583" transform="translate(-1163.991 -3321.583)"/>
+          </g>
+          <g id="Groupe_393" data-name="Groupe 393" transform="translate(51.791 4.879)">
+            <line id="Ligne_107" data-name="Ligne 107" class="cls-2" y1="3.503" transform="translate(1.376)"/>
+            <rect id="Rectangle_142" data-name="Rectangle 142" class="cls-3" width="2.751" height="3.503" transform="translate(0 0)"/>
+          </g>
+          <g id="Groupe_394" data-name="Groupe 394" transform="translate(54.648 5.647)">
+            <path id="Tracé_919" data-name="Tracé 919" class="cls-4" d="M1173.167,3317.117" transform="translate(-1173.167 -3317.117)"/>
+          </g>
+          <g id="Groupe_395" data-name="Groupe 395" transform="translate(54.648 8.382)">
+            <path id="Tracé_920" data-name="Tracé 920" class="cls-4" d="M1173.167,3321.583" transform="translate(-1173.167 -3321.583)"/>
+          </g>
+          <g id="Groupe_396" data-name="Groupe 396" transform="translate(37.79 5.647)">
+            <path id="Tracé_921" data-name="Tracé 921" class="cls-4" d="M1145.638,3317.117" transform="translate(-1145.638 -3317.117)"/>
+          </g>
+          <g id="Groupe_397" data-name="Groupe 397" transform="translate(37.79 8.382)">
+            <path id="Tracé_922" data-name="Tracé 922" class="cls-4" d="M1145.638,3321.583" transform="translate(-1145.638 -3321.583)"/>
+          </g>
+          <g id="Groupe_398" data-name="Groupe 398" transform="translate(34.933 4.879)">
+            <line id="Ligne_108" data-name="Ligne 108" class="cls-2" y1="3.503" transform="translate(1.376)"/>
+            <rect id="Rectangle_143" data-name="Rectangle 143" class="cls-3" width="2.751" height="3.503" transform="translate(0 0)"/>
+          </g>
+          <g id="Groupe_399" data-name="Groupe 399" transform="translate(32.171 5.647)">
+            <path id="Tracé_923" data-name="Tracé 923" class="cls-4" d="M1136.461,3317.117" transform="translate(-1136.461 -3317.117)"/>
+          </g>
+          <g id="Groupe_400" data-name="Groupe 400" transform="translate(32.171 8.382)">
+            <path id="Tracé_924" data-name="Tracé 924" class="cls-4" d="M1136.461,3321.583" transform="translate(-1136.461 -3321.583)"/>
+          </g>
+          <g id="Groupe_401" data-name="Groupe 401" transform="translate(29.314 4.879)">
+            <line id="Ligne_109" data-name="Ligne 109" class="cls-2" y1="3.503" transform="translate(1.376)"/>
+            <rect id="Rectangle_144" data-name="Rectangle 144" class="cls-3" width="2.751" height="3.503" transform="translate(0 0)"/>
+          </g>
+          <g id="Groupe_402" data-name="Groupe 402" transform="translate(26.552 5.647)">
+            <path id="Tracé_925" data-name="Tracé 925" class="cls-4" d="M1127.285,3317.117" transform="translate(-1127.285 -3317.117)"/>
+          </g>
+          <g id="Groupe_403" data-name="Groupe 403" transform="translate(26.552 8.382)">
+            <path id="Tracé_926" data-name="Tracé 926" class="cls-4" d="M1127.285,3321.583" transform="translate(-1127.285 -3321.583)"/>
+          </g>
+          <g id="Groupe_404" data-name="Groupe 404" transform="translate(23.694 4.879)">
+            <line id="Ligne_110" data-name="Ligne 110" class="cls-2" y1="3.503" transform="translate(1.376)"/>
+            <rect id="Rectangle_145" data-name="Rectangle 145" class="cls-3" width="2.751" height="3.503" transform="translate(0 0)"/>
+          </g>
+          <g id="Groupe_405" data-name="Groupe 405" transform="translate(20.932 5.647)">
+            <path id="Tracé_927" data-name="Tracé 927" class="cls-4" d="M1118.108,3317.117" transform="translate(-1118.108 -3317.117)"/>
+          </g>
+          <g id="Groupe_406" data-name="Groupe 406" transform="translate(20.932 8.382)">
+            <path id="Tracé_928" data-name="Tracé 928" class="cls-4" d="M1118.108,3321.583" transform="translate(-1118.108 -3321.583)"/>
+          </g>
+          <g id="Groupe_407" data-name="Groupe 407" transform="translate(18.075 4.879)">
+            <line id="Ligne_111" data-name="Ligne 111" class="cls-2" y1="3.503" transform="translate(1.376)"/>
+            <rect id="Rectangle_146" data-name="Rectangle 146" class="cls-3" width="2.751" height="3.503" transform="translate(0 0)"/>
+          </g>
+          <g id="Groupe_408" data-name="Groupe 408" transform="translate(15.313 5.647)">
+            <path id="Tracé_929" data-name="Tracé 929" class="cls-4" d="M1108.931,3317.117" transform="translate(-1108.931 -3317.117)"/>
+          </g>
+          <g id="Groupe_409" data-name="Groupe 409" transform="translate(15.313 8.382)">
+            <path id="Tracé_930" data-name="Tracé 930" class="cls-4" d="M1108.931,3321.583" transform="translate(-1108.931 -3321.583)"/>
+          </g>
+          <g id="Groupe_410" data-name="Groupe 410" transform="translate(12.456 4.879)">
+            <line id="Ligne_112" data-name="Ligne 112" class="cls-2" y1="3.503" transform="translate(1.376)"/>
+            <rect id="Rectangle_147" data-name="Rectangle 147" class="cls-3" width="2.751" height="3.503" transform="translate(0 0)"/>
+          </g>
+          <g id="Groupe_411" data-name="Groupe 411" transform="translate(9.694 5.647)">
+            <path id="Tracé_931" data-name="Tracé 931" class="cls-4" d="M1099.755,3317.117" transform="translate(-1099.755 -3317.117)"/>
+          </g>
+          <g id="Groupe_412" data-name="Groupe 412" transform="translate(9.694 8.382)">
+            <path id="Tracé_932" data-name="Tracé 932" class="cls-4" d="M1099.755,3321.583" transform="translate(-1099.755 -3321.583)"/>
+          </g>
+          <g id="Groupe_413" data-name="Groupe 413" transform="translate(6.837 4.879)">
+            <line id="Ligne_113" data-name="Ligne 113" class="cls-2" y1="3.503" transform="translate(1.376)"/>
+            <rect id="Rectangle_148" data-name="Rectangle 148" class="cls-3" width="2.751" height="3.503" transform="translate(0 0)"/>
+          </g>
+          <g id="Groupe_414" data-name="Groupe 414" transform="translate(4.074 5.647)">
+            <path id="Tracé_933" data-name="Tracé 933" class="cls-4" d="M1090.578,3317.117" transform="translate(-1090.578 -3317.117)"/>
+          </g>
+          <g id="Groupe_415" data-name="Groupe 415" transform="translate(4.074 8.382)">
+            <path id="Tracé_934" data-name="Tracé 934" class="cls-4" d="M1090.578,3321.583" transform="translate(-1090.578 -3321.583)"/>
+          </g>
+        </g>
+        <g id="Groupe_439" data-name="Groupe 439" transform="translate(7.232)">
+          <g id="Groupe_417" data-name="Groupe 417">
+            <rect id="Rectangle_149" data-name="Rectangle 149" class="cls-2" width="7.006" height="46.406" transform="translate(1.376 1.376)"/>
+            <path id="Tracé_935" data-name="Tracé 935" class="cls-3" d="M1105.492,3347.246h-9.757v-49.158h9.757Zm-7.006-2.751h4.255V3300.84h-4.255Z" transform="translate(-1095.735 -3298.088)"/>
+          </g>
+          <g id="Groupe_418" data-name="Groupe 418" transform="translate(5.647 18.091)">
+            <path id="Tracé_936" data-name="Tracé 936" class="cls-4" d="M1104.957,3327.631" transform="translate(-1104.957 -3327.631)"/>
+          </g>
+          <g id="Groupe_419" data-name="Groupe 419" transform="translate(8.382 18.091)">
+            <path id="Tracé_937" data-name="Tracé 937" class="cls-4" d="M1109.423,3327.631" transform="translate(-1109.423 -3327.631)"/>
+          </g>
+          <g id="Groupe_420" data-name="Groupe 420" transform="translate(4.879 18.197)">
+            <line id="Ligne_114" data-name="Ligne 114" class="cls-2" x1="3.503" transform="translate(0 1.375)"/>
+            <rect id="Rectangle_150" data-name="Rectangle 150" class="cls-3" width="3.503" height="2.751"/>
+          </g>
+          <g id="Groupe_421" data-name="Groupe 421" transform="translate(4.879 12.577)">
+            <line id="Ligne_115" data-name="Ligne 115" class="cls-2" x1="3.503" transform="translate(0 1.376)"/>
+            <rect id="Rectangle_151" data-name="Rectangle 151" class="cls-3" width="3.503" height="2.751"/>
+          </g>
+          <g id="Groupe_422" data-name="Groupe 422" transform="translate(5.647 12.471)">
+            <path id="Tracé_938" data-name="Tracé 938" class="cls-4" d="M1104.957,3318.454" transform="translate(-1104.957 -3318.454)"/>
+          </g>
+          <g id="Groupe_423" data-name="Groupe 423" transform="translate(8.382 12.471)">
+            <path id="Tracé_939" data-name="Tracé 939" class="cls-4" d="M1109.423,3318.454" transform="translate(-1109.423 -3318.454)"/>
+          </g>
+          <g id="Groupe_424" data-name="Groupe 424" transform="translate(4.879 6.958)">
+            <line id="Ligne_116" data-name="Ligne 116" class="cls-2" x1="3.503" transform="translate(0 1.376)"/>
+            <rect id="Rectangle_152" data-name="Rectangle 152" class="cls-3" width="3.503" height="2.751"/>
+          </g>
+          <g id="Groupe_425" data-name="Groupe 425" transform="translate(5.647 6.852)">
+            <path id="Tracé_940" data-name="Tracé 940" class="cls-4" d="M1104.957,3309.278" transform="translate(-1104.957 -3309.278)"/>
+          </g>
+          <g id="Groupe_426" data-name="Groupe 426" transform="translate(8.382 6.852)">
+            <path id="Tracé_941" data-name="Tracé 941" class="cls-4" d="M1109.423,3309.278" transform="translate(-1109.423 -3309.278)"/>
+          </g>
+          <g id="Groupe_427" data-name="Groupe 427" transform="translate(5.647 23.71)">
+            <path id="Tracé_942" data-name="Tracé 942" class="cls-4" d="M1104.957,3336.807" transform="translate(-1104.957 -3336.807)"/>
+          </g>
+          <g id="Groupe_428" data-name="Groupe 428" transform="translate(8.382 23.71)">
+            <path id="Tracé_943" data-name="Tracé 943" class="cls-4" d="M1109.423,3336.807" transform="translate(-1109.423 -3336.807)"/>
+          </g>
+          <g id="Groupe_429" data-name="Groupe 429" transform="translate(4.879 23.816)">
+            <line id="Ligne_117" data-name="Ligne 117" class="cls-2" x1="3.503" transform="translate(0 1.375)"/>
+            <rect id="Rectangle_153" data-name="Rectangle 153" class="cls-3" width="3.503" height="2.751"/>
+          </g>
+          <g id="Groupe_430" data-name="Groupe 430" transform="translate(5.647 29.329)">
+            <path id="Tracé_944" data-name="Tracé 944" class="cls-4" d="M1104.957,3345.984" transform="translate(-1104.957 -3345.984)"/>
+          </g>
+          <g id="Groupe_431" data-name="Groupe 431" transform="translate(8.382 29.329)">
+            <path id="Tracé_945" data-name="Tracé 945" class="cls-4" d="M1109.423,3345.984" transform="translate(-1109.423 -3345.984)"/>
+          </g>
+          <g id="Groupe_432" data-name="Groupe 432" transform="translate(4.879 29.435)">
+            <line id="Ligne_118" data-name="Ligne 118" class="cls-2" x1="3.503" transform="translate(0 1.375)"/>
+            <rect id="Rectangle_154" data-name="Rectangle 154" class="cls-3" width="3.503" height="2.751"/>
+          </g>
+          <g id="Groupe_433" data-name="Groupe 433" transform="translate(5.647 34.948)">
+            <path id="Tracé_946" data-name="Tracé 946" class="cls-4" d="M1104.957,3355.16" transform="translate(-1104.957 -3355.16)"/>
+          </g>
+          <g id="Groupe_434" data-name="Groupe 434" transform="translate(8.382 34.948)">
+            <path id="Tracé_947" data-name="Tracé 947" class="cls-4" d="M1109.423,3355.16" transform="translate(-1109.423 -3355.16)"/>
+          </g>
+          <g id="Groupe_435" data-name="Groupe 435" transform="translate(4.879 35.054)">
+            <line id="Ligne_119" data-name="Ligne 119" class="cls-2" x1="3.503" transform="translate(0 1.376)"/>
+            <rect id="Rectangle_155" data-name="Rectangle 155" class="cls-3" width="3.503" height="2.751"/>
+          </g>
+          <g id="Groupe_436" data-name="Groupe 436" transform="translate(5.647 40.568)">
+            <path id="Tracé_948" data-name="Tracé 948" class="cls-4" d="M1104.957,3364.337" transform="translate(-1104.957 -3364.337)"/>
+          </g>
+          <g id="Groupe_437" data-name="Groupe 437" transform="translate(8.382 40.568)">
+            <path id="Tracé_949" data-name="Tracé 949" class="cls-4" d="M1109.423,3364.337" transform="translate(-1109.423 -3364.337)"/>
+          </g>
+          <g id="Groupe_438" data-name="Groupe 438" transform="translate(4.879 40.674)">
+            <line id="Ligne_120" data-name="Ligne 120" class="cls-2" x1="3.503" transform="translate(0 1.376)"/>
+            <rect id="Rectangle_156" data-name="Rectangle 156" class="cls-3" width="3.503" height="2.751"/>
+          </g>
+        </g>
+        <g id="Groupe_440" data-name="Groupe 440" transform="translate(20.592 19.398)">
+          <rect id="Rectangle_157" data-name="Rectangle 157" class="cls-2" width="35.486" height="24.117" transform="translate(1.376 1.375)"/>
+          <path id="Tracé_950" data-name="Tracé 950" class="cls-3" d="M1155.79,3356.634h-38.238v-26.868h38.238Zm-35.487-2.751h32.735v-21.365H1120.3Z" transform="translate(-1117.552 -3329.766)"/>
+        </g>
+      </g>
+      <g id="Groupe_442" data-name="Groupe 442" transform="translate(36.58 26.225)">
+        <path id="Tracé_951" data-name="Tracé 951" class="cls-3" d="M1147.335,3350.676h-1.781c-.012-.044-.07-.2-.172-.477a2.073,2.073,0,0,1-.154-.717,3.88,3.88,0,0,1,.164-1.128,3.758,3.758,0,0,1,.48-1.011,15.98,15.98,0,0,1,1.254-1.506,2.9,2.9,0,0,0,.937-1.706q0-1.305-1.706-1.305a2.639,2.639,0,0,0-1.734.83l-.96-1.8a4.99,4.99,0,0,1,3.16-.94,3.819,3.819,0,0,1,2.522.838,2.75,2.75,0,0,1,1.012,2.229,3.249,3.249,0,0,1-.369,1.609,7.116,7.116,0,0,1-1.3,1.542,5.694,5.694,0,0,0-1.208,1.473,2.958,2.958,0,0,0-.28,1.287A5.717,5.717,0,0,0,1147.335,3350.676Zm-.793,1.268a1.46,1.46,0,0,1,1.077.447,1.543,1.543,0,0,1,0,2.164,1.525,1.525,0,0,1-2.158,0,1.529,1.529,0,0,1,1.081-2.61Z" transform="translate(-1143.662 -3340.914)"/>
+      </g>
+    </g>
+    <g id="Groupe_444" data-name="Groupe 444" transform="translate(0 44.999)">
+      <path id="Tracé_952" data-name="Tracé 952" class="cls-2" d="M1009.938,3414.294c-7.888-5.846-13.252-14.053-13.252-22.454,0-18.328,22.776-33.187,50.871-33.187s50.872,14.858,50.872,33.187-22.776,33.186-50.872,33.186a70.817,70.817,0,0,1-28.874-5.862,34.37,34.37,0,0,1-20.66,5.862A49.888,49.888,0,0,0,1009.938,3414.294Z" transform="translate(-993.784 -3357.278)"/>
+      <path id="Tracé_953" data-name="Tracé 953" class="cls-3" d="M997.742,3425.586c-.985,0-1.584-.052-1.684-.062l-4.112-.385,3.522-2.157a49.715,49.715,0,0,0,10.679-9.322c-8.074-6.389-12.674-14.594-12.674-22.69,0-19.058,23.438-34.563,52.247-34.563s52.247,15.5,52.247,34.563-23.438,34.562-52.247,34.562a72.5,72.5,0,0,1-28.739-5.674A36.056,36.056,0,0,1,997.742,3425.586Zm18.965-8.865.7.318a69.421,69.421,0,0,0,28.309,5.74c27.292,0,49.5-14.27,49.5-31.81s-22.2-31.811-49.5-31.811-49.5,14.27-49.5,31.811c0,7.476,4.746,15.457,12.7,21.349l1.126.834-.855,1.111a48.415,48.415,0,0,1-8.517,8.4,33.336,33.336,0,0,0,15.4-5.507Z" transform="translate(-991.946 -3356.407)"/>
+    </g>
+    <g id="Groupe_503" data-name="Groupe 503" transform="translate(24.823 54.564)">
+      <g id="Groupe_501" data-name="Groupe 501">
+        <g id="Groupe_445" data-name="Groupe 445" transform="translate(20.367 19.173)">
+          <rect id="Rectangle_158" data-name="Rectangle 158" class="cls-2" width="35.486" height="24.117" transform="translate(1.376 1.376)"/>
+          <path id="Tracé_954" data-name="Tracé 954" class="cls-3" d="M1103.981,3430.2h-38.238v-26.868h38.238Zm-35.486-2.75h32.735v-21.366h-32.735Z" transform="translate(-1065.743 -3403.337)"/>
+        </g>
+        <g id="Groupe_476" data-name="Groupe 476" transform="translate(0 6.005)">
+          <g id="Groupe_446" data-name="Groupe 446">
+            <rect id="Rectangle_159" data-name="Rectangle 159" class="cls-2" width="7.006" height="58.748" transform="translate(60.124 1.376) rotate(90)"/>
+            <path id="Tracé_955" data-name="Tracé 955" class="cls-3" d="M1093.982,3391.592h-61.5v-9.758h61.5Zm-58.747-2.752h56v-4.255h-56Z" transform="translate(-1032.483 -3381.833)"/>
+          </g>
+          <g id="Groupe_447" data-name="Groupe 447" transform="translate(43.409 5.647)">
+            <path id="Tracé_956" data-name="Tracé 956" class="cls-4" d="M1103.372,3391.055" transform="translate(-1103.372 -3391.055)"/>
+          </g>
+          <g id="Groupe_448" data-name="Groupe 448" transform="translate(43.409 8.382)">
+            <path id="Tracé_957" data-name="Tracé 957" class="cls-4" d="M1103.372,3395.521" transform="translate(-1103.372 -3395.521)"/>
+          </g>
+          <g id="Groupe_449" data-name="Groupe 449" transform="translate(40.552 4.879)">
+            <line id="Ligne_121" data-name="Ligne 121" class="cls-2" y1="3.503" transform="translate(1.376)"/>
+            <rect id="Rectangle_160" data-name="Rectangle 160" class="cls-3" width="2.751" height="3.503"/>
+          </g>
+          <g id="Groupe_450" data-name="Groupe 450" transform="translate(46.171 4.879)">
+            <line id="Ligne_122" data-name="Ligne 122" class="cls-2" y1="3.503" transform="translate(1.376)"/>
+            <rect id="Rectangle_161" data-name="Rectangle 161" class="cls-3" width="2.751" height="3.503"/>
+          </g>
+          <g id="Groupe_451" data-name="Groupe 451" transform="translate(49.029 5.647)">
+            <path id="Tracé_958" data-name="Tracé 958" class="cls-4" d="M1112.549,3391.055" transform="translate(-1112.549 -3391.055)"/>
+          </g>
+          <g id="Groupe_452" data-name="Groupe 452" transform="translate(49.029 8.382)">
+            <path id="Tracé_959" data-name="Tracé 959" class="cls-4" d="M1112.549,3395.521" transform="translate(-1112.549 -3395.521)"/>
+          </g>
+          <g id="Groupe_453" data-name="Groupe 453" transform="translate(51.791 4.879)">
+            <line id="Ligne_123" data-name="Ligne 123" class="cls-2" y1="3.503" transform="translate(1.376)"/>
+            <rect id="Rectangle_162" data-name="Rectangle 162" class="cls-3" width="2.751" height="3.503"/>
+          </g>
+          <g id="Groupe_454" data-name="Groupe 454" transform="translate(54.648 5.647)">
+            <path id="Tracé_960" data-name="Tracé 960" class="cls-4" d="M1121.725,3391.055" transform="translate(-1121.725 -3391.055)"/>
+          </g>
+          <g id="Groupe_455" data-name="Groupe 455" transform="translate(54.648 8.382)">
+            <path id="Tracé_961" data-name="Tracé 961" class="cls-4" d="M1121.725,3395.521" transform="translate(-1121.725 -3395.521)"/>
+          </g>
+          <g id="Groupe_456" data-name="Groupe 456" transform="translate(37.79 5.647)">
+            <path id="Tracé_962" data-name="Tracé 962" class="cls-4" d="M1094.2,3391.055" transform="translate(-1094.196 -3391.055)"/>
+          </g>
+          <g id="Groupe_457" data-name="Groupe 457" transform="translate(37.79 8.382)">
+            <path id="Tracé_963" data-name="Tracé 963" class="cls-4" d="M1094.2,3395.521" transform="translate(-1094.196 -3395.521)"/>
+          </g>
+          <g id="Groupe_458" data-name="Groupe 458" transform="translate(34.933 4.879)">
+            <line id="Ligne_124" data-name="Ligne 124" class="cls-2" y1="3.503" transform="translate(1.376)"/>
+            <rect id="Rectangle_163" data-name="Rectangle 163" class="cls-3" width="2.751" height="3.503"/>
+          </g>
+          <g id="Groupe_459" data-name="Groupe 459" transform="translate(32.171 5.647)">
+            <path id="Tracé_964" data-name="Tracé 964" class="cls-4" d="M1085.019,3391.055" transform="translate(-1085.019 -3391.055)"/>
+          </g>
+          <g id="Groupe_460" data-name="Groupe 460" transform="translate(32.171 8.382)">
+            <path id="Tracé_965" data-name="Tracé 965" class="cls-4" d="M1085.019,3395.521" transform="translate(-1085.019 -3395.521)"/>
+          </g>
+          <g id="Groupe_461" data-name="Groupe 461" transform="translate(29.314 4.879)">
+            <line id="Ligne_125" data-name="Ligne 125" class="cls-2" y1="3.503" transform="translate(1.376)"/>
+            <rect id="Rectangle_164" data-name="Rectangle 164" class="cls-3" width="2.751" height="3.503"/>
+          </g>
+          <g id="Groupe_462" data-name="Groupe 462" transform="translate(26.551 5.647)">
+            <path id="Tracé_966" data-name="Tracé 966" class="cls-4" d="M1075.842,3391.055" transform="translate(-1075.842 -3391.055)"/>
+          </g>
+          <g id="Groupe_463" data-name="Groupe 463" transform="translate(26.551 8.382)">
+            <path id="Tracé_967" data-name="Tracé 967" class="cls-4" d="M1075.842,3395.521" transform="translate(-1075.842 -3395.521)"/>
+          </g>
+          <g id="Groupe_464" data-name="Groupe 464" transform="translate(23.694 4.879)">
+            <line id="Ligne_126" data-name="Ligne 126" class="cls-2" y1="3.503" transform="translate(1.376)"/>
+            <rect id="Rectangle_165" data-name="Rectangle 165" class="cls-3" width="2.751" height="3.503"/>
+          </g>
+          <g id="Groupe_465" data-name="Groupe 465" transform="translate(20.932 5.647)">
+            <path id="Tracé_968" data-name="Tracé 968" class="cls-4" d="M1066.666,3391.055" transform="translate(-1066.666 -3391.055)"/>
+          </g>
+          <g id="Groupe_466" data-name="Groupe 466" transform="translate(20.932 8.382)">
+            <path id="Tracé_969" data-name="Tracé 969" class="cls-4" d="M1066.666,3395.521" transform="translate(-1066.666 -3395.521)"/>
+          </g>
+          <g id="Groupe_467" data-name="Groupe 467" transform="translate(18.075 4.879)">
+            <line id="Ligne_127" data-name="Ligne 127" class="cls-2" y1="3.503" transform="translate(1.376)"/>
+            <rect id="Rectangle_166" data-name="Rectangle 166" class="cls-3" width="2.751" height="3.503"/>
+          </g>
+          <g id="Groupe_468" data-name="Groupe 468" transform="translate(15.313 5.647)">
+            <path id="Tracé_970" data-name="Tracé 970" class="cls-4" d="M1057.489,3391.055" transform="translate(-1057.489 -3391.055)"/>
+          </g>
+          <g id="Groupe_469" data-name="Groupe 469" transform="translate(15.313 8.382)">
+            <path id="Tracé_971" data-name="Tracé 971" class="cls-4" d="M1057.489,3395.521" transform="translate(-1057.489 -3395.521)"/>
+          </g>
+          <g id="Groupe_470" data-name="Groupe 470" transform="translate(12.456 4.879)">
+            <line id="Ligne_128" data-name="Ligne 128" class="cls-2" y1="3.503" transform="translate(1.376)"/>
+            <rect id="Rectangle_167" data-name="Rectangle 167" class="cls-3" width="2.751" height="3.503"/>
+          </g>
+          <g id="Groupe_471" data-name="Groupe 471" transform="translate(9.694 5.647)">
+            <path id="Tracé_972" data-name="Tracé 972" class="cls-4" d="M1048.313,3391.055" transform="translate(-1048.313 -3391.055)"/>
+          </g>
+          <g id="Groupe_472" data-name="Groupe 472" transform="translate(9.694 8.382)">
+            <path id="Tracé_973" data-name="Tracé 973" class="cls-4" d="M1048.313,3395.521" transform="translate(-1048.313 -3395.521)"/>
+          </g>
+          <g id="Groupe_473" data-name="Groupe 473" transform="translate(6.836 4.879)">
+            <line id="Ligne_129" data-name="Ligne 129" class="cls-2" y1="3.503" transform="translate(1.376)"/>
+            <rect id="Rectangle_168" data-name="Rectangle 168" class="cls-3" width="2.751" height="3.503"/>
+          </g>
+          <g id="Groupe_474" data-name="Groupe 474" transform="translate(4.074 5.647)">
+            <path id="Tracé_974" data-name="Tracé 974" class="cls-4" d="M1039.136,3391.055" transform="translate(-1039.136 -3391.055)"/>
+          </g>
+          <g id="Groupe_475" data-name="Groupe 475" transform="translate(4.074 8.382)">
+            <path id="Tracé_975" data-name="Tracé 975" class="cls-4" d="M1039.136,3395.521" transform="translate(-1039.136 -3395.521)"/>
+          </g>
+        </g>
+        <g id="Groupe_499" data-name="Groupe 499" transform="translate(7.231)">
+          <g id="Groupe_477" data-name="Groupe 477">
+            <rect id="Rectangle_169" data-name="Rectangle 169" class="cls-2" width="7.006" height="46.406" transform="translate(1.376 1.376)"/>
+            <path id="Tracé_976" data-name="Tracé 976" class="cls-3" d="M1054.05,3421.185h-9.758v-49.157h9.758Zm-7.006-2.751h4.255v-43.655h-4.255Z" transform="translate(-1044.292 -3372.027)"/>
+          </g>
+          <g id="Groupe_478" data-name="Groupe 478" transform="translate(5.648 18.09)">
+            <path id="Tracé_977" data-name="Tracé 977" class="cls-4" d="M1053.515,3401.569" transform="translate(-1053.515 -3401.569)"/>
+          </g>
+          <g id="Groupe_479" data-name="Groupe 479" transform="translate(8.382 18.09)">
+            <path id="Tracé_978" data-name="Tracé 978" class="cls-4" d="M1057.981,3401.569" transform="translate(-1057.981 -3401.569)"/>
+          </g>
+          <g id="Groupe_480" data-name="Groupe 480" transform="translate(4.879 18.196)">
+            <line id="Ligne_130" data-name="Ligne 130" class="cls-2" x1="3.503" transform="translate(0 1.376)"/>
+            <rect id="Rectangle_170" data-name="Rectangle 170" class="cls-3" width="3.503" height="2.751" transform="translate(0)"/>
+          </g>
+          <g id="Groupe_481" data-name="Groupe 481" transform="translate(4.879 12.577)">
+            <line id="Ligne_131" data-name="Ligne 131" class="cls-2" x1="3.503" transform="translate(0 1.376)"/>
+            <rect id="Rectangle_171" data-name="Rectangle 171" class="cls-3" width="3.503" height="2.751" transform="translate(0)"/>
+          </g>
+          <g id="Groupe_482" data-name="Groupe 482" transform="translate(5.648 12.471)">
+            <path id="Tracé_979" data-name="Tracé 979" class="cls-4" d="M1053.515,3392.393" transform="translate(-1053.515 -3392.393)"/>
+          </g>
+          <g id="Groupe_483" data-name="Groupe 483" transform="translate(8.382 12.471)">
+            <path id="Tracé_980" data-name="Tracé 980" class="cls-4" d="M1057.981,3392.393" transform="translate(-1057.981 -3392.393)"/>
+          </g>
+          <g id="Groupe_484" data-name="Groupe 484" transform="translate(4.879 6.958)">
+            <line id="Ligne_132" data-name="Ligne 132" class="cls-2" x1="3.503" transform="translate(0 1.375)"/>
+            <rect id="Rectangle_172" data-name="Rectangle 172" class="cls-3" width="3.503" height="2.751" transform="translate(0)"/>
+          </g>
+          <g id="Groupe_485" data-name="Groupe 485" transform="translate(5.648 6.852)">
+            <path id="Tracé_981" data-name="Tracé 981" class="cls-4" d="M1053.515,3383.216" transform="translate(-1053.515 -3383.216)"/>
+          </g>
+          <g id="Groupe_486" data-name="Groupe 486" transform="translate(8.382 6.852)">
+            <path id="Tracé_982" data-name="Tracé 982" class="cls-4" d="M1057.981,3383.216" transform="translate(-1057.981 -3383.216)"/>
+          </g>
+          <g id="Groupe_487" data-name="Groupe 487" transform="translate(5.648 23.71)">
+            <path id="Tracé_983" data-name="Tracé 983" class="cls-4" d="M1053.515,3410.746" transform="translate(-1053.515 -3410.746)"/>
+          </g>
+          <g id="Groupe_488" data-name="Groupe 488" transform="translate(8.382 23.71)">
+            <path id="Tracé_984" data-name="Tracé 984" class="cls-4" d="M1057.981,3410.746" transform="translate(-1057.981 -3410.746)"/>
+          </g>
+          <g id="Groupe_489" data-name="Groupe 489" transform="translate(4.879 23.816)">
+            <line id="Ligne_133" data-name="Ligne 133" class="cls-2" x1="3.503" transform="translate(0 1.375)"/>
+            <rect id="Rectangle_173" data-name="Rectangle 173" class="cls-3" width="3.503" height="2.751" transform="translate(0)"/>
+          </g>
+          <g id="Groupe_490" data-name="Groupe 490" transform="translate(5.648 29.329)">
+            <path id="Tracé_985" data-name="Tracé 985" class="cls-4" d="M1053.515,3419.923" transform="translate(-1053.515 -3419.923)"/>
+          </g>
+          <g id="Groupe_491" data-name="Groupe 491" transform="translate(8.382 29.329)">
+            <path id="Tracé_986" data-name="Tracé 986" class="cls-4" d="M1057.981,3419.923" transform="translate(-1057.981 -3419.923)"/>
+          </g>
+          <g id="Groupe_492" data-name="Groupe 492" transform="translate(4.879 29.435)">
+            <line id="Ligne_134" data-name="Ligne 134" class="cls-2" x1="3.503" transform="translate(0 1.375)"/>
+            <rect id="Rectangle_174" data-name="Rectangle 174" class="cls-3" width="3.503" height="2.751" transform="translate(0)"/>
+          </g>
+          <g id="Groupe_493" data-name="Groupe 493" transform="translate(5.648 34.948)">
+            <path id="Tracé_987" data-name="Tracé 987" class="cls-4" d="M1053.515,3429.1" transform="translate(-1053.515 -3429.099)"/>
+          </g>
+          <g id="Groupe_494" data-name="Groupe 494" transform="translate(8.382 34.948)">
+            <path id="Tracé_988" data-name="Tracé 988" class="cls-4" d="M1057.981,3429.1" transform="translate(-1057.981 -3429.099)"/>
+          </g>
+          <g id="Groupe_495" data-name="Groupe 495" transform="translate(4.879 35.054)">
+            <line id="Ligne_135" data-name="Ligne 135" class="cls-2" x1="3.503" transform="translate(0 1.375)"/>
+            <rect id="Rectangle_175" data-name="Rectangle 175" class="cls-3" width="3.503" height="2.751" transform="translate(0)"/>
+          </g>
+          <g id="Groupe_496" data-name="Groupe 496" transform="translate(5.648 40.568)">
+            <path id="Tracé_989" data-name="Tracé 989" class="cls-4" d="M1053.515,3438.276" transform="translate(-1053.515 -3438.276)"/>
+          </g>
+          <g id="Groupe_497" data-name="Groupe 497" transform="translate(8.382 40.568)">
+            <path id="Tracé_990" data-name="Tracé 990" class="cls-4" d="M1057.981,3438.276" transform="translate(-1057.981 -3438.276)"/>
+          </g>
+          <g id="Groupe_498" data-name="Groupe 498" transform="translate(4.879 40.673)">
+            <line id="Ligne_136" data-name="Ligne 136" class="cls-2" x1="3.503" transform="translate(0 1.376)"/>
+            <rect id="Rectangle_176" data-name="Rectangle 176" class="cls-3" width="3.503" height="2.751" transform="translate(0)"/>
+          </g>
+        </g>
+        <g id="Groupe_500" data-name="Groupe 500" transform="translate(20.592 19.398)">
+          <rect id="Rectangle_177" data-name="Rectangle 177" class="cls-2" width="35.486" height="24.117" transform="translate(1.376 1.376)"/>
+          <path id="Tracé_991" data-name="Tracé 991" class="cls-3" d="M1104.348,3430.572H1066.11V3403.7h38.238Zm-35.486-2.751H1101.6v-21.365h-32.735Z" transform="translate(-1066.11 -3403.704)"/>
+        </g>
+      </g>
+      <g id="Groupe_502" data-name="Groupe 502" transform="translate(31.726 25.582)">
+        <path id="Tracé_992" data-name="Tracé 992" class="cls-5" d="M1089.215,3428.9c-.005-.012-.954-2.444-4.922-5.728l1.6-1.929a25.151,25.151,0,0,1,4.283,4.421,33.616,33.616,0,0,1,8.488-11.859l1.607,1.92c-5.9,4.934-8.656,13.07-8.684,13.153Z" transform="translate(-1084.293 -3413.804)"/>
+      </g>
+    </g>
+  </g>
+</svg>

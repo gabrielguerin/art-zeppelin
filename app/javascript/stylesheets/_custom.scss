@@ -170,7 +170,7 @@ hr {
 .header-link {
 	font-family: 'Saira Extra Condensed';
 	font-size: 25px;
-	font-weight: 300;
+	font-weight: 400;
 	margin-left: 3vw;
 	text-decoration: none;
 	white-space: nowrap;
@@ -210,7 +210,7 @@ hr {
 	display: none;
 }
 .header-ddown-ctt>a {
-	font-size: 28px;
+	font-size: 22px;
 	margin: 0 20px 0 0;
 	white-space: nowrap;
 	text-decoration: none;
@@ -279,7 +279,7 @@ hr {
 		font-weight: 400;
 	}
 	.header-ddown-link svg{
-		margin: 12px 0 0 9px;
+		margin: 9px 0 0 9px;
 	}
 	.header-ddown-ctt{
 		position: relative;
@@ -295,7 +295,7 @@ hr {
 }
 @media screen and (max-width: 450px) {
 	.header-ddown-ctt {
-		display: block;
+		flex-wrap: wrap;
 	}
 }
 /* ######## Buttons */
@@ -453,8 +453,12 @@ a.index-artist-ctn:focus{
 	}
 }
 @media screen and (max-width: 800px) {
+	.crsl-img {
+		opacity: 0.3;
+	}
 	.crsl-img-active {
-		transform: scale(2);
+		opacity: 1;
+		transform: scale(1.5);
 	}
 }
 .crsl-controls {
@@ -487,14 +491,33 @@ a.index-artist-ctn:focus{
 	height: 70vh;
 	object-fit: contain;
 	transition: all 1s ease-in-out;
+}
+.crsl-img-2>img {
 	pointer-events: none;
 }
+.crsl-img-2>a {
+	width: 100%;
+	display: block;
+	font-family: var(--text-font);
+	color: transparent;
+	text-align: center;
+	font-size: 17px;
+	text-transform: none;
+	margin-top: 20px;
+}
 .crsl-img-2>p {
-	color: transparent
+	width: 100%;
+	color: transparent;
+	text-align: center;
+	font-size: 17px;
+	margin-top: 20px;
 }
 .crsl-img-active-2 {
 	z-index: 10;
 	transform: scale(1.1);
+}
+.crsl-img-active-2>a {
+	color: var(--lignt-color) !important;
 }
 .crsl-img-active-2>p {
 	color: var(--lignt-color) !important;
@@ -577,9 +600,6 @@ a.index-artist-ctn:focus{
 		width: 100%;
 		margin: 0;
 	}
-	.index-section-1>div {
-		transform: translateY(-5vh);
-	}
 	.index-section-1-img {
 		display: none;
 	}
@@ -646,11 +666,13 @@ a.index-artist-ctn:focus{
 
 /* Index section 3 */
 .index-section-3 {
-	height: 100vh;
+	height: 80vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-top: 120px;
+	overflow: visible;
 }
 
 @media screen and (max-width: 800px) {
@@ -659,18 +681,82 @@ a.index-artist-ctn:focus{
 	}
 }
 .index-section-3>a {
-	text-decoration: underline;
+	height: 50%;
+	width: 100%;
+	text-decoration: none;
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-sizing: content-box;
+	border: 2px solid var(--dark-color);
+	transition: 0.3s all;
+	margin-bottom: 38px;
+	position: relative;
+}
+.index-section-3>a:hover {
+	height: 50%;
+	width: 100%;
+	text-decoration: none;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 2px solid var(--main-color);
+	transition: 0.3s all;
+}
+.index-section-3>a::before {
+	position: absolute;
+	content:'';
+	height: 40px;
+	width: 40px;
+	top: -20px;
+	left: -20px;
+	border: 2px solid var(--main-color);
+	z-index: -1;
+	transition: all 1s;
+}
+.index-section-3>a::after {
+	position: absolute;
+	content:'';
+	height: 40px;
+	width: 40px;
+	bottom: -20px;
+	right: -20px;
+	border: 2px solid var(--main-color);
+	z-index: -1;
+	transition: all 1s;
+}
+.index-section-3>a:hover::before,
+.index-section-3>a:active::before {
+	left: 100%;
+	transform: rotate(90deg) translateX(-50%);
+	transition: all 1s ease;
+}
+.index-section-3>a:hover::after,
+.index-section-3>a:active::after {
+	right: 100%;
+	transform: rotate(90deg) translateX(50%);
+	transition: all 1s ease;
+}
+@media screen and (max-width: 800px) {
+	.index-section-3>a {
+		padding: 20px 0;
+	}
+}
+
+.index-section-3>a>p {
+	text-transform: none;
 }
 .index-section-3>hr {
 	width: 100%;
-	text-align: center;
-	margin: 60px 0;
 }
 
 /* Index section 4 */
 .index-section-4 {
-	height: 100vh;
+	height: 60vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -693,7 +779,7 @@ a.index-artist-ctn:focus{
 
 /* Index section 5 */
 .index-section-5 {
-	height: 100vh;
+	height: 60vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -780,14 +866,14 @@ a.index-artist-ctn:focus{
 .for-artists-section-2-pictos-ctn>div>h3 {
 	width: 100%;
 	text-align: center;
-	font-size: 25px;
+	font-size: 20px;
 	font-weight: 400;
 }
 
 /* For Artists section 3 */
 .for-artists-section-3>h2 {
 	text-align: center;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 .for-artists-section-3-insitu-ctn {
 	display: flex;
@@ -1307,10 +1393,18 @@ a.index-artist-ctn:focus{
 .contact-btns-ctn>div {
 	height: 25%;
 	width: 100%;
+	font-family: var(--title-font);
+	font-size: 25px;
+	font-weight: 500;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
+	transition: 0.3s all;
+}
+.contact-btn-active {
+	background-color: #eee;
+	transition: 0.3s all;
 }
 .contact-panels-ctn {
 	width: 70%;

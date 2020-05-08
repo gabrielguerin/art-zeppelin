@@ -15,15 +15,15 @@
 <div class="section index-section-2">
     <div class="index-section-2-pictos-ctn">
         <div>
-            <%= image_tag("icons/icon - 1.png", alt: "art-zeppelin-index-icon") %>
+            <%= image_tag("icons/icon-1.svg", alt: "art-zeppelin-index-icon") %>
             <h3 class="">Inspirez vos équipes</h3>
         </div>
         <div>
-            <%= image_tag("icons/icon - 2.png", alt: "art-zeppelin-index-icon") %>
+            <%= image_tag("icons/icon-2.svg", alt: "art-zeppelin-index-icon") %>
             <h3 class="">Consolidez votre image</h3>
         </div>
         <div>
-            <%= image_tag("icons/icon - 3.png", alt: "art-zeppelin-index-icon") %>
+            <%= image_tag("icons/icon-3.svg", alt: "art-zeppelin-index-icon") %>
             <h3 class="">Avantages fiscaux</h3>
         </div>
     </div>
@@ -44,18 +44,18 @@
 
 <div class="section index-section-3">
     <%= link_to( "statics/for_artists", class: "") do %>
-        <h1>Pour les <span class="span-orange">artistes</span></h1>
+        <h1>Vous êtes <span class="span-orange">artiste</span> ?</h1>
+        <p>Venez découvrir notre démarche</p>
     <% end %>
-    <hr>
     <%= link_to( "statics/for_companies", class: "") do %>
-        <h1>Pour les <span class="span-orange">entreprises</span></h1>
+        <h1>Vous représentez une <span class="span-orange">entreprise</span></h1>
+        <p>Découvrez comment sublimer vos locaux avec nous</p>
     <% end %>
 </div>
 
 <div class="section index-section-4">
     <h2>Ça bouge chez <span class="span-orange">Art&nbsp;Zeppelin</span></h2>
     <p class="p-bold">Inscrivez-vous à notre Newsletter pour rester au courant</p>
-
     <%= render 'clients/form-newsletter' %>
 </div>
 

@@ -1,7 +1,7 @@
 <div class="section contact-section-1">
   <div class="contact-ctn">
     <div class="contact-btns-ctn">
-      <div>Informations</div>
+      <div class="contact-btn-active">Informations</div>
       <div>Formulaire</div>
       <div>FAQ</div>
       <div>Newsletter</div>
@@ -87,6 +87,11 @@
     }
     if(i == 2) {contactPanels[i].style.display = "block";}
     else {contactPanels[i].style.display = "flex";}
+
+    for (let y = 0; y < contactPanels.length; y++) {
+      contactBtns[y].classList.remove('contact-btn-active');
+    }
+    contactBtns[i].classList.add('contact-btn-active');
   }
   
   for (let i = 0; i < contactBtns.length; i++) {

@@ -86,7 +86,9 @@
           <div class="crsl-img-ctn">
             <div class="crsl-img-2">
               <%= image_tag(artworkImage, alt: "") %>
-              <p><%= artwork.artist.first_name + " " + artwork.artist.last_name + " - " + artwork.title %></p>
+              <%= link_to( artist_path(artwork.artist.id), class: "") do %>
+                <%= artwork.artist.first_name + " " + artwork.artist.last_name + " - " + artwork.title %>
+              <% end %>
             </div>
           </div>
         <% end %>
@@ -126,7 +128,7 @@
       </svg>
     </div>
   </div>
-  <div class="lightbox-close"></div>
+  <%= image_tag("icons/close.svg", alt: "", class: "lightbox-close") %>
 </div>
 
 <script class="carousel">
@@ -137,7 +139,8 @@
   const crslImgsLength = document.querySelectorAll('.crsl-img').length;
   var nextCount = 0;
 
-  crslImgs[nextCount+1].classList.add('crsl-img-active');
+  if(crslImgs2.length < 2) {crslImgs2[nextCount2].classList.add('crsl-img-active-2')}
+  else {crslImgs2[nextCount2+1].classList.add('crsl-img-active-2')};
 
   function crslPrevImg() {
       nextCount -= 1;
@@ -206,7 +209,8 @@
     lightboxCtn.style.display = "flex";
     nextCount2 = index-1;
     crslAllImgs2.style.transform = `translateX(${nextCount2*50*-1}vw)`;
-    crslImgs2[nextCount2+1].classList.add('crsl-img-active-2');
+    if(crslImgs2.length < 2) {crslImgs2[nextCount2].classList.add('crsl-img-active-2')}
+    else {crslImgs2[nextCount2+1].classList.add('crsl-img-active-2')};
   }
 
 for (let i = 0; i < allIndexArtworks.length; i++) {
@@ -216,9 +220,7 @@ for (let i = 0; i < allIndexArtworks.length; i++) {
 /* Close lightbox */
   const closeLightboxBtn = document.querySelector('.lightbox-close');
 
-  lightboxCtn.addEventListener('click', function(e) {
-    var ev = e || window.event;
-    if(e.target !== this) return;
+  closeLightboxBtn.addEventListener('click', function(e) {
     lightboxCtn.style.display = "none";
   });
 
