@@ -1,44 +1,46 @@
-<div class="main">
-<div class="section-100vh-top flex-center full-contact-ctn">
-  <div class="contact-btns-ctn contact-btns-ctn-mobile">
-    <div class="button">Informations</div>
-    <div class="button">Formulaire</div>
-    <div class="button">FAQ</div>
-    <div class="button">Newsletter</div>
-  </div>
-  <div class="col-ctn contact-ctn">
+<div class="section contact-section-1">
+  <div class="contact-ctn">
+    <div class="contact-btns-ctn">
+      <div>Informations</div>
+      <div>Formulaire</div>
+      <div>FAQ</div>
+      <div>Newsletter</div>
+    </div>
     <div class="contact-panels-ctn">
-      <div class="col-ctn contact-panel-1">
+      <div class="contact-panel-1">
         <%= image_tag("logo-contact.png", alt: "", class: "contact-info-logo") %>
-        <div class="contact-info-text-ctn">
+        <div class="contact-panel-1-text-ctn">
           <h1>Art Zeppelin</h1>
           <hr>
-          <div class="contact-info-details-ctn">
-            <p class="contact-info-text">contact@artzeppelin.com</p>
-            <p class="contact-info-text">+ 33 (0) 7 70 00 40 34</p>
-            <p class="contact-info-text">
+          <div>
+            <%= image_tag("icons/email.svg", alt: "", class: "email-picto") %>
+            <p>contact@artzeppelin.com</p>
+          </div>
+          <div>
+            <%= image_tag("icons/mobile.svg", alt: "", class: "telephone-picto") %>
+            <p>+ 33 (0)7 70 00 40 34</p>
+          </div>
+          <div>
+            <%= image_tag("icons/location-pin.svg", alt: "", class: "location-picto") %>
+            <p>
               382 B rue de Picquenard<br>
               78630 Orgeval
             </p>
           </div>
         </div>
       </div>
-      <div class="col-ctn contact-panel-2">
-        <input type="text" id="name" name="name" placeholder="Nom">
-        <input type="text" id="name" name="name" placeholder="Prénom">
-        <input type="text" id="name" name="name" placeholder="Email">
-        <input type="text" id="name" name="name" placeholder="Message">
-        <div class="input-btn-ctn">
-          <input type="button">
-          <svg class="input-btn-arrow" xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 33.115 23.682">
-            <g id="Groupe_195" data-name="Groupe 195" transform="translate(0 1.394)">
-              <path id="Tracé_504" data-name="Tracé 504" d="M30.189,0H0" transform="translate(30.189 10.416) rotate(180)" fill="none" stroke="#fff" stroke-width="4"/>
-              <path id="Tracé_505" data-name="Tracé 505" d="M10.154,0,0,10.447,10.154,20.894" transform="translate(30.326 20.894) rotate(180)" fill="none" stroke="#fff" stroke-width="4"/>
-            </g>
-          </svg>
-        </div>
+
+      <div class="contact-panel-2">
+        <p>Pour nous écrire, c'est&nbsp;par&nbsp;ici&nbsp;!</p>
+        <input class="form-control" placeholder="Nom" type="text" name="client[email]" id="client_email">
+        <input class="form-control" placeholder="Prénom" type="text" name="client[email]" id="client_email">
+        <input class="form-control" placeholder="Email" type="text" name="client[email]" id="client_email">
+        <textarea></textarea>
+        <input type="submit" name="commit" value="Rechercher" class="btn btn-primary" data-disable-with="Envoyer">
+        </form>
       </div>
-      <div class="col-ctn contact-panel-3">
+
+      <div class="contact-panel-3">
         <p class="p-bold">1°Pourquoi rejoindre Art Zeppelin ?</p>
         <p>Nous rejoindre c’est la possibilité de réaliser des projets en lien avec votre démarche artistique, selon vos disponibilités.</p>
         <p class="p-bold">2°Quels sont les pré-requis pour rejoindre Art Zeppelin ? </p>
@@ -56,50 +58,38 @@
         <p class="p-bold">8°Comment contacter le service client ?</p>
         <p>Nous vous invitons à remplir le formulaire de contact ci dessous ou appeler les numéros indiqués.</p>
       </div>
-      <div class="col-ctn contact-panel-4">
-        <h2>Ça bouge chez <span class="span-orange">Art&nbsp;Zeppelin</span>&nbsp;!</h2>
-        <p>Inscrivez-vous à notre newsletter pour rester au courant</p>
-        <div class="input-text-btn-ctn">
-          <input type="text" id="name" name="name" placeholder="Message">
-          <div class="input-btn-ctn">
-            <input type="button">
-            <svg class="input-btn-arrow" xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 33.115 23.682">
-              <g id="Groupe_195" data-name="Groupe 195" transform="translate(0 1.394)">
-                <path id="Tracé_504" data-name="Tracé 504" d="M30.189,0H0" transform="translate(30.189 10.416) rotate(180)" fill="none" stroke="#fff" stroke-width="4"/>
-                <path id="Tracé_505" data-name="Tracé 505" d="M10.154,0,0,10.447,10.154,20.894" transform="translate(30.326 20.894) rotate(180)" fill="none" stroke="#fff" stroke-width="4"/>
-              </g>
-            </svg>
+
+      <div class="contact-panel-4">
+        <h2>Ça bouge chez <span class="span-orange">Art&nbsp;Zeppelin</span></h2>
+        <p class="p-bold">Inscrivez-vous à notre Newsletter pour rester au courant</p>
+
+        <form class="form-inline input-text-btn-ctn" action="/clients" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="dxg7C5ju1ennDjjA46AOSdOnCJDFqGx+fRQvVWDACgAb30gU0Sj/ScQCGdarhDlGqf50zzwbVDmticnWWkAFcA==">
+          <div class="form-group text">
+            <input class="form-control" placeholder="Votre email" type="text" name="client[email]" id="client_email">
           </div>
-        </div>
+          <div>
+            <input type="submit" name="commit" value="Envoyer" class="btn btn-primary" data-disable-with="Envoyer">
+          </div>
+        </form>        
       </div>
-    </div>
-    <div class="contact-btns-ctn">
-      <div class="button">Informations</div>
-      <div class="button">Formulaire</div>
-      <div class="button">FAQ</div>
-      <div class="button">Newsletter</div>
     </div>
   </div>
 </div>
 
 
 <script>
-  const contactBtns = document.querySelectorAll('.contact-btns-ctn>.button');
+  const contactBtns = document.querySelectorAll('.contact-btns-ctn>div');
   const contactPanels = document.querySelectorAll('.contact-panels-ctn>div');
-  console.log("22");
 
   function updateContactPanel(i) {
     for (let y = 0; y < contactPanels.length; y++) {
-      var contactPanel = contactPanels[y];
-      contactPanel.style.display = "none";
+      contactPanels[y].style.display = "none";
     }
-    if (i > 3) i -= 4;
-      contactPanels[i].style.display ="flex";
+    if(i == 2) {contactPanels[i].style.display = "block";}
+    else {contactPanels[i].style.display = "flex";}
   }
   
   for (let i = 0; i < contactBtns.length; i++) {
-    var ContactBtn = contactBtns[i];
-
-    ContactBtn.addEventListener('click', updateContactPanel.bind( null, i));
+    contactBtns[i].addEventListener('click', function() {updateContactPanel(i)}, false);
   }
 </script>
