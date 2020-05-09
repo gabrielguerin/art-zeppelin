@@ -1,0 +1,16 @@
+<%= link_to blog_path(blog.id), class: "index-blog-ctn" do %>
+  <%= image_tag(blog.cover, alt: "") %>
+  <div class="index-blog-text-ctn">
+    <h3><%= blog.title%></h3>
+    <hr>
+    <p><%= blog.description%></p>
+    <div class="index-blog-infos-ctn">
+      <p class="index-blog-date"><%= blog.created_at.strftime("%d/%m/%Y")%></p>
+      <div class="index-blog-tags-ctn">
+        <% blog.tags.take(5).each do |tag| %>
+          <p class="tag"><%= tag.title %></p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+<% end %>
