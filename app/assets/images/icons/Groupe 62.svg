@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="186.257" height="190.414" viewBox="0 0 186.257 190.414">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f7bcb2;
+        opacity: 0.5;
+      }
+
+      .cls-2, .cls-5 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke: #e53917;
+        stroke-width: 5.535px;
+      }
+
+      .cls-3 {
+        fill: #fa4616;
+        opacity: 0.8;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        font-size: 27.231px;
+        font-family: Roboto-Bold, Roboto;
+        font-weight: 700;
+      }
+
+      .cls-5 {
+        stroke: #ff4e00;
+        stroke-linecap: round;
+        stroke-width: 3.867px;
+      }
+    </style>
+  </defs>
+  <g id="Groupe_62" data-name="Groupe 62" transform="translate(0 1.934)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" class="cls-1" width="105.097" height="105.097" rx="52.549" transform="translate(38.022 42.51)"/>
+    <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-2" cx="61.658" cy="61.658" r="61.658" transform="translate(28.912 33.401)"/>
+    <path id="Tracé_86" data-name="Tracé 86" class="cls-3" d="M469.916,1607.674H283.659v-48.282l186.257-.791Z" transform="translate(-283.659 -1490.033)"/>
+    <text id="CORPORATE" class="cls-4" transform="translate(92.885 103.431)"><tspan x="-78.316" y="0">CORPORATE</tspan></text>
+    <g id="Groupe_61" data-name="Groupe 61" transform="translate(17.611)">
+      <g id="Groupe_42" data-name="Groupe 42" transform="translate(72.206)">
+        <g id="Groupe_41" data-name="Groupe 41">
+          <line id="Ligne_11" data-name="Ligne 11" class="cls-5" y2="14.171"/>
+        </g>
+      </g>
+      <g id="Groupe_44" data-name="Groupe 44" transform="translate(32.812 10.531)">
+        <g id="Groupe_43" data-name="Groupe 43">
+          <line id="Ligne_12" data-name="Ligne 12" class="cls-5" x2="6.149" y2="12.768"/>
+        </g>
+      </g>
+      <g id="Groupe_46" data-name="Groupe 46" transform="translate(1.888 37.112)">
+        <g id="Groupe_45" data-name="Groupe 45">
+          <line id="Ligne_13" data-name="Ligne 13" class="cls-5" x2="11.08" y2="8.836"/>
+        </g>
+      </g>
+      <g id="Groupe_48" data-name="Groupe 48" transform="translate(0 145.873)">
+        <g id="Groupe_47" data-name="Groupe 47">
+          <line id="Ligne_14" data-name="Ligne 14" class="cls-5" y1="8.836" x2="11.08"/>
+        </g>
+      </g>
+      <g id="Groupe_50" data-name="Groupe 50" transform="translate(32.795 166.174)">
+        <g id="Groupe_49" data-name="Groupe 49">
+          <line id="Ligne_15" data-name="Ligne 15" class="cls-5" y1="12.768" x2="6.149"/>
+        </g>
+      </g>
+      <g id="Groupe_52" data-name="Groupe 52" transform="translate(72.858 172.375)">
+        <g id="Groupe_51" data-name="Groupe 51">
+          <line id="Ligne_16" data-name="Ligne 16" class="cls-5" y1="14.171"/>
+        </g>
+      </g>
+      <g id="Groupe_54" data-name="Groupe 54" transform="translate(106.103 163.247)">
+        <g id="Groupe_53" data-name="Groupe 53">
+          <line id="Ligne_17" data-name="Ligne 17" class="cls-5" x1="6.149" y1="12.768"/>
+        </g>
+      </g>
+      <g id="Groupe_56" data-name="Groupe 56" transform="translate(132.096 140.599)">
+        <g id="Groupe_55" data-name="Groupe 55">
+          <line id="Ligne_18" data-name="Ligne 18" class="cls-5" x1="11.08" y1="8.836"/>
+        </g>
+      </g>
+      <g id="Groupe_58" data-name="Groupe 58" transform="translate(133.984 31.838)">
+        <g id="Groupe_57" data-name="Groupe 57">
+          <line id="Ligne_19" data-name="Ligne 19" class="cls-5" x1="11.08" y2="8.836"/>
+        </g>
+      </g>
+      <g id="Groupe_60" data-name="Groupe 60" transform="translate(106.12 7.604)">
+        <g id="Groupe_59" data-name="Groupe 59">
+          <line id="Ligne_20" data-name="Ligne 20" class="cls-5" x1="6.149" y2="12.768"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
