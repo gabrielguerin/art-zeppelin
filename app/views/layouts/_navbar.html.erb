@@ -41,5 +41,45 @@
       <%= link_to "Contact - FAQ", "statics/contact", class: "header-link"%>
       </div>
   </nav>
+
+
   <%= yield %>
+
+  
+  <script class="mobile-header-transition">
+        const burgerBtn = document.querySelector('.burger-btn');
+        const ddownLinks = document.querySelector('.header-links-ctn');
+        const burgerOpen = document.querySelector('#burger-open');
+        const burgerClose = document.querySelector('#burger-close');
+
+
+        function toggleNav() {
+            if (!ddownLinks.classList.contains('header-links-ctn-active')) {
+                ddownLinks.classList.add('header-links-ctn-active');
+                burgerOpen.style.opacity = 0;
+                burgerClose.style.opacity = 1;
+            } else {
+                ddownLinks.classList.remove('header-links-ctn-active');
+                burgerOpen.style.opacity = 1;
+                burgerClose.style.opacity = 0;
+            }
+        }
+        burgerBtn.addEventListener('click', toggleNav); 
+    </script>
+
+    <script class="header-dropdown">
+        const ddownLink = document.querySelector('.header-ddown-link');
+        const ddownCtt = document.querySelector('.header-ddown-ctt');
+
+        function toggleDdown() {
+            if (!ddownCtt.classList.contains('header-ddown-ctt-active')) {
+                ddownCtt.classList.add('header-ddown-ctt-active');
+                ddownCtt.classList.remove('header-ddown-ctt-inactive');
+            } else {
+                ddownCtt.classList.remove('header-ddown-ctt-active');
+                ddownCtt.classList.add('header-ddown-ctt-inactive');
+            }
+        }
+        ddownLink.addEventListener('click', toggleDdown);
+    </script>
 <% end %>

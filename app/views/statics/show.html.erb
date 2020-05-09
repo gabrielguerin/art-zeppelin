@@ -1,87 +1,70 @@
-<div class="main">
-  <div class="flex-center section-100vh-top">
-    <div class="col-ctn index-lp-top">
-      <div class="lp-top-text">
-        <h1>L'<span class="span-orange">art</span> s'invite dans vos locaux</h1>
-        <hr>
-        <p>Les artistes aux savoir-faire variés conceptualisent des espaces inspirants propices au bien-être et aux échanges. <br>
-          Notre double expertise, artistique et commerciale, vous accompagne de la conception à la réalisation d’œuvres d'art qui reflètent votre vision, mission et identité.<br>
-          <br>
-          Nous choisissons avec un soin particulier nos artistes selon une approche prenant en compte à la fois expérience mais aussi style et technique.</p>
-      </div>
-      <%= image_tag("index-img.png", alt: "art-zeppelin-index-illustration", class: "lp-top-img") %>
+<div class="section index-section-1">
+    <div>
+        <%= image_tag("index-img.png", alt: "art-zeppelin-index-illustration", class: "index-section-1-img") %>
+        <div class="index-section-1-text-ctn">
+            <h1>L'<span class="span-orange">art</span> s'invite<br>dans vos locaux</h1>
+            <hr>
+            <p>Les artistes aux savoir-faire variés conceptualisent des espaces inspirants propices au bien-être et aux échanges. <br>
+            Notre double expertise, artistique et commerciale, vous accompagne de la conception à la réalisation d’œuvres d'art qui reflètent votre vision, mission et identité.<br>
+            <br>
+            Nous choisissons avec un soin particulier nos artistes selon une approche prenant en compte à la fois expérience mais aussi style et technique.</p>
+        </div>
     </div>
-  </div>
-  <div class="section-100vh index-section-2-ctn">
-    <div class="flex-center section-100vh index-section-2">
-      <div class="col-ctn">
-        <div class="one-third">
-          <%= image_tag("icons/icon - 1.png", alt: "art-zeppelin-index-icon", class: "lp-index-icons") %>
-          <h3 class="lp-index-icons-h3">Inspirez vos équipes
-            <h3>
-            </div>
-            <div class="one-third">
-              <%= image_tag("icons/icon - 2.png", alt: "art-zeppelin-index-icon", class: "lp-index-icons") %>
-              <h3 class="lp-index-icons-h3">Consolidez votre image
-                <h3>
-                </div>
-                <div class="one-third">
-                  <%= image_tag("icons/icon - 3.png", alt: "art-zeppelin-index-icon", class: "lp-index-icons") %>
-                  <h3 class="lp-index-icons-h3">Avantages fiscaux
-                    <h3>
-                    </div>
-                  </div>
-                  <hr>
-                  <p>
-                    La présence de l’art au sein des entreprises se développe progressivement et séduit tous les secteurs, c’est un excellent moyen de transformer les espaces de façon innovante. Cultiver la notion de plaisir au travail est un moyen pertinent de créer un sentiment d’appartenance et de cohésion de groupe au sein de votre entreprise.<br>
-                    <br>
-                    Nos experts accompagnent votre réflexion stratégique lors du choix de l’artiste-auteur pour mettre en valeur votre environnement professionnel.<br>
-                    En effet, notre sélection d’artistes partenaires présente de multiples styles et techniques qui conviendront à l’image et aux valeurs de votre entreprise. La présence d’art contribue au maintien et au renforcement de vos relations commerciales. C’est dans un environnement accueillant et chaleureux que vos clients et partenaires se projettent, Art Zeppelin met à votre disposition l’ensemble de ses connaissances et compétences pour que cela soit chez vous, dans vos locaux. 
-                  </p>
-                  <div class="index-section-2-links">
-                    <%= link_to "Découvrez nos artistes", artists_path %>
-                    <%= link_to "Quels sont les avantages fiscaux ?", "statics/deductions" %>
-                  </div>
-                </div>
-              </div>
-              <div class="section-60vh index-section-3-ctn">
-                <div class="flex-center section-60vh index-section-3">
-                  <%= link_to( "statics/for_artists", class: "") do %>
-                    <h1>Pour les <span class="span-orange">artistes</span></h1>
-                  <% end %>
-                  <%= link_to( "statics/for_companies", class: "") do %>
-                    <h1>Pour les <span class="span-orange">entreprises</span></h1>
-                  <% end %>
-                </div>
-              </div>
-              <div class="section-60vh index-section-4-ctn">
-                <div class="flex-center section-60vh index-section-4">
-                  <h2>Ça bouge chez <span class="span-orange">Art&nbsp;Zeppelin</span></h2>
-                  <p class="p-bold">Inscrivez-vous à notre Newsletter pour rester au courant</p>
-                  <!-- NEWSLETTER FORM -->
-                  <%= render 'clients/form-newsletter' %>
-                  <%# 
-                  <div class="input-text-btn-ctn">
-                    <input type="text" id="name" name="name" placeholder="Votre email">
-                    <div class="input-btn-ctn">
-                      <input type="button">
-                      <svg class="input-btn-arrow" xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 33.115 23.682">
-                        <g id="Groupe_195" data-name="Groupe 195" transform="translate(0 1.394)">
-                          <path id="Tracé_504" data-name="Tracé 504" d="M30.189,0H0" transform="translate(30.189 10.416) rotate(180)" fill="none" stroke="#fff" stroke-width="4"/>
-                          <path id="Tracé_505" data-name="Tracé 505" d="M10.154,0,0,10.447,10.154,20.894" transform="translate(30.326 20.894) rotate(180)" fill="none" stroke="#fff" stroke-width="4"/>
-                        </g>
-                      </svg>
-                    </div>
-                  </div>
-                  %>
-                </div>
-              </div>
-              <div class="section-60vh">
-                <div class="flex-center section-60vh index-section-5">
-                  <p>
-                    Nous partons du constat que l’art en entreprise est peu présent si ce n’est absent. Notre équipe a pour mission de fournir un support commercial et promotionnel aux artistes afin qu’ils puissent se focaliser pleinement sur leur processus créatif. Forte de 4 nationalités et de compétences complémentaires, Art Zeppelin une entreprise vivante et compétente pour vous conseiller dans vos choix artistiques. Nous avons la volonté partagée de contribuer à promouvoir le travail d’artiste en France et bientôt au-delà.
-                  </p>
-                  <%=image_tag("logo-bottom.png", alt: "art-zeppelin-index-icon", class: "")%>
-                </div>
-              </div>
-            </div>
+</div>
+
+<div class="section index-section-2">
+    <div class="index-section-2-pictos-ctn">
+        <div>
+            <%= image_tag("icons/icon-1.svg", alt: "art-zeppelin-index-icon") %>
+            <h3 class="">Inspirez vos équipes</h3>
+        </div>
+        <div>
+            <%= image_tag("icons/icon-2.svg", alt: "art-zeppelin-index-icon") %>
+            <h3 class="">Consolidez votre image</h3>
+        </div>
+        <div>
+            <%= image_tag("icons/icon-3.svg", alt: "art-zeppelin-index-icon") %>
+            <h3 class="">Avantages fiscaux</h3>
+        </div>
+    </div>
+    <hr>
+    <div class="index-section-2-text-ctn">
+        <p>
+            La présence de l’art au sein des entreprises se développe progressivement et séduit tous les secteurs, c’est un excellent moyen de transformer les espaces de façon innovante. Cultiver la notion de plaisir au travail est un moyen pertinent de créer un sentiment d’appartenance et de cohésion de groupe au sein de votre entreprise.<br>
+            <br>
+            Nos experts accompagnent votre réflexion stratégique lors du choix de l’artiste-auteur pour mettre en valeur votre environnement professionnel.<br>
+            En effet, notre sélection d’artistes partenaires présente de multiples styles et techniques qui conviendront à l’image et aux valeurs de votre entreprise. La présence d’art contribue au maintien et au renforcement de vos relations commerciales. C’est dans un environnement accueillant et chaleureux que vos clients et partenaires se projettent, Art Zeppelin met à votre disposition l’ensemble de ses connaissances et compétences pour que cela soit chez vous, dans vos locaux. 
+        </p>
+        <div class="index-section-2-links-ctn">
+            <%= link_to "Découvrez nos artistes", artists_path %>
+            <%= link_to "Avantages fiscaux", "statics/deductions" %>
+        </div>
+    </div>
+</div>
+
+<div class="section index-section-3">
+    <%= link_to( "statics/for_artists", class: "") do %>
+        <h1>Vous êtes <span class="span-orange">artiste</span> ?</h1>
+        <p>Venez découvrir notre démarche</p>
+    <% end %>
+    <%= link_to( "statics/for_companies", class: "") do %>
+        <h1>Vous représentez une <span class="span-orange">entreprise</span></h1>
+        <p>Découvrez comment sublimer vos locaux avec nous</p>
+    <% end %>
+</div>
+
+<div class="section index-section-4">
+    <h2>Ça bouge chez <span class="span-orange">Art&nbsp;Zeppelin</span></h2>
+    <p class="p-bold">Inscrivez-vous à notre Newsletter pour rester au courant</p>
+    <%= render 'clients/form-newsletter' %>
+</div>
+
+<div class="section index-section-5">
+    <p>
+        Nous partons du constat que l’art en entreprise est peu présent si ce n’est absent.<br>
+        Notre équipe a pour mission de fournir un support commercial et promotionnel aux artistes afin qu’ils puissent se focaliser pleinement sur leur processus créatif.<br>
+        Forte de 4 nationalités et de compétences complémentaires, Art Zeppelin une entreprise vivante et compétente pour vous conseiller dans vos choix artistiques.<br>
+        Nous avons la volonté partagée de contribuer à promouvoir le travail d’artiste en France et bientôt au-delà.
+    </p>
+    <%=image_tag("logo-bottom.png", alt: "art-zeppelin-index-icon", class: "")%>
+</div>
