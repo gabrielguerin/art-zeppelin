@@ -6,80 +6,74 @@
       <%end%>
       <div class="burger-btn">
         <svg id="burger-open" xmlns="http://www.w3.org/2000/svg" width="30" height="27" viewBox="0 0 15.296 14">
-            <g id="Groupe_611" data-name="Groupe 611" transform="translate(-10.257 -5.5)">
-                <path id="Tracé_1154" data-name="Tracé 1154" d="M5717.2,6130.607h15.3" transform="translate(-5706.94 -6124.107)" fill="none" stroke="#000" stroke-width="2"/>
-                <path id="Tracé_1155" data-name="Tracé 1155" d="M5717.2,6130.607h15.3" transform="translate(-5706.94 -6118.107)" fill="none" stroke="#000" stroke-width="2"/>
-                <path id="Tracé_1156" data-name="Tracé 1156" d="M5717.2,6130.607h15.3" transform="translate(-5706.94 -6112.107)" fill="none" stroke="#000" stroke-width="2"/>
-            </g>
+          <g id="Groupe_611" data-name="Groupe 611" transform="translate(-10.257 -5.5)">
+            <path id="Tracé_1154" data-name="Tracé 1154" d="M5717.2,6130.607h15.3" transform="translate(-5706.94 -6124.107)" fill="none" stroke="#000" stroke-width="2"/>
+            <path id="Tracé_1155" data-name="Tracé 1155" d="M5717.2,6130.607h15.3" transform="translate(-5706.94 -6118.107)" fill="none" stroke="#000" stroke-width="2"/>
+            <path id="Tracé_1156" data-name="Tracé 1156" d="M5717.2,6130.607h15.3" transform="translate(-5706.94 -6112.107)" fill="none" stroke="#000" stroke-width="2"/>
+          </g>
         </svg>
         <svg id="burger-close" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 13.66 13.659">
-            <g id="Groupe_612" data-name="Groupe 612" transform="translate(-11.079 -6.078)">
-              <path id="Tracé_1154" data-name="Tracé 1154" d="M0,0H17.317" transform="translate(11.786 6.786) rotate(45)" fill="none" stroke="#000" stroke-width="2"/>
-              <path id="Tracé_1156" data-name="Tracé 1156" d="M0,0H17.317" transform="translate(11.786 19.03) rotate(-45)" fill="none" stroke="#000" stroke-width="2"/>
-            </g>
+          <g id="Groupe_612" data-name="Groupe 612" transform="translate(-11.079 -6.078)">
+            <path id="Tracé_1154" data-name="Tracé 1154" d="M0,0H17.317" transform="translate(11.786 6.786) rotate(45)" fill="none" stroke="#000" stroke-width="2"/>
+            <path id="Tracé_1156" data-name="Tracé 1156" d="M0,0H17.317" transform="translate(11.786 19.03) rotate(-45)" fill="none" stroke="#000" stroke-width="2"/>
+          </g>
         </svg>
       </div>
     </div>
-
     <div class="header-links-ctn">
       <div class="header-ddown-ctn">
         <div class="header-link header-ddown-link">
-            Offres
-            <svg xmlns="http://www.w3.org/2000/svg" width="17.678" height="17.678" viewBox="0 0 17.678 17.678">
-                <path id="Tracé_1153" data-name="Tracé 1153" d="M11,11H0V0" transform="translate(1.061 7.778) rotate(-45)" fill="none" stroke="#000" stroke-width="2"/>
-            </svg>
+          Offres
+          <svg xmlns="http://www.w3.org/2000/svg" width="17.678" height="17.678" viewBox="0 0 17.678 17.678">
+            <path id="Tracé_1153" data-name="Tracé 1153" d="M11,11H0V0" transform="translate(1.061 7.778) rotate(-45)" fill="none" stroke="#000" stroke-width="2"/>
+          </svg>
         </div>
         <div class="header-ddown-ctt">
           <%= link_to "Pour les artistes", "statics/for_artists", class: "header-link"%>
           <%= link_to "Pour les entreprises", "statics/for_companies", class: "header-link"%>
         </div>
       </div>
-
       <%= link_to "Articles", blogs_path, class: "header-link"%>
       <%= link_to "Artistes", artists_path, class: "header-link"%>
       <%= link_to "Réalisations", artworks_path, class: "header-link"%>
       <%= link_to "Contact - FAQ", "statics/contact", class: "header-link"%>
-      </div>
+    </div>
   </nav>
-
-
+  <%= render "layouts/flashes" %>
   <%= yield %>
-
-  
   <script class="mobile-header-transition">
-        const burgerBtn = document.querySelector('.burger-btn');
-        const ddownLinks = document.querySelector('.header-links-ctn');
-        const burgerOpen = document.querySelector('#burger-open');
-        const burgerClose = document.querySelector('#burger-close');
-
-
-        function toggleNav() {
-            if (!ddownLinks.classList.contains('header-links-ctn-active')) {
-                ddownLinks.classList.add('header-links-ctn-active');
-                burgerOpen.style.opacity = 0;
-                burgerClose.style.opacity = 1;
-            } else {
-                ddownLinks.classList.remove('header-links-ctn-active');
-                burgerOpen.style.opacity = 1;
-                burgerClose.style.opacity = 0;
-            }
+    const burgerBtn = document.querySelector('.burger-btn');
+    const ddownLinks = document.querySelector('.header-links-ctn');
+    const burgerOpen = document.querySelector('#burger-open');
+    const burgerClose = document.querySelector('#burger-close');
+    
+    
+    function toggleNav() {
+        if (!ddownLinks.classList.contains('header-links-ctn-active')) {
+            ddownLinks.classList.add('header-links-ctn-active');
+            burgerOpen.style.opacity = 0;
+            burgerClose.style.opacity = 1;
+        } else {
+            ddownLinks.classList.remove('header-links-ctn-active');
+            burgerOpen.style.opacity = 1;
+            burgerClose.style.opacity = 0;
         }
-        burgerBtn.addEventListener('click', toggleNav); 
-    </script>
-
-    <script class="header-dropdown">
-        const ddownLink = document.querySelector('.header-ddown-link');
-        const ddownCtt = document.querySelector('.header-ddown-ctt');
-
-        function toggleDdown() {
-            if (!ddownCtt.classList.contains('header-ddown-ctt-active')) {
-                ddownCtt.classList.add('header-ddown-ctt-active');
-                ddownCtt.classList.remove('header-ddown-ctt-inactive');
-            } else {
-                ddownCtt.classList.remove('header-ddown-ctt-active');
-                ddownCtt.classList.add('header-ddown-ctt-inactive');
-            }
+    }
+    burgerBtn.addEventListener('click', toggleNav);
+  </script>
+  <script class="header-dropdown">
+    const ddownLink = document.querySelector('.header-ddown-link');
+    const ddownCtt = document.querySelector('.header-ddown-ctt');
+    
+    function toggleDdown() {
+        if (!ddownCtt.classList.contains('header-ddown-ctt-active')) {
+            ddownCtt.classList.add('header-ddown-ctt-active');
+            ddownCtt.classList.remove('header-ddown-ctt-inactive');
+        } else {
+            ddownCtt.classList.remove('header-ddown-ctt-active');
+            ddownCtt.classList.add('header-ddown-ctt-inactive');
         }
-        ddownLink.addEventListener('click', toggleDdown);
-    </script>
+    }
+    ddownLink.addEventListener('click', toggleDdown);
+  </script>
 <% end %>

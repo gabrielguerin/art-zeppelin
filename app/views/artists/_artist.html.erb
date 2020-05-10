@@ -1,0 +1,16 @@
+<%= link_to artist_path(artist.id), :class => 'index-artist-ctn' do %>
+  <%= image_tag("img.png", alt: "art-zeppelin-index-artist-portrait", class: "")%>
+  <div class="index-artist-text-ctn">
+    <div>
+      <h3 class="index-artist-name"><%= artist.first_name + " " + artist.last_name %></h3>
+      <hr class="index-artist-hr">
+      <p class="index-artist-description"><%= artist.description %></p>
+    </div>
+    <div class="index-artist-tag-ctn">
+      <% artist.tags.each do |tag| %>
+        <p class="index-artist-tag"><%= tag.title %></p>
+      <% end %>
+    </div>
+  </div>
+  <div class="index-artist-fill-ctn"></div>
+<% end %>

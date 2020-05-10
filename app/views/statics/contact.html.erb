@@ -29,17 +29,10 @@
           </div>
         </div>
       </div>
-
       <div class="contact-panel-2">
-        <p>Pour nous écrire, c'est&nbsp;par&nbsp;ici&nbsp;!</p>
-        <input class="form-control" placeholder="Nom" type="text" name="client[email]" id="client_email">
-        <input class="form-control" placeholder="Prénom" type="text" name="client[email]" id="client_email">
-        <input class="form-control" placeholder="Email" type="text" name="client[email]" id="client_email">
-        <textarea></textarea>
-        <input type="submit" name="commit" value="Rechercher" class="btn btn-primary" data-disable-with="Envoyer">
-        </form>
+        <p>Pour nous écrire, c'est par ici !</p>
+        <%= render 'clients/form-contact' %>
       </div>
-
       <div class="contact-panel-3">
         <p class="p-bold">1°Pourquoi rejoindre Art Zeppelin ?</p>
         <p>Nous rejoindre c’est la possibilité de réaliser des projets en lien avec votre démarche artistique, selon vos disponibilités.</p>
@@ -58,36 +51,25 @@
         <p class="p-bold">8°Comment contacter le service client ?</p>
         <p>Nous vous invitons à remplir le formulaire de contact ci dessous ou appeler les numéros indiqués.</p>
       </div>
-
       <div class="contact-panel-4">
         <h2>Ça bouge chez <span class="span-orange">Art&nbsp;Zeppelin</span></h2>
         <p class="p-bold">Inscrivez-vous à notre Newsletter pour rester au courant</p>
-
-        <form class="form-inline input-text-btn-ctn" action="/clients" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="dxg7C5ju1ennDjjA46AOSdOnCJDFqGx+fRQvVWDACgAb30gU0Sj/ScQCGdarhDlGqf50zzwbVDmticnWWkAFcA==">
-          <div class="form-group text">
-            <input class="form-control" placeholder="Votre email" type="text" name="client[email]" id="client_email">
-          </div>
-          <div>
-            <input type="submit" name="commit" value="Envoyer" class="btn btn-primary" data-disable-with="Envoyer">
-          </div>
-        </form>        
+        <%= render 'clients/form-newsletter'%>
       </div>
     </div>
   </div>
 </div>
-
-
 <script>
   const contactBtns = document.querySelectorAll('.contact-btns-ctn>div');
   const contactPanels = document.querySelectorAll('.contact-panels-ctn>div');
-
+  
   function updateContactPanel(i) {
     for (let y = 0; y < contactPanels.length; y++) {
       contactPanels[y].style.display = "none";
     }
     if(i == 2) {contactPanels[i].style.display = "block";}
     else {contactPanels[i].style.display = "flex";}
-
+  
     for (let y = 0; y < contactPanels.length; y++) {
       contactBtns[y].classList.remove('contact-btn-active');
     }
