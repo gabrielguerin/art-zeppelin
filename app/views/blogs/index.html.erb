@@ -1,5 +1,5 @@
 <div class="section index-blog-section-1">
-  <h1>Ça bouge chez<span class="span-orange"> Art Zeppelin</span></h1>
+  <h1>Ça bouge chez <span class="span-orange">Art Zeppelin</span></h1>
   <div class="index-blog-section-1-filters-ctn">
     <div class="index-blog-section-1-filters-btn-ctn">
       <a href="#" class="filter-btn">Artiste</a>
@@ -7,34 +7,18 @@
       <a href="#" class="filter-btn">Événement</a>
       <a href="#" class="filter-btn">Autres</a>
     </div>
-    <form class="form-inline input-text-btn-ctn">
-      <div class="form-group text">
-        <input class="form-control" placeholder="lieu, date..." type="text" name="client[email]" id="client_email">
-      </div>
-      <div>
-        <input type="submit" name="commit" value="Rechercher" class="btn btn-primary" data-disable-with="Envoyer">
-      </div>
-    </form>
+    <%= render 'search' %>
   </div>
 </div>
-
 <div class="section index-blog-section-2">
-  <% @blogs.each do |blog| %>
-    <%= link_to blog_path(blog.id), class: "index-blog-ctn" do%>
-      <%= image_tag(blog.cover, alt: "") %>
-      <div class="index-blog-text-ctn">
-        <h3><%= blog.title%></h3>
-        <hr>
-        <p><%= blog.description%></p>
-        <div class="index-blog-infos-ctn">
-          <p class="index-blog-date"><%= blog.created_at.strftime("%d/%m/%Y")%></p>
-          <div class="index-blog-tags-ctn">
-            <% blog.tags.take(5).each do |tag| %>
-              <p class="tag"><%= tag.title %></p>
-            <% end %>
-          </div>
-        </div>
+  <div id="blogs">
+    <%= render partial: 'articles', locals: { blogs: @blogs } %>
+  </div>
+  <% if @blogs.count > 5 %>
+    <div class="card">
+      <div class="card-body d-flex justify-content-center" id="paginate">
+        <%= paginate @blogs, remote: true %>
       </div>
-    <% end %>
+    </div>
   <% end %>
 </div>
