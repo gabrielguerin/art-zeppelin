@@ -55,10 +55,6 @@ group :development, :test do
 
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
 
-  # Seed with Faker
-
-  gem 'faker'
-
   # Replace the standard Rails error page with a much better and more useful error page
 
   gem 'better_errors'
@@ -123,4 +119,9 @@ gem 'mini_magick'
 gem 'sendgrid-ruby'
 
 #  A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
+
 gem 'kaminari'
+
+# Seed with Faker
+
+gem 'faker'

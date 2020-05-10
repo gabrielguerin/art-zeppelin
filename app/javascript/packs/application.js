@@ -20,7 +20,7 @@ require("trix")
 require("@rails/actiontext")
 
 import 'bootstrap';
-import '../stylesheets/application';
+import '../stylesheets/style';
 import "@fortawesome/fontawesome-free/js/all";
 
 require("./carousels/artists_carousel")
