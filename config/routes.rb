@@ -45,7 +45,7 @@ Rails.application.routes.draw do
 
   resources :clients
 
-  root 'statics#show', page: 'index'
+  root 'statics#show', page: 'home'
 
   get '/statics/:page' => 'statics#show'
 

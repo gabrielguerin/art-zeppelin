@@ -3,9 +3,7 @@
 class StaticsController < ApplicationController
   layout '_navbar'
 
-  before_action :contact, only: %i[show]
-
-  def index; end
+  before_action :contact, only: %i[show index]
 
   def show
     if valid_page?
