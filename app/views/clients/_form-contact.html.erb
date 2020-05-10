@@ -1,37 +1,25 @@
-<div class='card'>
-  <div class='card-header'>
-    <h5>Écrivez-nous</h5>
-  </div>
-  <%= form_with(model: @client, local: true, class: 'card-body') do |form| %>
-    <% if @client.errors.any? %>
-      <div id="error_explanation">
-        <h2><%= pluralize(@client.errors.count, "error") %> prohibited this client from being saved:</h2>
-        <ul>
-          <% @client.errors.full_messages.each do |message| %>
-            <li><%= message %></li>
-          <% end %>
-        </ul>
-      </div>
-    <% end %>
-    <div class='form-group'>
-      <%= form.label :first_name, 'Prénom' %>
-      <%= form.text_field :first_name, class: 'form-control', placeholder: 'Votre prénom' %>
-    </div>
-    <div class='form-group'>
-      <%= form.label :last_name, 'Nom' %>
-      <%= form.text_field :last_name, class: 'form-control', placeholder: 'Votre nom' %>
-    </div>
-    <div class='form-group text'>
-      <%= form.label :email, 'Email' %>
-      <%= form.text_field :email, class: 'form-control', placeholder: 'Votre email' %>
-    </div>
-    <div class='form-group'>
-      <%= form.label :comment, 'Message' %>
-      <%= form.text_area :comment, class: 'form-control text', placeholder: 'Ecrivez-nous, nous vous répondrons dans les 24h qui suivent.' %>
-    </div>
-    <div class="actions">
-      <%= form.submit 'Envoyer', class: 'btn btn-primary' %>
-      <%= link_to 'Retour', clients_path, class: 'btn btn-outline-primary' %>
+<%= form_with(model: @client, local: true, class: 'w-50', style: 'max-width: 300px;') do |form| %>
+  <% if @client.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@client.errors.count, "error") %> prohibited this client from being saved:</h2>
+      <ul>
+        <% @client.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
     </div>
   <% end %>
-</div>
+  <div class='form-group'>
+    <%= form.text_field :first_name, class: 'form-control', placeholder: 'Prénom' %>
+  </div>
+  <div class='form-group'>
+    <%= form.text_field :last_name, class: 'form-control', placeholder: 'Nom' %>
+  </div>
+  <div class='form-group'>
+    <%= form.text_field :email, class: 'form-control', placeholder: 'Email' %>
+  </div>
+  <div class='form-group'>
+    <%= form.text_area :comment, class: 'form-control text', placeholder: 'Écrivez-nous, nous vous répondrons dans les 24h qui suivent.' %>
+  </div>
+  <%= form.submit 'Envoyer', class: 'btn btn-primary' %>
+<% end %>
