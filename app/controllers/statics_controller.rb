@@ -4,6 +4,7 @@ class StaticsController < ApplicationController
   layout '_navbar'
 
   def show
+    @client = Client.new
     if valid_page?
 
       render template: "statics/#{params[:page]}"
