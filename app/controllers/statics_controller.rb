@@ -5,9 +5,10 @@ class StaticsController < ApplicationController
 
   def show
     @client = Client.new
+
     if valid_page?
 
-      render template: "statics/#{params[:page]}"
+      render template: params[:page].to_s
 
     else
 
