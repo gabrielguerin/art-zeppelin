@@ -37,16 +37,16 @@
     </p>
     <div class="index-section-2-links-ctn">
       <%= link_to "Découvrez nos artistes", artists_path %>
-      <%= link_to "Avantages fiscaux", "statics/deductions" %>
+      <%= link_to "Avantages fiscaux", "deductions" %>
     </div>
   </div>
 </div>
 <div class="section index-section-3">
-  <%= link_to( "statics/for_artists", class: "") do %>
+  <%= link_to( "for_artists", class: "") do %>
     <h1>Vous êtes <span class="span-orange">artiste</span> ?</h1>
     <p>Venez découvrir notre démarche</p>
   <% end %>
-  <%= link_to( "statics/for_companies", class: "") do %>
+  <%= link_to( "for_companies", class: "") do %>
     <h1>Vous représentez une <span class="span-orange">entreprise</span></h1>
     <p>Découvrez comment sublimer vos locaux avec nous</p>
   <% end %>
@@ -63,5 +63,5 @@
     Forte de 4 nationalités et de compétences complémentaires, Art Zeppelin une entreprise vivante et compétente pour vous conseiller dans vos choix artistiques.<br>
     Nous avons la volonté partagée de contribuer à promouvoir le travail d’artiste en France et bientôt au-delà.
   </p>
-  <%=image_tag("logo-bottom.png", alt: "art-zeppelin-index-icon", class: "")%>
+  <%= link_to image_tag("logo-bottom.png", alt: "art-zeppelin-index-icon", class: "", style: 'width: 130px; height: 130px'), 'home' %>
 </div>
