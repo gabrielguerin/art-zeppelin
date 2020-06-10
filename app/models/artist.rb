@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Artist < ApplicationRecord
+  searchkick
   extend FriendlyId
   friendly_id :full_name, use: :slugged
   has_one_attached :avatar

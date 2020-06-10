@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Blog < ApplicationRecord
+  searchkick
   extend FriendlyId
   friendly_id :title, use: :slugged
   has_rich_text :body
