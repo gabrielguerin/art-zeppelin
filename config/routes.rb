@@ -33,13 +33,7 @@ Rails.application.routes.draw do
 
   # Blogs routes
 
-  resources :blogs, only: %i[index show], path: 'blog' do
-    # Search routes
-
-    collection do
-      get :autocomplete
-    end
-  end
+  resources :blogs, only: %i[index show], path: 'blog'
 
   # Devise routes
 

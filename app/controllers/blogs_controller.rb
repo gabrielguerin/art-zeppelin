@@ -105,16 +105,6 @@ class BlogsController < ApplicationController
     end
   end
 
-  def autocomplete
-    render json: Blog.search(params[:search], {
-                               fields: %w[title],
-                               match: :word_start,
-                               limit: 10,
-                               load: false,
-                               misspellings: { below: 5 }
-                             }).map(&:title)
-  end
-
   private
 
   # Use callbacks to share common setup or constraints between actions.

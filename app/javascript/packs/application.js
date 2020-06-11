@@ -26,5 +26,3 @@ import "@fortawesome/fontawesome-free/js/all";
 require("./carousels/artists_carousel")
 require("./carousels/artworks_carousel")
 require("./navbar")
-require("packs/typeahead.bundle")
-require("packs/autocomplete-blog")
