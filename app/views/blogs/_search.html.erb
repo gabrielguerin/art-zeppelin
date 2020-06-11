@@ -1,9 +1,9 @@
-    
-<form class="form-inline input-text-btn-ctn">
+<%# Search form %>
+<%= form_tag(blogs_path, method: 'get', class: 'form-inline input-text-btn-ctn', role: 'search') do %>
   <div class="form-group text">
-    <input class="form-control" placeholder="lieu, date..." type="text" name="client[email]" id="client_email">
+    <%# Search field %>
+    <%= text_field_tag :search, nil, placeholder: "Rechercher un article", class: "form-control", name: "search", autocomplete: :off %>
   </div>
-  <div>
-    <input type="submit" name="commit" value="Rechercher" class="btn btn-primary" data-disable-with="Envoyer">
-  </div>
-</form>
+  <%# Submit button %>
+  <%= submit_tag '', class: 'btn btn-primary', value: 'Rechercher' %>
+<% end %>

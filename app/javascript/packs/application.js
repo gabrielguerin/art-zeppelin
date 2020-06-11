@@ -7,7 +7,6 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-require("jquery")
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
@@ -18,11 +17,14 @@ require("jquery")
 
 require("trix")
 require("@rails/actiontext")
+require("bootstrap");
 
-import 'bootstrap';
 import '../stylesheets/style';
 import "@fortawesome/fontawesome-free/js/all";
+
 
 require("./carousels/artists_carousel")
 require("./carousels/artworks_carousel")
 require("./navbar")
+require("packs/typeahead.bundle")
+require("packs/autocomplete-blog")

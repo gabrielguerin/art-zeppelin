@@ -125,3 +125,7 @@ gem 'faker'
 # Intelligent search made easy with Rails and Elasticsearch
 
 gem 'searchkick'
+
+# A Ruby static code analyzer and formatter, based on the community Ruby style guide.
+
+gem 'rubocop', require: false
