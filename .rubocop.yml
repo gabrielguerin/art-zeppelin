@@ -3876,13 +3876,14 @@ Style/StructInheritance:
   StyleGuide: '#no-extend-struct-new'
   Enabled: true
   VersionAdded: '0.29'
+  VersionChanged: '0.86'
 
 Style/SymbolArray:
   Description: 'Use %i or %I for arrays of symbols.'
   StyleGuide: '#percent-i'
   Enabled: true
   VersionAdded: '0.9'
-  VersionChanged: '0.49'ou
+  VersionChanged: '0.49'
   EnforcedStyle: percent
   MinSize: 2
   SupportedStyles:
