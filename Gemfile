@@ -118,10 +118,10 @@ gem 'mini_magick'
 
 gem 'sendgrid-ruby'
 
-#  A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
-
-gem 'kaminari'
-
 # Seed with Faker
 
 gem 'faker'
+
+# Intelligent search made easy with Rails and Elasticsearch
+
+gem 'searchkick'

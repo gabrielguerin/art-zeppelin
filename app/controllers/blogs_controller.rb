@@ -12,7 +12,21 @@ class BlogsController < ApplicationController
   # GET /blogs.json
 
   def index
-    @blogs = Blog.all.order(created_at: :desc).page(params[:page])
+    search = params[:search].present? ? params[:search] : nil
+
+    @blogs = if search
+
+               # Render search results
+
+               Blog.search(params[:search], page: params[:page], per_page: 20)
+
+             else
+
+               # Render blog articles
+
+               Blog.all.order(created_at: :desc).page(params[:page])
+
+              end
   end
 
   # GET /blogs/1

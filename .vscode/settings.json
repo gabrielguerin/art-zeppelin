@@ -1,0 +1,13 @@
+{
+    "[ruby]": {
+        "editor.formatOnSave": true
+    },
+    "ruby.lint": {
+        "rubocop": {
+            "lint": true,
+            "rails": true,
+            "path": "C:/Ruby26-x64/bin/"
+        }
+    },
+    "ruby.format": "rubocop",
+}

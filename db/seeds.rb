@@ -156,7 +156,9 @@ end
 
     client: Client.all.sample,
 
-    date: Faker::Date.forward(days: 365)
+    date: Faker::Date.forward(days: 365),
+
+    description: Faker::Lorem.paragraph
   )
 end
 
