@@ -1,0 +1,9 @@
+<%# Search form %>
+<%= form_tag(artworks_path, method: 'get', class: 'form-inline input-text-btn-ctn', role: 'search') do %>
+  <div class="form-group text">
+    <%# Search field %>
+    <%= text_field_tag :search, nil, placeholder: "Rechercher une oeuvre d'art", class: "form-control", name: "search", autocomplete: :off %>
+  </div>
+  <%# Submit button %>
+  <%= submit_tag '', class: 'btn btn-primary', value: 'Rechercher' %>
+<% end %>

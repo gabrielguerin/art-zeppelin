@@ -3,6 +3,8 @@
 class ClientsController < ApplicationController
   before_action :set_client, only: %i[show edit update destroy]
 
+  respond_to :js, :html, :json
+
   # GET /clients
 
   # GET /clients.json
@@ -36,6 +38,8 @@ class ClientsController < ApplicationController
 
     respond_to do |format|
       if @client.save
+
+        format.js
 
         format.html { redirect_to root_path, notice: 'Vous avez bien été ajouté à notre newsletter' }
 

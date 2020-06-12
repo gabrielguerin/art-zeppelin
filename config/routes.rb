@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  # Admin routes
+
   namespace :admin do
     resources :users
 
@@ -29,25 +31,43 @@ Rails.application.routes.draw do
     root to: 'users#index'
   end
 
-  resources :blogs
+  # Blogs routes
+
+  resources :blogs, only: %i[index show], path: 'blog'
+
+  # Devise routes
 
   devise_for :users
 
+  # Projects routes
+
   resources :projects
+
+  # Tags routes
 
   resources :tags
 
+  # Artworks routes
+
   resources :artworks
+
+  # Artists routes
 
   resources :artists
 
+  # Companies routes
+
   resources :companies
+
+  # Clients routes
 
   resources :clients
 
+  # Statics routes
+
   root 'statics#show', page: 'home'
 
-  get '/statics/:page' => 'statics#show'
+  get '/:page', to: 'statics#show'
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

@@ -12,7 +12,21 @@ class ArtworksController < ApplicationController
   # GET /artworks.json
 
   def index
-    @artworks = Artwork.all.order(created_at: :desc).page(params[:page])
+    search = params[:search].present? ? params[:search] : nil
+
+    @artworks = if search
+
+                  # Render search results
+
+                  Artwork.search(params[:search], page: params[:page], per_page: 20)
+
+                else
+
+                  # Render artworks
+
+                  Artwork.all.order(created_at: :desc).page(params[:page])
+
+                end
   end
 
   # GET /artworks/1

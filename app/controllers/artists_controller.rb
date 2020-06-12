@@ -12,7 +12,21 @@ class ArtistsController < ApplicationController
   # GET /artists.json
 
   def index
-    @artists = Artist.all.order(created_at: :desc).page(params[:page])
+    search = params[:search].present? ? params[:search] : nil
+
+    @artists = if search
+
+                 # Render search results
+
+                 Artist.search(params[:search], page: params[:page], per_page: 20)
+
+               else
+
+                 # Render blog articles
+
+                 Artist.all.order(created_at: :desc).page(params[:page])
+
+               end
   end
 
   # GET /artists/1

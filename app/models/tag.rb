@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Tag < ApplicationRecord
+  searchkick
   extend FriendlyId
   friendly_id :title, use: :slugged
   has_many :projects_tags, dependent: :destroy

@@ -56,14 +56,7 @@
       <a href="#" class="filter-btn">Sculpture</a>
       <a href="#" class="filter-btn">Performance</a>
     </div>
-    <form class="form-inline input-text-btn-ctn">
-      <div class="form-group text">
-        <input class="form-control" placeholder="Nom, medium..." type="text" name="client[email]" id="client_email">
-      </div>
-      <div>
-        <input type="submit" name="commit" value="Rechercher" class="btn btn-primary" data-disable-with="Envoyer">
-      </div>
-    </form>
+    <%= render 'search' %>
   </div>
 </div>
 <div class="section index-artist-section-3" id="artworks">
@@ -79,7 +72,7 @@
 <div class="lightbox-ctn">
   <div class="crsl-ctn">
     <div class="crsl-all-img-ctn-2">
-      <% @artworks.last(20).each do |artwork| %>
+      <% @artworks.each do |artwork| %>
         <% artwork.images.each do |artworkImage| %>
           <div class="crsl-img-ctn">
             <div class="crsl-img-2">
