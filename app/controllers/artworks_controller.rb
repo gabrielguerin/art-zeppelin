@@ -5,12 +5,28 @@ class ArtworksController < ApplicationController
 
   before_action :set_artwork, only: %i[show edit update destroy]
 
+  respond_to :js, :html, :json
+
   # GET /artworks
 
   # GET /artworks.json
 
   def index
-    @artworks = Artwork.all
+    search = params[:search].present? ? params[:search] : nil
+
+    @artworks = if search
+
+                  # Render search results
+
+                  Artwork.search(params[:search], page: params[:page], per_page: 20)
+
+                else
+
+                  # Render artworks
+
+                  Artwork.all.order(created_at: :desc).page(params[:page])
+
+                end
   end
 
   # GET /artworks/1

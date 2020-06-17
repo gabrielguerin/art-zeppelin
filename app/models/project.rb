@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 class Project < ApplicationRecord
+
+  searchkick
+
   belongs_to :artist
 
   belongs_to :client

@@ -3,14 +3,12 @@
 class StaticsController < ApplicationController
   layout '_navbar'
 
-  before_action :contact, only: %i[show]
-
-  def index; end
-
   def show
+    @client = Client.new
+
     if valid_page?
 
-      render template: "statics/#{params[:page]}"
+      render template: params[:page].to_s
 
     else
 
@@ -27,9 +25,5 @@ class StaticsController < ApplicationController
         Rails.root + "app/views/statics/#{params[:page]}.html.erb"
       )
     )
-  end
-
-  def contact
-    @client = Client.new
   end
 end

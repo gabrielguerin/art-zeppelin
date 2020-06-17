@@ -1,0 +1,9 @@
+<%# Search form %>
+<%= form_tag(blogs_path, method: 'get', class: 'form-inline input-text-btn-ctn', role: 'search') do %>
+  <div class="form-group text">
+    <%# Search field %>
+    <%= text_field_tag :search, nil, placeholder: "Rechercher un article", class: "form-control", name: "search", autocomplete: :off %>
+  </div>
+  <%# Submit button %>
+  <%= submit_tag '', class: 'btn btn-primary', value: 'Rechercher' %>
+<% end %>

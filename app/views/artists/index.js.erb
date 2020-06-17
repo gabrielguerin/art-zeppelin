@@ -1,0 +1,5 @@
+$("#artists").html("<%= j render(@artists) %>");
+$("#paginate").html("<%= escape_javascript(paginate(@artists, remote: true)) %>");
+$(document).ready(function(){
+$(this).scrollTop(0);
+});

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Client < ApplicationRecord
+  searchkick
   extend FriendlyId
   friendly_id :full_name, use: :slugged
   belongs_to :company, optional: true
