@@ -2,13 +2,19 @@
   <div>
     <%= image_tag("index-img.png", alt: "art-zeppelin-index-illustration", class: "index-section-1-img") %>
     <div class="index-section-1-text-ctn">
-      <h1>L'<span class="span-orange">art</span> s'invite<br>
-        dans vos locaux</h1>
+      <h1>
+        L'<span class="span-orange">art</span> s'invite<br>
+        dans vos locaux
+      </h1>
       <hr>
-      <p>Les artistes aux savoir-faire variés conceptualisent des espaces inspirants propices au bien-être et aux échanges. <br>
-        Notre double expertise, artistique et commerciale, vous accompagne de la conception à la réalisation d’œuvres d'art qui reflètent votre vision, mission et identité.<br>
-        <br>
-        Nous choisissons avec un soin particulier nos artistes selon une approche prenant en compte à la fois expérience mais aussi style et technique.</p>
+      <p>
+        Les artistes aux savoir-faire variés conceptualisent des espaces inspirants propices au bien-être et aux échanges. <br>
+        Notre double expertise, artistique et commerciale, vous accompagne de la conception à la réalisation d’œuvres d'art qui reflètent votre vision, mission et identité.<br><br>
+        Nous choisissons avec un soin particulier nos artistes selon une approche prenant en compte à la fois expérience mais aussi style et technique.
+      </p>
+      <%= link_to( "for_companies", class: "") do %>
+        offres
+      <% end %>
     </div>
   </div>
 </div>
@@ -41,16 +47,18 @@
     </div>
   </div>
 </div>
-<div class="section index-section-3">
-  <%= link_to( "for_artists", class: "") do %>
-    <h1>Vous êtes <span class="span-orange">artiste</span> ?</h1>
-    <p>Venez découvrir notre démarche</p>
-  <% end %>
-  <%= link_to( "for_companies", class: "") do %>
-    <h1>Vous représentez une <span class="span-orange">entreprise</span></h1>
-    <p>Découvrez comment sublimer vos locaux avec nous</p>
-  <% end %>
-</div>
+<% if false %>
+  <div class="section index-section-3">
+    <%= link_to( "for_artists", class: "") do %>
+      <h1>Vous êtes <span class="span-orange">artiste</span> ?</h1>
+      <p>Venez découvrir notre démarche</p>
+    <% end %>
+    <%= link_to( "for_companies", class: "") do %>
+      <h1>Vous représentez une <span class="span-orange">entreprise</span></h1>
+      <p>Découvrez comment sublimer vos locaux avec nous</p>
+    <% end %>
+  </div>
+<% end %>
 <div class="section index-section-4">
   <h2>Ça bouge chez <span class="span-orange">Art&nbsp;Zeppelin</span></h2>
   <p class="p-bold">Inscrivez-vous à notre Newsletter pour rester au courant</p>
