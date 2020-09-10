@@ -23,7 +23,7 @@
 	/* ######## Color variables */
 	--main-color: #fa4616;
 	--dark-color: #000;
-	--lignt-color: #fff;
+	--light-color: #fff;
 
 	/* ######## Font variables */
 	--title-font: 'Saira Extra Condensed', Arial, Helvetica, sans-serif;
@@ -607,11 +607,11 @@ a.index-artist-ctn:focus {
 }
 
 .crsl-img-active-2>a {
-	color: var(--lignt-color) !important;
+	color: var(--light-color) !important;
 }
 
 .crsl-img-active-2>p {
-	color: var(--lignt-color) !important;
+	color: var(--light-color) !important;
 }
 
 .crsl-prev-2 {
@@ -689,6 +689,38 @@ a.index-artist-ctn:focus {
 	margin: 20px 0;
 }
 
+.index-section-1-text-ctn>p {
+	margin-bottom: 20px
+}
+
+.index-section-1-text-ctn>a {
+	font-size: 30px;
+	background-color: var(--main-color);
+	color: var(--light-color);
+	padding: 0 30px;
+	margin-bottom: 38px;
+	text-decoration: none;
+	display: inline-block;
+	box-sizing: content-box;
+	border: 2px solid var(--main-color);
+	transition: 0.3s all;
+	position: relative;
+}
+
+.index-section-1-text-ctn>a:hover {
+	font-size: 30px;
+	background-color: var(--light-color);
+	color: var(--main-color);
+	padding: 0 30px;
+	margin-bottom: 38px;
+	text-decoration: none;
+	display: inline-block;
+	box-sizing: content-box;
+	border: 2px solid var(--main-color);
+	transition: 0.3s all;
+	position: relative;
+}
+
 .index-section-1-img {
 	width: 35%;
 	object-fit: contain;
@@ -757,7 +789,7 @@ a.index-artist-ctn:focus {
 .index-section-2>hr {
 	width: 100%;
 	text-align: center;
-	margin: 60px 0;
+	margin: 60px 0 30px;
 }
 
 .index-section-2-links-ctn {
@@ -775,7 +807,10 @@ a.index-artist-ctn:focus {
 	}
 }
 
-/* Index section 3 */
+
+
+/* Index section 3 
+
 .index-section-3 {
 	height: 80vh;
 	display: flex;
@@ -873,6 +908,8 @@ a.index-artist-ctn:focus {
 	width: 100%;
 }
 
+
+
 /* Index section 4 */
 .index-section-4 {
 	height: 60vh;
@@ -910,13 +947,15 @@ a.index-artist-ctn:focus {
 
 .index-section-5>p {
 	text-align: center;
+	max-width: 800px;
 	margin-bottom: 60px;
 }
 
-.index-section-5>img {
+.index-section-5>a>img {
 	height: 130px;
 	width: 130px;
 	object-fit: contain;
+	margin-bottom: 60px;
 }
 
 /* ############ Pour les artistes / For artists */

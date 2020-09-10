@@ -33,3 +33,6 @@ yarn-debug.log*
 # Ignore API keys
 .env
 /config/local_env.yml
+
+# Ignore DS_Store files
+.DS_Store
